@@ -33,11 +33,11 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   onUpdateProfile,
   onResetData,
 }) => {
-  if (!isOpen) return null;
-
   const [activeTab, setActiveTab] = useState<"general" | "privacy" | "data">("privacy");
   const [showCharter, setShowCharter] = useState<boolean>(false);
   const [exportNotice, setExportNotice] = useState<string | null>(null);
+
+  if (!isOpen) return null;
 
   const translations: BibleTranslation[] = ["ESV", "NIV", "CSB", "NASB", "NLT", "KJV"];
 

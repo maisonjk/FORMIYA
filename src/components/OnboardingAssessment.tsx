@@ -50,7 +50,7 @@ export const OnboardingAssessment: React.FC<OnboardingAssessmentProps> = ({
         });
       }
     } else {
-      if (answers.selectedGoals.length < 4) {
+      if (answers.selectedGoals.length < 3) {
         setAnswers({
           ...answers,
           selectedGoals: [...answers.selectedGoals, goal],
@@ -390,6 +390,33 @@ export const OnboardingAssessment: React.FC<OnboardingAssessmentProps> = ({
                       onClick={() => setAnswers({ ...answers, churchBelonging: option })}
                       className={`p-4 rounded-xl border text-sm sm:text-base text-left transition-all ${
                         answers.churchBelonging === option
+                          ? "border-[#c5a368] bg-[#1a1a1a] text-[#c5a368] font-semibold ring-1 ring-[#c5a368]"
+                          : "border-white/10 bg-[#151515] hover:bg-[#1f1f1f] text-white/80"
+                      }`}
+                    >
+                      {option}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm sm:text-base font-semibold text-white mb-3">
+                  Are you part of a small group or home group?
+                </label>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  {[
+                    "Yes, and we share openly",
+                    "Yes, but we rarely share deep struggles",
+                    "No, but I want to join one",
+                    "No, and I'm not sure about it",
+                  ].map((option) => (
+                    <button
+                      key={option}
+                      type="button"
+                      onClick={() => setAnswers({ ...answers, hasSmallGroup: option })}
+                      className={`p-4 rounded-xl border text-sm sm:text-base text-left transition-all ${
+                        answers.hasSmallGroup === option
                           ? "border-[#c5a368] bg-[#1a1a1a] text-[#c5a368] font-semibold ring-1 ring-[#c5a368]"
                           : "border-white/10 bg-[#151515] hover:bg-[#1f1f1f] text-white/80"
                       }`}

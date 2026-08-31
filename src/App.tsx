@@ -79,8 +79,7 @@ export default function App() {
   ) => {
     setUserProfile((prev) => ({
       ...prev,
-      hasCompletedOnboarding: true,
-      assessmentAnswers: answers,
+      onboarded: true,
       indicators,
       primaryGrowthArea: growthArea,
     }));
@@ -109,7 +108,7 @@ export default function App() {
       eveningReflection: {
         status,
         note,
-        submittedAt: new Date().toISOString(),
+        completedAt: new Date().toISOString(),
       },
     }));
   };

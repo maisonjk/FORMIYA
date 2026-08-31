@@ -119,7 +119,7 @@ Provide a structured, beautifully formatted markdown response following the FORM
 `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.7-flash",
+      model: "gemini-2.0-flash",
       contents: prompt,
       config: {
         systemInstruction: THEOLOGICAL_SYSTEM_PROMPT,
@@ -180,7 +180,7 @@ Respond in JSON format with these exact keys:
 `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.7-flash",
+      model: "gemini-2.0-flash",
       contents: prompt,
       config: {
         systemInstruction: THEOLOGICAL_SYSTEM_PROMPT,
@@ -251,7 +251,7 @@ Respond in JSON format with this structure:
 `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.7-flash",
+      model: "gemini-2.0-flash",
       contents: prompt,
       config: {
         systemInstruction: THEOLOGICAL_SYSTEM_PROMPT,
@@ -348,7 +348,7 @@ Respond in valid JSON with this exact structure:
 `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.7-flash",
+      model: "gemini-2.0-flash",
       contents: prompt,
       config: {
         systemInstruction: THEOLOGICAL_SYSTEM_PROMPT,
@@ -407,7 +407,7 @@ Structure your response in JSON:
 `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.7-flash",
+      model: "gemini-2.0-flash",
       contents: prompt,
       config: {
         systemInstruction: THEOLOGICAL_SYSTEM_PROMPT,
@@ -463,7 +463,7 @@ Output JSON with:
 `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.7-flash",
+      model: "gemini-2.0-flash",
       contents: prompt,
       config: {
         systemInstruction: THEOLOGICAL_SYSTEM_PROMPT,
@@ -518,7 +518,7 @@ Output JSON:
 `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.7-flash",
+      model: "gemini-2.0-flash",
       contents: prompt,
       config: {
         systemInstruction: THEOLOGICAL_SYSTEM_PROMPT,

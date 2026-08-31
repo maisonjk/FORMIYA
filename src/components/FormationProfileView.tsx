@@ -625,13 +625,13 @@ export const FormationProfileView: React.FC<FormationProfileViewProps> = ({
                   </span>
                 </div>
                 <span className="font-mono text-sm font-bold text-[#c5a368]">
-                  {ind.score}/100
+                  {ind.score}/10
                 </span>
               </div>
               <div className="w-full bg-[#181818] h-3 rounded-full overflow-hidden border border-white/10">
                 <div
                   className="bg-[#c5a368] h-full rounded-full transition-all duration-500"
-                  style={{ width: `${ind.score}%` }}
+                  style={{ width: `${ind.score * 10}%` }}
                 />
               </div>
             </div>

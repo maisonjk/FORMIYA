@@ -49,9 +49,11 @@ export const AICompanionModal: React.FC<AICompanionModalProps> = ({
   const [inputText, setInputText] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const initialPromptSentRef = useRef<string | null>(null);
 
   useEffect(() => {
-    if (initialPrompt && isOpen) {
+    if (initialPrompt && isOpen && initialPromptSentRef.current !== initialPrompt) {
+      initialPromptSentRef.current = initialPrompt;
       handleSendMessage(initialPrompt);
     }
   }, [initialPrompt, isOpen]);
@@ -82,7 +84,7 @@ export const AICompanionModal: React.FC<AICompanionModalProps> = ({
         content: m.content,
       }));
 
-      const res = await fetch("/api/ai-companion", {
+      const res = await fetch("/api/companion", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -99,7 +101,7 @@ export const AICompanionModal: React.FC<AICompanionModalProps> = ({
       const data = await res.json();
       const modelMsg: Message = {
         role: "model",
-        content: data.reply,
+        content: data.text,
         timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
       };
       setMessages((prev) => [...prev, modelMsg]);
