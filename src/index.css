@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Newsreader', 'Georgia', serif;
+  --font-display: 'Cinzel', 'Newsreader', serif;
+  
+  --color-canvas: #050505;
+  --color-surface: #111111;
+  --color-surface-elevated: #181818;
+  --color-surface-card: #151515;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-accent: #c5a368;
+  --color-accent-hover: #d8b67b;
+  --color-accent-muted: rgba(197, 163, 104, 0.15);
+  --color-muted: rgba(255, 255, 255, 0.5);
+  --color-secondary: rgba(255, 255, 255, 0.8);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #050505;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+}
+
+/* Custom scrollbar for dark aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+.prose-formation {
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+.prose-formation p {
+  margin-bottom: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+.prose-formation h3 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  color: #ffffff;
+}
+.prose-formation h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+  color: #c5a368;
+}
+.prose-formation ul, .prose-formation ol {
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+}
+.prose-formation li {
+  margin-bottom: 0.4rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+.prose-formation blockquote {
+  border-left: 2.5px solid #c5a368;
+  padding-left: 1.25rem;
+  font-style: italic;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 1.25rem 0;
+  line-height: 1.75;
+}
+
+/* Sophisticated Dark Utility Helpers */
+.text-micro {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.55);
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "FORMIYA - Christian Discipleship Platform",
+  "description": "Don't just consume faith. Be formed by it. A category-defining Christian discipleship SaaS platform with Scripture-grounded AI, daily formation practices, structured pathways, Heart Mirror analysis, and church leadership infrastructure.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
