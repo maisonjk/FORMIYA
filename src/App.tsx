@@ -36,7 +36,18 @@ export default function App() {
   // Local storage / Initial state setup
   const [userProfile, setUserProfile] = useState<UserProfile>(() => {
     const saved = localStorage.getItem("formed_user_profile");
-    return saved ? JSON.parse(saved) : INITIAL_USER_PROFILE;
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.tier === "free") {
+          parsed.tier = "plus";
+        }
+        return parsed;
+      } catch {
+        return INITIAL_USER_PROFILE;
+      }
+    }
+    return INITIAL_USER_PROFILE;
   });
 
   const [currentView, setCurrentView] = useState<string>("landing");

@@ -13,7 +13,7 @@ export type DiscipleshipLevel =
 
 export type BibleTranslation = "ESV" | "NIV" | "CSB" | "NASB" | "NLT" | "KJV";
 
-export type SubscriptionTier = "free" | "plus" | "pro" | "church";
+export type SubscriptionTier = "plus" | "pro" | "church";
 export type UserTier = SubscriptionTier;
 
 export interface FormationIndicators {

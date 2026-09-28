@@ -39,7 +39,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenSettings,
 }) => {
   const tier = userProfile?.tier || userTier;
-  const isPaid = tier !== "free";
 
   return (
     <header className="sticky top-0 z-40 bg-[#050505]/95 backdrop-blur-md border-b border-white/10 transition-all text-white">
@@ -187,13 +186,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               onClick={onOpenPricing}
               className={`px-2.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider transition-all flex items-center space-x-1 ${
-                tier === "pro"
+                tier === "pro" || tier === "church"
                   ? "bg-[#c5a368] text-black"
-                  : tier === "plus"
-                  ? "bg-[#1a1a1a] text-[#c5a368] border border-[#c5a368]/30"
-                  : tier === "church"
-                  ? "bg-[#c5a368] text-black"
-                  : "bg-[#181818] text-white/50 hover:bg-white/10 border border-white/10"
+                  : "bg-[#1a1a1a] text-[#c5a368] border border-[#c5a368]/30"
               }`}
             >
               <span>{tier.toUpperCase()}</span>

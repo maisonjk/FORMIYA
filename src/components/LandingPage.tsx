@@ -440,48 +440,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               Invest in What Lasts
             </p>
             <p className="mt-3 text-base text-white/60">
-              Free forever for foundational discipleship. Upgrade for deep personalized formation journeys and church tools.
+              Plans designed for individuals seeking deep spiritual formation, families walking together, and whole congregations.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-stretch">
-            {/* Free */}
-            <div className="bg-[#111111] border border-white/10 rounded-2xl p-6 flex flex-col justify-between">
-              <div>
-                <span className="text-xs font-semibold uppercase tracking-widest text-white/40">
-                  Free Plan
-                </span>
-                <div className="mt-4 mb-6">
-                  <span className="font-serif text-4xl font-medium text-white">$0</span>
-                  <span className="text-xs text-white/40 ml-1">/ forever</span>
-                </div>
-                <ul className="space-y-2.5 text-xs text-white/65 mb-6">
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>Daily Formation Session</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>7-Day 'Come Back to God' Journey</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>Basic Prayer & Reflection Journal</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>Spiritual Formation Assessment</span>
-                  </li>
-                </ul>
-              </div>
-              <button
-                onClick={onStartAssessment}
-                className="w-full py-2.5 rounded-lg bg-[#181818] hover:bg-[#222] text-white border border-white/10 font-semibold text-xs transition-colors uppercase tracking-wider"
-              >
-                Get Started Free
-              </button>
-            </div>
-
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-5xl mx-auto">
             {/* Plus */}
             <div className="bg-[#151515] border-2 border-[#c5a368] rounded-2xl p-6 flex flex-col justify-between relative shadow-xl">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#c5a368] text-black text-[10px] font-bold uppercase tracking-widest px-3 py-0.5 rounded-full">
@@ -498,7 +461,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <ul className="space-y-2.5 text-xs text-white/75 mb-6">
                   <li className="flex items-center space-x-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span className="text-white font-semibold">Everything in Free</span>
+                    <span className="text-white font-semibold">Daily Scripture, Context & Practice</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
@@ -515,6 +478,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                   <li className="flex items-center space-x-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
                     <span>Unlimited AI Companion Q&A</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
+                    <span>Private Encrypted Reflection Journal</span>
                   </li>
                 </ul>
               </div>
@@ -620,7 +587,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             onClick={onStartAssessment}
             className="px-8 py-4 rounded-lg bg-[#c5a368] hover:bg-[#d8b67b] text-black font-semibold text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all inline-flex items-center space-x-2"
           >
-            <span>Begin Free Discovery</span>
+            <span>Begin Discovery Assessment</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

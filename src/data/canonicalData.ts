@@ -288,7 +288,7 @@ export const FORMATION_JOURNEYS: FormationJourney[] = [
     tagline: "7 Days to reconnect your heart with the Father's unchanging love",
     durationDays: 7,
     category: "Beginner",
-    tierRequired: "free",
+    tierRequired: "plus",
     overview:
       "If you've felt distant, distracted, or burdened by guilt, this 7-day pathway guides you gently into the Father's welcoming arms through Luke 15 and the Psalms.",
     learningOutcomes: [
@@ -1003,7 +1003,7 @@ export const FORMATION_JOURNEYS: FormationJourney[] = [
     tagline: "14 Days to anchor your convictions, navigate hard questions, and build lasting spiritual roots",
     durationDays: 14,
     category: "Beginner",
-    tierRequired: "free",
+    tierRequired: "plus",
     overview:
       "A deep foundation in the core truths of the Gospel, the authority of Scripture, the resurrection of Christ, and learning to bring honest doubts into the light of Jesus.",
     learningOutcomes: [
