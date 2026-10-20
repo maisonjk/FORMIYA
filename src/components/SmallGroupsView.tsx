@@ -10,6 +10,12 @@ import {
   Plus,
   Send,
   RotateCw,
+  Check,
+  CheckSquare,
+  Square,
+  Clock,
+  FileText,
+  HeartHandshake,
 } from "lucide-react";
 import Markdown from "react-markdown";
 import { SEED_SMALL_GROUPS, SEED_MENTOR_PAIRING } from "../data/canonicalData";
@@ -17,21 +23,64 @@ import { SmallGroup, MentorPairing, UserProfile } from "../types";
 
 interface SmallGroupsViewProps {
   userProfile: UserProfile;
-  onOpenCompanion: (prompt: string) => void;
 }
 
 export const SmallGroupsView: React.FC<SmallGroupsViewProps> = ({
   userProfile,
-  onOpenCompanion,
 }) => {
   const [activeTab, setActiveTab] = useState<"group" | "mentor" | "curriculum_builder">("group");
   const [group, setGroup] = useState<SmallGroup>(SEED_SMALL_GROUPS[0]);
   const [mentor, setMentor] = useState<MentorPairing>(SEED_MENTOR_PAIRING);
 
+  // Mentor Hub Action Items & Notes state
+  const [newActionText, setNewActionText] = useState("");
+  const [isAddingAction, setIsAddingAction] = useState(false);
+  const [noteSummary, setNoteSummary] = useState("");
+  const [isAddingNote, setIsAddingNote] = useState(false);
+  const [isEditingMeeting, setIsEditingMeeting] = useState(false);
+  const [customMeetingDate, setCustomMeetingDate] = useState(mentor.nextMeetingDate);
+
+  const handleToggleAction = (index: number) => {
+    const updated = [...mentor.actionItems];
+    updated[index] = { ...updated[index], completed: !updated[index].completed };
+    setMentor((prev) => ({ ...prev, actionItems: updated }));
+  };
+
+  const handleAddAction = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newActionText.trim()) return;
+    setMentor((prev) => ({
+      ...prev,
+      actionItems: [...prev.actionItems, { task: newActionText.trim(), completed: false }],
+    }));
+    setNewActionText("");
+    setIsAddingAction(false);
+  };
+
+  const handleAddNote = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!noteSummary.trim()) return;
+    const today = new Date().toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+    setMentor((prev) => ({
+      ...prev,
+      pastNotes: [{ date: today, summary: noteSummary.trim() }, ...prev.pastNotes],
+    }));
+    setNoteSummary("");
+    setIsAddingNote(false);
+  };
+
+  const handleSaveMeetingDate = () => {
+    if (customMeetingDate.trim()) {
+      setMentor((prev) => ({ ...prev, nextMeetingDate: customMeetingDate.trim() }));
+      setIsEditingMeeting(false);
+    }
+  };
+
   // Curriculum Builder Generator state
   const [curriculumTopic, setCurriculumTopic] = useState<string>("Authentic Community and Vulnerability");
   const [curriculumPassage, setCurriculumPassage] = useState<string>("Hebrews 10:24-25");
   const [isGenerating, setIsGenerating] = useState<boolean>(false);
+  const [guideCopied, setGuideCopied] = useState<boolean>(false);
   const [generatedGuide, setGeneratedGuide] = useState<string>(`
 ### Small Group Leader Discussion Guide
 
@@ -93,7 +142,7 @@ export const SmallGroupsView: React.FC<SmallGroupsViewProps> = ({
             Community & Mentorship
           </h1>
           <p className="text-base sm:text-lg text-white/80 mt-2 max-w-xl leading-relaxed">
-            Spiritual formation cannot happen in isolation. Connect with your church small group, prayer partners, and discipleship mentors.
+            Spiritual formation cannot happen in isolation. Connect with your small group, prayer partners, and discipleship mentors.
           </p>
         </div>
 
@@ -101,8 +150,8 @@ export const SmallGroupsView: React.FC<SmallGroupsViewProps> = ({
         <div className="flex items-center space-x-2 overflow-x-auto no-scrollbar py-1">
           {[
             { id: "group", label: "My Small Group" },
-            { id: "mentor", label: "1-on-1 Mentor" },
-            { id: "curriculum_builder", label: "Curriculum Builder" },
+            { id: "mentor", label: "Mentor ↔ Disciple Hub" },
+            { id: "curriculum_builder", label: "Small Group Leader Tools" },
           ].map((tab) => (
             <button
               key={tab.id}
@@ -184,45 +233,139 @@ export const SmallGroupsView: React.FC<SmallGroupsViewProps> = ({
         </div>
       )}
 
-      {/* Tab 2: 1-on-1 Mentor Pairing */}
+      {/* Tab 2: Mentor ↔ Disciple Hub */}
       {activeTab === "mentor" && (
-        <div className="bg-[#111111] border border-white/15 rounded-2xl p-6 sm:p-9 shadow-sm space-y-7">
+        <div className="bg-[#111111] border border-white/15 rounded-2xl p-6 sm:p-9 shadow-sm space-y-8">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-white/10 pb-5 gap-4">
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#c5a368]">
-                Discipleship Pairing
-              </span>
-              <h2 className="font-serif text-2xl sm:text-3xl font-normal text-white mt-1">
-                Your Discipleship Mentor: {mentor.mentorName}
+              <div className="inline-flex items-center space-x-2 bg-[#181818] border border-[#c5a368]/30 text-[#c5a368] text-xs font-semibold px-3 py-1 rounded-full mb-2">
+                <HeartHandshake className="w-3.5 h-3.5" />
+                <span>Mentor ↔ Disciple Hub (Pro Feature)</span>
+              </div>
+              <h2 className="font-serif text-2xl sm:text-3xl font-normal text-white">
+                {mentor.mentorName} & {mentor.discipleName || userProfile.name}
               </h2>
               <p className="text-sm sm:text-base text-white/60 mt-1">
-                Cadence: {mentor.meetingCadence} • Next Check-In: {mentor.nextMeetingDate}
+                Cadence: {mentor.meetingCadence} • Next Check-In: <strong className="text-[#c5a368]">{mentor.nextMeetingDate}</strong>
               </p>
             </div>
 
-            <button
-              onClick={() => onOpenCompanion("Help me prepare 3 honest questions for my upcoming discipleship meeting with my mentor.")}
-              className="px-5 py-2.5 rounded-xl bg-[#181818] border border-[#c5a368]/40 hover:bg-[#222] text-[#c5a368] font-semibold text-xs sm:text-sm flex items-center space-x-2 transition-colors self-start sm:self-auto"
-            >
-              <Sparkles className="w-4 h-4" />
-              <span>Prepare Meeting with AI</span>
-            </button>
+            <div className="flex items-center space-x-2.5">
+              {isEditingMeeting ? (
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="text"
+                    value={customMeetingDate}
+                    onChange={(e) => setCustomMeetingDate(e.target.value)}
+                    placeholder="e.g. Next Tuesday at 5:00 PM"
+                    className="p-2 rounded-lg bg-[#181818] border border-white/15 text-xs text-white focus:outline-none focus:border-[#c5a368]"
+                  />
+                  <button
+                    onClick={handleSaveMeetingDate}
+                    className="px-3 py-2 rounded-lg bg-[#c5a368] text-black text-xs font-semibold"
+                  >
+                    Save
+                  </button>
+                </div>
+              ) : (
+                <button
+                  onClick={() => setIsEditingMeeting(true)}
+                  className="px-3.5 py-2 rounded-xl bg-[#181818] hover:bg-[#202020] border border-white/15 text-xs sm:text-sm font-semibold text-white/80 hover:text-white flex items-center space-x-1.5 transition-colors"
+                >
+                  <Calendar className="w-3.5 h-3.5 text-[#c5a368]" />
+                  <span>Reschedule Meeting</span>
+                </button>
+              )}
+            </div>
           </div>
 
-          {/* Current Focus Area */}
-          <div className="bg-[#151515] border border-white/10 rounded-2xl p-6 space-y-2">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#c5a368] block">
-              1-on-1 Focus Area:
-            </span>
-            <p className="text-base sm:text-lg text-white font-medium">
-              {mentor.currentGoal}
-            </p>
+          {/* Current Focus Area & Shared Scripture */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-[#151515] border border-white/10 rounded-2xl p-5 sm:p-6 space-y-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#c5a368] block">
+                Discipleship Milestone Focus
+              </span>
+              <p className="text-base sm:text-lg text-white font-medium">
+                {mentor.currentGoal}
+              </p>
+            </div>
+
+            <div className="bg-[#151515] border border-[#c5a368]/30 rounded-2xl p-5 sm:p-6 space-y-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#c5a368] block">
+                Shared Scripture Anchor
+              </span>
+              <p className="font-serif text-lg sm:text-xl text-white">
+                {mentor.sharedScripture}
+              </p>
+            </div>
+          </div>
+
+          {/* Action Items Checklist */}
+          <div className="space-y-4 pt-2">
+            <div className="flex items-center justify-between">
+              <h3 className="text-sm sm:text-base font-semibold text-white uppercase tracking-wider flex items-center space-x-2">
+                <CheckSquare className="w-4 h-4 text-[#c5a368]" />
+                <span>Discipleship Action Items ({mentor.actionItems.filter(a => a.completed).length}/{mentor.actionItems.length} Completed)</span>
+              </h3>
+              <button
+                onClick={() => setIsAddingAction(!isAddingAction)}
+                className="text-xs font-semibold text-[#c5a368] hover:underline flex items-center space-x-1"
+              >
+                <Plus className="w-3.5 h-3.5" />
+                <span>Add Action Item</span>
+              </button>
+            </div>
+
+            {isAddingAction && (
+              <form onSubmit={handleAddAction} className="flex gap-2 p-3 bg-[#181818] rounded-xl border border-white/10">
+                <input
+                  type="text"
+                  value={newActionText}
+                  onChange={(e) => setNewActionText(e.target.value)}
+                  placeholder="e.g. Read Philippians 2 and journal observations"
+                  className="flex-1 p-2 rounded-lg bg-[#111111] border border-white/10 text-xs sm:text-sm text-white focus:outline-none focus:border-[#c5a368]"
+                />
+                <button
+                  type="submit"
+                  className="px-4 py-2 bg-[#c5a368] hover:bg-[#d8b67b] text-black font-semibold text-xs rounded-lg transition-colors"
+                >
+                  Add
+                </button>
+              </form>
+            )}
+
+            <div className="space-y-2.5">
+              {mentor.actionItems.map((item, idx) => (
+                <div
+                  key={idx}
+                  onClick={() => handleToggleAction(idx)}
+                  className={`p-4 rounded-xl border flex items-center justify-between cursor-pointer transition-all ${
+                    item.completed
+                      ? "bg-[#141414] border-white/5 text-white/50 line-through"
+                      : "bg-[#181818] border-white/10 hover:border-white/20 text-white"
+                  }`}
+                >
+                  <div className="flex items-center space-x-3">
+                    {item.completed ? (
+                      <CheckCircle2 className="w-5 h-5 text-[#c5a368] shrink-0" />
+                    ) : (
+                      <Square className="w-5 h-5 text-white/40 shrink-0" />
+                    )}
+                    <span className="text-sm sm:text-base">{item.task}</span>
+                  </div>
+                  <span className="text-xs font-medium text-white/40">
+                    {item.completed ? "Done" : "In Progress"}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Shared Discussion Prompts */}
-          <div className="space-y-4">
-            <h3 className="text-sm sm:text-base font-semibold text-white uppercase tracking-wider">
-              Discussion Topics For Your Next Meeting
+          <div className="space-y-4 pt-2">
+            <h3 className="text-sm sm:text-base font-semibold text-white uppercase tracking-wider flex items-center space-x-2">
+              <MessageSquare className="w-4 h-4 text-[#c5a368]" />
+              <span>Discussion Topics For Your Next Meeting</span>
             </h3>
             <div className="space-y-3">
               {mentor.discussionPrompts.map((prompt, idx) => (
@@ -233,6 +376,65 @@ export const SmallGroupsView: React.FC<SmallGroupsViewProps> = ({
                   <CheckCircle2 className="w-5 h-5 text-[#c5a368] shrink-0 mt-0.5" />
                   <p className="text-sm sm:text-base text-white/90 font-normal leading-relaxed">
                     {prompt}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Past Notes & Log Note Section */}
+          <div className="space-y-4 pt-4 border-t border-white/10">
+            <div className="flex items-center justify-between">
+              <h3 className="text-sm sm:text-base font-semibold text-white uppercase tracking-wider flex items-center space-x-2">
+                <FileText className="w-4 h-4 text-[#c5a368]" />
+                <span>Check-In Meeting Notes Archive</span>
+              </h3>
+              <button
+                onClick={() => setIsAddingNote(!isAddingNote)}
+                className="px-3.5 py-1.5 rounded-lg bg-[#181818] hover:bg-[#202020] border border-white/15 text-xs text-[#c5a368] font-semibold flex items-center space-x-1.5"
+              >
+                <Plus className="w-3.5 h-3.5" />
+                <span>Log Meeting Note</span>
+              </button>
+            </div>
+
+            {isAddingNote && (
+              <form onSubmit={handleAddNote} className="space-y-3 p-4 bg-[#181818] rounded-xl border border-white/10">
+                <textarea
+                  value={noteSummary}
+                  onChange={(e) => setNoteSummary(e.target.value)}
+                  placeholder="Record key revelations, encouragement, prayer points, or commitments from your check-in..."
+                  rows={3}
+                  className="w-full p-3 rounded-lg bg-[#111111] border border-white/10 text-xs sm:text-sm text-white focus:outline-none focus:border-[#c5a368]"
+                  required
+                />
+                <div className="flex justify-end space-x-2">
+                  <button
+                    type="button"
+                    onClick={() => setIsAddingNote(false)}
+                    className="px-3 py-1.5 rounded-lg text-xs text-white/60 hover:text-white"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="px-4 py-1.5 bg-[#c5a368] hover:bg-[#d8b67b] text-black font-semibold text-xs rounded-lg"
+                  >
+                    Save Note
+                  </button>
+                </div>
+              </form>
+            )}
+
+            <div className="space-y-3">
+              {mentor.pastNotes.map((note, idx) => (
+                <div key={idx} className="bg-[#181818] border border-white/10 rounded-xl p-4 sm:p-5 space-y-1.5">
+                  <div className="flex items-center justify-between text-xs text-[#c5a368] font-semibold">
+                    <span>{note.date}</span>
+                    <span className="text-white/40">Check-in Summary</span>
+                  </div>
+                  <p className="text-sm text-white/80 leading-relaxed font-normal">
+                    {note.summary}
                   </p>
                 </div>
               ))}
@@ -306,12 +508,22 @@ export const SmallGroupsView: React.FC<SmallGroupsViewProps> = ({
               <button
                 onClick={() => {
                   navigator.clipboard?.writeText(generatedGuide);
-                  alert("Copied discussion guide to clipboard!");
+                  setGuideCopied(true);
+                  setTimeout(() => setGuideCopied(false), 2500);
                 }}
                 className="text-xs text-white/60 hover:text-white flex items-center space-x-1"
               >
-                <Share2 className="w-3.5 h-3.5" />
-                <span>Copy to Clipboard</span>
+                {guideCopied ? (
+                  <>
+                    <Check className="w-3.5 h-3.5 text-emerald-400" />
+                    <span className="text-emerald-400 font-semibold">Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <Share2 className="w-3.5 h-3.5" />
+                    <span>Copy to Clipboard</span>
+                  </>
+                )}
               </button>
             </div>
 

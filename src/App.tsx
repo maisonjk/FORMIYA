@@ -9,9 +9,8 @@ import { PainToFormationView } from "./components/PainToFormationView";
 import { FormationJourneysView } from "./components/FormationJourneysView";
 import { SermonTransformView } from "./components/SermonTransformView";
 import { FormedFamilyView } from "./components/FormedFamilyView";
-import { ChurchLeadershipView } from "./components/ChurchLeadershipView";
 import { SmallGroupsView } from "./components/SmallGroupsView";
-import { AICompanionModal } from "./components/AICompanionModal";
+import { ReflectionJournalView } from "./components/ReflectionJournalView";
 import { NextStepModal } from "./components/NextStepModal";
 import { PricingModal } from "./components/PricingModal";
 import { SettingsModal } from "./components/SettingsModal";
@@ -60,8 +59,6 @@ export default function App() {
   const [activeJourneyId, setActiveJourneyId] = useState<string>("journey_prayer");
 
   // Modals state
-  const [isCompanionOpen, setIsCompanionOpen] = useState<boolean>(false);
-  const [companionInitialPrompt, setCompanionInitialPrompt] = useState<string | undefined>(undefined);
   const [isNextStepOpen, setIsNextStepOpen] = useState<boolean>(false);
   const [isPricingOpen, setIsPricingOpen] = useState<boolean>(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState<boolean>(false);
@@ -131,12 +128,9 @@ export default function App() {
     );
   };
 
-  // Explore Theme via Companion
+  // Explore Theme via Practice
   const handleExploreTheme = (theme: HeartMirrorTheme) => {
-    setCompanionInitialPrompt(
-      `I want to understand and pray through this pattern: "${theme.title}". How can I practice ${theme.suggestedPractice} in light of ${theme.scripture}?`
-    );
-    setIsCompanionOpen(true);
+    setCurrentView("daily");
   };
 
   // Run Real-time Heart Mirror AI Scan
@@ -178,19 +172,8 @@ export default function App() {
       {/* Top Navigation */}
       <Navbar
         currentView={currentView}
-        onNavigate={(view) => {
-          if (view === "companion") {
-            setCompanionInitialPrompt(undefined);
-            setIsCompanionOpen(true);
-          } else {
-            setCurrentView(view);
-          }
-        }}
+        onNavigate={(view) => setCurrentView(view)}
         userProfile={userProfile}
-        onOpenCompanion={() => {
-          setCompanionInitialPrompt(undefined);
-          setIsCompanionOpen(true);
-        }}
         onOpenNextStep={() => setIsNextStepOpen(true)}
         onOpenPricing={() => setIsPricingOpen(true)}
         onOpenSettings={() => setIsSettingsOpen(true)}
@@ -268,10 +251,6 @@ export default function App() {
         {currentView === "groups" && (
           <SmallGroupsView
             userProfile={userProfile}
-            onOpenCompanion={(prompt) => {
-              setCompanionInitialPrompt(prompt);
-              setIsCompanionOpen(true);
-            }}
           />
         )}
 
@@ -279,36 +258,22 @@ export default function App() {
 
         {currentView === "family" && <FormedFamilyView />}
 
-        {currentView === "church" && <ChurchLeadershipView />}
+        {currentView === "journal" && (
+          <ReflectionJournalView
+            userProfile={userProfile}
+            onNavigate={(view) => setCurrentView(view)}
+          />
+        )}
       </main>
 
       {/* Persistent App Bottom Buttons Navigation Bar */}
       <BottomNav
         currentView={currentView}
-        onNavigate={(view) => {
-          if (view === "companion") {
-            setCompanionInitialPrompt(undefined);
-            setIsCompanionOpen(true);
-          } else {
-            setCurrentView(view);
-          }
-        }}
+        onNavigate={(view) => setCurrentView(view)}
         onOpenNextStep={() => setIsNextStepOpen(true)}
-        onOpenCompanion={() => {
-          setCompanionInitialPrompt(undefined);
-          setIsCompanionOpen(true);
-        }}
         onOpenPricing={() => setIsPricingOpen(true)}
         onOpenSettings={() => setIsSettingsOpen(true)}
         userProfile={userProfile}
-      />
-
-      {/* Global AI Companion Modal */}
-      <AICompanionModal
-        isOpen={isCompanionOpen}
-        onClose={() => setIsCompanionOpen(false)}
-        userProfile={userProfile}
-        initialPrompt={companionInitialPrompt}
       />
 
       {/* Global Next Step Guidance Modal */}
@@ -326,7 +291,7 @@ export default function App() {
         onSelectTier={handleSelectTier}
       />
 
-      {/* Global Settings & Privacy Modal */}
+      {/* Global Settings Modal */}
       <SettingsModal
         isOpen={isSettingsOpen}
         onClose={() => setIsSettingsOpen(false)}

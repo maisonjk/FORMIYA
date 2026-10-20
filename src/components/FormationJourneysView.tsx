@@ -11,10 +11,15 @@ import {
   Send,
   Check,
   Type,
+  ChevronLeft,
+  ChevronRight,
+  Search,
+  Calendar,
 } from "lucide-react";
 import confetti from "canvas-confetti";
 import { FormationJourney, UserProfile } from "../types";
 import { FORMATION_JOURNEYS } from "../data/canonicalData";
+import { addJournalEntry } from "../lib/journalStorage";
 
 interface FormationJourneysViewProps {
   userProfile: UserProfile;
@@ -32,6 +37,8 @@ export const FormationJourneysView: React.FC<FormationJourneysViewProps> = ({
   onCompleteDay,
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const [selectedDuration, setSelectedDuration] = useState<string>("all");
+  const [searchQuery, setSearchQuery] = useState<string>("");
   const [activeDayNum, setActiveDayNum] = useState<number>(1);
   const [journalNote, setJournalNote] = useState<string>("");
   const [savedDay, setSavedDay] = useState<boolean>(false);
@@ -48,6 +55,15 @@ export const FormationJourneysView: React.FC<FormationJourneysViewProps> = ({
 
   const handleFinishDay = () => {
     onCompleteDay(currentJourney.id, activeDayNum);
+    if (journalNote.trim()) {
+      addJournalEntry({
+        title: `${currentJourney.title} (Day ${activeDayNum}): ${currentDayData.title}`,
+        scriptureReference: currentDayData.scriptureRef,
+        category: "Reflection",
+        content: journalNote.trim(),
+      });
+      setJournalNote("");
+    }
     setSavedDay(true);
     confetti({
       particleCount: 35,
@@ -58,9 +74,22 @@ export const FormationJourneysView: React.FC<FormationJourneysViewProps> = ({
     setTimeout(() => setSavedDay(false), 2500);
   };
 
-  const filteredJourneys = FORMATION_JOURNEYS.filter(
-    (j) => selectedCategory === "All" || j.category === selectedCategory
-  );
+  const filteredJourneys = FORMATION_JOURNEYS.filter((j) => {
+    const matchesCat = selectedCategory === "All" || j.category === selectedCategory;
+    const matchesDuration =
+      selectedDuration === "all" ||
+      (selectedDuration === "14_21" && (j.durationDays === 14 || j.durationDays === 21)) ||
+      (selectedDuration === "12week" && j.durationDays >= 84) ||
+      (selectedDuration === "7day" && j.durationDays === 7);
+    const q = searchQuery.toLowerCase().trim();
+    const matchesSearch =
+      !q ||
+      j.title.toLowerCase().includes(q) ||
+      j.tagline.toLowerCase().includes(q) ||
+      j.overview.toLowerCase().includes(q) ||
+      j.category.toLowerCase().includes(q);
+    return matchesCat && matchesDuration && matchesSearch;
+  });
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10 text-white">
@@ -79,31 +108,61 @@ export const FormationJourneysView: React.FC<FormationJourneysViewProps> = ({
           </p>
         </div>
 
-        {/* Category Pills */}
-        <div className="flex items-center space-x-2 overflow-x-auto no-scrollbar self-stretch md:self-auto py-1">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
-              className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-colors ${
-                selectedCategory === cat
-                  ? "bg-[#c5a368] text-black"
-                  : "bg-[#151515] border border-white/10 text-white/80 hover:bg-[#202020]"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
+        {/* Category & Duration Filter Controls */}
+        <div className="flex flex-col gap-2.5 w-full md:w-auto">
+          {/* Duration Pills */}
+          <div className="flex items-center space-x-1.5 overflow-x-auto no-scrollbar py-1">
+            {[
+              { id: "all", label: "All Lengths" },
+              { id: "14_21", label: "All 14 & 21-Day Journeys" },
+              { id: "12week", label: "12-Week Advanced" },
+              { id: "7day", label: "7-Day Foundation" },
+            ].map((dur) => (
+              <button
+                key={dur.id}
+                onClick={() => setSelectedDuration(dur.id)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors ${
+                  selectedDuration === dur.id
+                    ? "bg-[#c5a368] text-black font-bold"
+                    : "bg-[#181818] border border-white/10 text-white/70 hover:bg-[#222]"
+                }`}
+              >
+                {dur.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Category Pills */}
+          <div className="flex items-center space-x-1.5 overflow-x-auto no-scrollbar py-1">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setSelectedCategory(cat)}
+                className={`px-3 py-1 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors ${
+                  selectedCategory === cat
+                    ? "bg-white text-black font-bold"
+                    : "bg-[#141414] border border-white/10 text-white/60 hover:bg-[#202020]"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Active Selected Journey Reader / Practice Interface */}
       <div className="bg-[#111111] border border-white/15 rounded-2xl p-6 sm:p-9 shadow-sm space-y-8">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-white/10 pb-6 gap-4">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between border-b border-white/10 pb-6 gap-5">
           <div>
-            <span className="text-xs font-bold uppercase tracking-widest text-[#c5a368] bg-[#181818] border border-[#c5a368]/30 px-3 py-1 rounded-lg">
-              Currently Practicing • {currentJourney.category}
-            </span>
+            <div className="flex items-center space-x-2">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#c5a368] bg-[#181818] border border-[#c5a368]/30 px-3 py-1 rounded-lg">
+                Currently Practicing • {currentJourney.category}
+              </span>
+              <span className="text-xs font-mono font-medium text-white/50 bg-[#161616] px-2.5 py-1 rounded-lg border border-white/10">
+                {currentJourney.durationDays} Days Total
+              </span>
+            </div>
             <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-normal text-white mt-2.5">
               {currentJourney.title}
             </h2>
@@ -112,21 +171,48 @@ export const FormationJourneysView: React.FC<FormationJourneysViewProps> = ({
             </p>
           </div>
 
-          {/* Day Selector Buttons */}
-          <div className="flex items-center space-x-2 overflow-x-auto no-scrollbar py-1">
-            {currentJourney.days.map((d) => (
+          {/* Day Navigation with Prev / Next and Day Pills */}
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+            <div className="flex items-center space-x-1.5">
               <button
-                key={d.day}
-                onClick={() => setActiveDayNum(d.day)}
-                className={`w-10 h-10 rounded-xl text-xs sm:text-sm font-bold font-mono transition-all flex items-center justify-center ${
-                  activeDayNum === d.day
-                    ? "bg-[#c5a368] text-black shadow-xs ring-2 ring-[#c5a368]/30"
-                    : "bg-[#181818] border border-white/10 text-white/80 hover:bg-[#222]"
-                }`}
+                onClick={() => setActiveDayNum((prev) => Math.max(1, prev - 1))}
+                disabled={activeDayNum <= 1}
+                className="p-2.5 rounded-xl bg-[#181818] border border-white/10 text-white/70 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#222] transition-colors"
+                title="Previous Day"
               >
-                D{d.day}
+                <ChevronLeft className="w-4 h-4" />
               </button>
-            ))}
+
+              <span className="px-3 py-2 rounded-xl bg-[#151515] border border-white/10 font-mono text-xs sm:text-sm font-bold text-[#c5a368] whitespace-nowrap">
+                Day {activeDayNum} of {currentJourney.durationDays}
+              </span>
+
+              <button
+                onClick={() => setActiveDayNum((prev) => Math.min(currentJourney.days.length, prev + 1))}
+                disabled={activeDayNum >= currentJourney.days.length}
+                className="p-2.5 rounded-xl bg-[#181818] border border-white/10 text-white/70 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#222] transition-colors"
+                title="Next Day"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+
+            {/* Quick Day Selector Pills */}
+            <div className="flex items-center space-x-1.5 overflow-x-auto no-scrollbar py-1 max-w-xs sm:max-w-md">
+              {currentJourney.days.map((d) => (
+                <button
+                  key={d.day}
+                  onClick={() => setActiveDayNum(d.day)}
+                  className={`w-9 h-9 shrink-0 rounded-xl text-xs font-bold font-mono transition-all flex items-center justify-center ${
+                    activeDayNum === d.day
+                      ? "bg-[#c5a368] text-black shadow-xs ring-2 ring-[#c5a368]/30"
+                      : "bg-[#181818] border border-white/10 text-white/70 hover:bg-[#222]"
+                  }`}
+                >
+                  {d.day}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -230,15 +316,26 @@ export const FormationJourneysView: React.FC<FormationJourneysViewProps> = ({
 
       {/* Catalog Grid of Available Journeys */}
       <div className="space-y-6">
-        <h3 className="font-serif text-2xl sm:text-3xl font-normal text-white">
-          Explore All Journeys ({filteredJourneys.length})
-        </h3>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <h3 className="font-serif text-2xl sm:text-3xl font-normal text-white">
+            Explore All Journeys ({filteredJourneys.length})
+          </h3>
+
+          <div className="relative w-full sm:w-72">
+            <Search className="w-4 h-4 text-white/40 absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search pathways, topics, scripture..."
+              className="w-full pl-10 pr-4 py-2 rounded-xl bg-[#151515] border border-white/10 text-xs sm:text-sm text-white focus:outline-none focus:border-[#c5a368] placeholder:text-white/40"
+            />
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredJourneys.map((journey) => {
-            const isLocked =
-              (journey.tierRequired === "pro" && userProfile.tier !== "pro" && userProfile.tier !== "church") ||
-              (journey.tierRequired === "church" && userProfile.tier !== "church");
+            const isLocked = journey.tierRequired === "pro" && userProfile.tier !== "pro";
 
             return (
               <div
@@ -257,7 +354,7 @@ export const FormationJourneysView: React.FC<FormationJourneysViewProps> = ({
                     {isLocked ? (
                       <span className="flex items-center space-x-1.5 text-xs font-semibold text-white/50 bg-[#151515] px-2.5 py-1 rounded-md border border-white/10">
                         <Lock className="w-3.5 h-3.5 text-[#c5a368]" />
-                        <span>{journey.tierRequired.toUpperCase()}</span>
+                        <span>PRO COHORT</span>
                       </span>
                     ) : (
                       <span className="text-xs font-semibold text-[#c5a368] bg-[#181818] px-2.5 py-1 rounded-md border border-[#c5a368]/20">
@@ -284,11 +381,15 @@ export const FormationJourneysView: React.FC<FormationJourneysViewProps> = ({
                       className="w-full py-2.5 rounded-xl bg-[#181818] border border-white/10 hover:bg-[#202020] text-white font-semibold text-xs sm:text-sm transition-colors flex items-center justify-center space-x-2"
                     >
                       <Sparkles className="w-4 h-4 text-[#c5a368]" />
-                      <span>Unlock with {journey.tierRequired.toUpperCase()}</span>
+                      <span>Unlock with PRO</span>
                     </button>
                   ) : (
                     <button
-                      onClick={() => onSelectJourney(journey.id)}
+                      onClick={() => {
+                        onSelectJourney(journey.id);
+                        setActiveDayNum(1);
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       className={`w-full py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-all flex items-center justify-center space-x-2 ${
                         journey.id === activeJourneyId
                           ? "bg-[#c5a368] text-black font-bold"

@@ -68,11 +68,11 @@ export const HeartMirrorView: React.FC<HeartMirrorViewProps> = ({
         </button>
       </div>
 
-      {/* Non-Clinical Trust Notice */}
+      {/* Informational Guidance Notice */}
       <div className="bg-[#151515] border border-white/10 rounded-2xl p-5 flex items-start space-x-3.5 text-sm sm:text-base text-white/80">
         <Info className="w-5 h-5 text-[#c5a368] shrink-0 mt-0.5" />
         <p className="leading-relaxed">
-          <strong className="text-white">Theological & Privacy Guardrail:</strong> Heart Mirror never diagnoses mental health disorders or assigns spiritual labels. Insights are observational invitations to explore root emotions with Scripture and community.
+          <strong className="text-white">Guidance Note:</strong> Heart Mirror does not provide clinical mental health diagnoses. Insights are devotional invitations to explore recurring themes with Scripture and community.
         </p>
       </div>
 
@@ -192,7 +192,7 @@ export const HeartMirrorView: React.FC<HeartMirrorViewProps> = ({
                     onClick={() => onExploreTheme(theme)}
                     className="px-5 py-2.5 rounded-xl bg-[#c5a368] hover:bg-[#d8b67b] text-black font-semibold text-sm flex items-center justify-center space-x-2 transition-all shadow-xs self-end sm:self-auto"
                   >
-                    <span>Explore with AI Companion</span>
+                    <span>Practice in Daily Formation</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>

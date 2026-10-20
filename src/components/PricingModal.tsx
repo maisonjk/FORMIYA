@@ -57,7 +57,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({
             Invest in What Lasts
           </h2>
           <p className="text-sm sm:text-base text-white/70 mt-2">
-            No manipulative guilt or fake urgency. 100% money-back guarantee.
+            Flexible monthly or annual plans for your discipleship journey.
           </p>
 
           {/* Billing cycle toggle */}
@@ -89,9 +89,9 @@ export const PricingModal: React.FC<PricingModalProps> = ({
         </div>
 
         {/* Tier Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* PLUS / PERSONAL GROWTH */}
-          <div className="bg-[#151515] border border-white/10 rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
+          <div className="bg-[#151515] border border-white/10 rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
             <div>
               <div className="mb-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-[#c5a368]">
@@ -108,30 +108,26 @@ export const PricingModal: React.FC<PricingModalProps> = ({
                 </div>
               </div>
 
-              <ul className="space-y-3 text-sm text-white/80 py-4 border-t border-white/10">
+              <ul className="space-y-3.5 text-sm text-white/80 py-4 border-t border-white/10">
                 <li className="flex items-start space-x-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
                   <span>5-10 min Daily Scripture, Context & Practice</span>
                 </li>
                 <li className="flex items-start space-x-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span>Full library of 25+ Formation Journeys</span>
+                  <span>All 14 & 21-day journeys (Full Library)</span>
                 </li>
                 <li className="flex items-start space-x-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span><strong>Heart Mirror:</strong> Pattern identification</span>
+                  <span><strong>Heart Mirror:</strong> Pattern Discovery</span>
                 </li>
                 <li className="flex items-start space-x-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span>Unlimited Scripture AI Companion conversations</span>
+                  <span>Personalized Formation Map</span>
                 </li>
                 <li className="flex items-start space-x-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span>Pain-to-Formation deep-dive modules</span>
-                </li>
-                <li className="flex items-start space-x-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span>Private Encrypted Reflection Journal</span>
+                  <span>Personal Reflection Journal</span>
                 </li>
               </ul>
             </div>
@@ -150,7 +146,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({
           </div>
 
           {/* FAMILY & COMMUNITY (PRO) */}
-          <div className="bg-[#181818] border-2 border-[#c5a368] rounded-2xl p-6 sm:p-7 flex flex-col justify-between relative shadow-lg">
+          <div className="bg-[#181818] border-2 border-[#c5a368] rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative shadow-lg">
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#c5a368] text-black text-xs font-bold uppercase tracking-wider px-3.5 py-1 rounded-full shadow-xs">
               Most Popular
             </div>
@@ -171,7 +167,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({
                 </div>
               </div>
 
-              <ul className="space-y-3 text-sm text-white/90 py-4 border-t border-white/10">
+              <ul className="space-y-3.5 text-sm text-white/90 py-4 border-t border-white/10">
                 <li className="flex items-start space-x-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
                   <span><strong>Everything in Plus</strong></span>
@@ -182,19 +178,19 @@ export const PricingModal: React.FC<PricingModalProps> = ({
                 </li>
                 <li className="flex items-start space-x-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span><strong>FORMIYA Family:</strong> Age-tiered moments</span>
+                  <span><strong>FORMIYA Family:</strong> All age-tiered moments</span>
                 </li>
                 <li className="flex items-start space-x-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span>Sermon to Discipleship Generator</span>
+                  <span>Small Group Leader Tools & Curriculum</span>
                 </li>
                 <li className="flex items-start space-x-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span>Small group curriculum & leader guides</span>
+                  <span><strong>Mentor ↔ Disciple Hub</strong></span>
                 </li>
                 <li className="flex items-start space-x-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span>Mentor ↔ Disciple Hub</span>
+                  <span><strong>12-Week Advanced Journeys</strong></span>
                 </li>
               </ul>
             </div>
@@ -209,65 +205,6 @@ export const PricingModal: React.FC<PricingModalProps> = ({
             >
               <span>{currentTier === "pro" ? "Current Plan" : "Upgrade to Pro"}</span>
               {currentTier !== "pro" && <ArrowRight className="w-4 h-4" />}
-            </button>
-          </div>
-
-          {/* CHURCH & MINISTRY */}
-          <div className="bg-[#151515] border border-white/10 rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
-            <div>
-              <div className="mb-4">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#c5a368]">
-                  Church & Ministry
-                </span>
-                <h3 className="font-serif text-2xl sm:text-3xl font-normal text-white mt-1">
-                  FORMIYA Church
-                </h3>
-                <div className="mt-3 flex items-baseline space-x-1">
-                  <span className="font-serif text-4xl font-normal text-white">
-                    {billingCycle === "yearly" ? "$249" : "$299"}
-                  </span>
-                  <span className="text-xs text-white/50">/month</span>
-                </div>
-              </div>
-
-              <ul className="space-y-3 text-sm text-white/80 py-4 border-t border-white/10">
-                <li className="flex items-start space-x-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span><strong>Everything in Pro</strong> for staff & leaders</span>
-                </li>
-                <li className="flex items-start space-x-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span>Full Congregation & Small Group Access</span>
-                </li>
-                <li className="flex items-start space-x-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span><strong>Sermon → Discipleship Engine</strong></span>
-                </li>
-                <li className="flex items-start space-x-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span>Privacy-Preserving Spiritual Health Analytics</span>
-                </li>
-                <li className="flex items-start space-x-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span>Custom Church Curriculum & Branding</span>
-                </li>
-                <li className="flex items-start space-x-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0 mt-0.5" />
-                  <span>Dedicated Discipleship Support</span>
-                </li>
-              </ul>
-            </div>
-
-            <button
-              onClick={() => handleUpgrade("church")}
-              className={`w-full py-3.5 rounded-xl font-semibold text-sm transition-all mt-6 shadow-sm flex items-center justify-center space-x-2 ${
-                currentTier === "church"
-                  ? "bg-[#1f1f1f] text-white/40 border border-white/5 cursor-default"
-                  : "bg-[#181818] border border-[#c5a368]/40 text-[#c5a368] hover:bg-[#202020]"
-              }`}
-            >
-              <span>{currentTier === "church" ? "Current Plan" : "Select Church Plan"}</span>
-              {currentTier !== "church" && <ArrowRight className="w-4 h-4" />}
             </button>
           </div>
         </div>

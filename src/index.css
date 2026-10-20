@@ -14,8 +14,8 @@
   --color-accent: #c5a368;
   --color-accent-hover: #d8b67b;
   --color-accent-muted: rgba(197, 163, 104, 0.15);
-  --color-muted: rgba(255, 255, 255, 0.5);
-  --color-secondary: rgba(255, 255, 255, 0.8);
+  --color-muted: rgba(255, 255, 255, 0.75);
+  --color-secondary: rgba(255, 255, 255, 0.92);
 }
 
 @layer base {
@@ -25,10 +25,19 @@
     color: #ffffff;
     font-size: 16px;
     line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   p {
     line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    letter-spacing: -0.01em;
   }
 }
 

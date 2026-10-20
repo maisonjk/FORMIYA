@@ -44,13 +44,6 @@ export const INITIAL_USER_PROFILE: UserProfile = {
     rememberBibleTranslation: true,
     allowHeartMirror: true,
   },
-  privacySettings: {
-    localOnlyStorage: true,
-    incognitoMode: false,
-    anonymizeChurchMetrics: true,
-    allowHeartMirror: true,
-    ephemeralAiOnly: true,
-  },
 };
 
 export const TODAY_FORMATION_SESSION: DailyFormationSession = {
@@ -691,7 +684,7 @@ export const FORMATION_JOURNEYS: FormationJourney[] = [
     category: "Suffering",
     tierRequired: "plus",
     overview:
-      "When life falls apart, this journey provides a gentle companion anchored in 2 Corinthians, Habakkuk, and the Psalms of lament.",
+      "When life falls apart, this journey provides a gentle guide anchored in 2 Corinthians, Habakkuk, and the Psalms of lament.",
     learningOutcomes: [
       "Learn the biblical practice of lament",
       "Encounter Jesus as the Man of Sorrows",
@@ -846,7 +839,7 @@ export const FORMATION_JOURNEYS: FormationJourney[] = [
     tagline: "14 Days from passive content consumption to active spiritual formation",
     durationDays: 14,
     category: "Habits",
-    tierRequired: "pro",
+    tierRequired: "plus",
     overview:
       "Transform how you live out your faith. Move from endlessly scrolling Christian podcasts, reels, and sermons into structured daily spiritual disciplines.",
     learningOutcomes: [
@@ -1317,7 +1310,7 @@ export const FORMATION_JOURNEYS: FormationJourney[] = [
     tagline: "14 Days: A masterclass in spiritual transformation, kingdom character & discipling others",
     durationDays: 14,
     category: "Advanced",
-    tierRequired: "pro",
+    tierRequired: "plus",
     overview:
       "A flagship comprehensive journey covering the Sermon on the Mount, the Fruit of the Spirit, spiritual warfare, mentoring others, and living as Kingdom ambassadors.",
     learningOutcomes: [
@@ -1468,6 +1461,3719 @@ export const FORMATION_JOURNEYS: FormationJourney[] = [
       },
     ],
   },
+  {
+    "id": "journey_sabbath_rest",
+    "title": "The Practice of Sabbath",
+    "tagline": "7 Days to move from relentless striving into holy, restorative rest",
+    "durationDays": 7,
+    "category": "Habits",
+    "tierRequired": "plus",
+    "overview": "Rediscover God's ancient rhythm of rest, delight, and worship. Stop striving and learn to rest in Christ's finished work.",
+    "learningOutcomes": [
+      "Cease anxiety-driven productivity",
+      "Establish practical boundaries with digital noise",
+      "Cultivate unhurried delight in God's presence"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "God Ceased from His Work",
+        "scriptureRef": "Genesis 2:2-3",
+        "scriptureText": "And on the seventh day God finished his work that he had done, and he rested on the seventh day from all his work that he had done.",
+        "context": "God did not rest out of fatigue, but out of satisfaction in what was made. Sabbath is a celebration of completeness.",
+        "reflectionPrompt": "What makes it difficult for you to stop working and simply be with God?",
+        "prayerPrompt": "Creator God, teach my hurried soul how to stop and delight in Your goodness.",
+        "practice": "Set a boundary today: pick one hour before bed with zero screens or work tasks."
+      },
+      {
+        "day": 2,
+        "title": "Remember You Were Slaves",
+        "scriptureRef": "Deuteronomy 5:15",
+        "scriptureText": "You shall remember that you were a slave in the land of Egypt, and the Lord your God brought you out from there with a mighty hand.",
+        "context": "In Egypt, slaves never received a day off. Sabbath is a declaration of freedom from the tyranny of perpetual performance.",
+        "reflectionPrompt": "What modern pressures tempt you to never stop striving?",
+        "prayerPrompt": "Lord Jesus, deliver me from the idolatry of busyness. I am Your child, not a slave to productivity.",
+        "practice": "Turn off all non-essential notifications for 6 straight hours today."
+      },
+      {
+        "day": 3,
+        "title": "Come to Me and Rest",
+        "scriptureRef": "Matthew 11:28-30",
+        "scriptureText": "Come to me, all who labor and are heavy laden, and I will give you rest. Take my yoke upon you, and learn from me.",
+        "context": "Jesus contrasts the crushing legalistic burdens of human striving with His own gentle, life-giving rhythm of grace.",
+        "reflectionPrompt": "What heaviness are you carrying right now that Jesus invites you to place in His hands?",
+        "prayerPrompt": "Gentle Shepherd, I lay down my striving. Grant true rest to my weary spirit.",
+        "practice": "Take a 15-minute unhurried walk in silence, observing God's creation."
+      },
+      {
+        "day": 4,
+        "title": "Delighting in God's Gifts",
+        "scriptureRef": "Isaiah 58:13-14",
+        "scriptureText": "If you call the Sabbath a delight and the holy day of the Lord honorable... then you shall take delight in the Lord.",
+        "context": "Sabbath is not grim asceticism; it is a lavish festival of gratitude, shared fellowship, and holy pleasure.",
+        "reflectionPrompt": "What simple blessings from God bring your soul the deepest joy?",
+        "prayerPrompt": "Father, open my eyes to taste and see Your goodness in ordinary blessings today.",
+        "practice": "Enjoy an unhurried meal with family or friends without checking the clock."
+      },
+      {
+        "day": 5,
+        "title": "Resting from Self-Justification",
+        "scriptureRef": "Hebrews 4:9-10",
+        "scriptureText": "So then, there remains a Sabbath rest for the people of God, for whoever has entered God's rest has also rested from his works.",
+        "context": "The ultimate Sabbath is resting in the finished redemption of Christ on the cross.",
+        "reflectionPrompt": "Are you working for God's approval, or from the reality of His approval in Christ?",
+        "prayerPrompt": "Christ my Savior, thank You that my salvation is complete. Nothing I do can add to Your cross.",
+        "practice": "Write down 'It is finished.' Keep it on your desk as a reminder all day."
+      },
+      {
+        "day": 6,
+        "title": "Trusting Daily Manna",
+        "scriptureRef": "Exodus 16:29-30",
+        "scriptureText": "See! The Lord has given you the Sabbath; therefore on the sixth day he gives you bread for two days.",
+        "context": "God supplied double manna so Israel did not need to gather on the seventh day. Sabbath tests our trust in God's provision.",
+        "reflectionPrompt": "Do you believe God can provide what you need even when you pause your labor?",
+        "prayerPrompt": "Jehovah Jireh, Provider of my life, I trust You with tomorrow's needs.",
+        "practice": "Plan ahead for a 24-hour Sabbath rest period this coming weekend."
+      },
+      {
+        "day": 7,
+        "title": "A Foretaste of Eternity",
+        "scriptureRef": "Revelation 21:3-4",
+        "scriptureText": "He will dwell with them, and they will be his people, and God himself will be with them as their God.",
+        "context": "Every Sabbath points forward to the eternal rest and restoration of the New Creation.",
+        "reflectionPrompt": "How does future hope reorient your view of today's temporary pressures?",
+        "prayerPrompt": "Come, Lord Jesus! Fill my heart with eager anticipation of Your eternal shalom.",
+        "practice": "Speak a word of blessing and encouragement over your household today."
+      }
+    ]
+  },
+  {
+    "id": "journey_anxiety_to_peace",
+    "title": "From Anxious Striving to Abiding Peace",
+    "tagline": "7 Days to exchange inner panic for the steady peace of God",
+    "durationDays": 7,
+    "category": "Prayer",
+    "tierRequired": "plus",
+    "overview": "Anchor your racing thoughts in God's sovereign care through Philippians 4, 1 Peter 5, and the Psalms of trust.",
+    "learningOutcomes": [
+      "Recognize the triggers of anxious rumination",
+      "Learn breath prayers to reset nervous tension",
+      "Cast burdens on the Lord through active supplication"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Do Not Be Anxious About Anything",
+        "scriptureRef": "Philippians 4:6-7",
+        "scriptureText": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.",
+        "context": "Paul wrote this from a Roman prison cell chained to guards, demonstrating that peace is rooted in Christ, not circumstance.",
+        "reflectionPrompt": "What is the single biggest anxiety weighing on your mind today?",
+        "prayerPrompt": "Lord, I hand You my anxieties. Guard my heart and mind with Your peace.",
+        "practice": "When anxiety surges today, pray: 'Lord Jesus, You are in control; I am safe in Your hands.'"
+      },
+      {
+        "day": 2,
+        "title": "Casting All Your Cares",
+        "scriptureRef": "1 Peter 5:7",
+        "scriptureText": "Casting all your anxieties on him, because he cares for you.",
+        "context": "The Greek word for casting implies hurling a heavy net or garment off one's back onto a stronger bearer.",
+        "reflectionPrompt": "Why do you tend to hold onto control instead of giving it to God?",
+        "prayerPrompt": "Father, You care for me with infinite tenderness. I cast this weight upon You.",
+        "practice": "Hold your hands tightly clenched for 30 seconds, then slowly open your palms up to God in prayer."
+      },
+      {
+        "day": 3,
+        "title": "Look at the Birds of the Air",
+        "scriptureRef": "Matthew 6:26",
+        "scriptureText": "Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them. Are you not of more value than they?",
+        "context": "Jesus grounds emotional freedom in the unwavering Fatherhood of God.",
+        "reflectionPrompt": "Where does scarcity thinking make you anxious about the future?",
+        "prayerPrompt": "Father, forgive my unbelief. You feed the birds; You will certainly care for me.",
+        "practice": "Step outside for 3 minutes, find a bird or tree, and meditate on God's sustaining power."
+      },
+      {
+        "day": 4,
+        "title": "Peace I Leave with You",
+        "scriptureRef": "John 14:27",
+        "scriptureText": "Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.",
+        "context": "Jesus spoke this on the night before His crucifixion, offering His disciples a peace forged through surrender.",
+        "reflectionPrompt": "How does Christ's peace differ from the temporary comfort the world offers?",
+        "prayerPrompt": "Prince of Peace, let Your tranquility rule in my heart today.",
+        "practice": "Spend 2 minutes breathing deeply before responding to stressful messages today."
+      },
+      {
+        "day": 5,
+        "title": "When Thoughts Multiply",
+        "scriptureRef": "Psalm 94:19",
+        "scriptureText": "When the cares of my heart are many, your consolations cheer my soul.",
+        "context": "The psalmist acknowledges overwhelming thoughts and discovers God's tender comfort in their midst.",
+        "reflectionPrompt": "What spiraling thoughts tend to hijack your focus?",
+        "prayerPrompt": "Lord, quiet the storm in my head with the whisper of Your truth.",
+        "practice": "Write down your spiraling thoughts, then write Scripture promises directly beside them."
+      },
+      {
+        "day": 6,
+        "title": "God Is Our Refuge and Strength",
+        "scriptureRef": "Psalm 46:1-2",
+        "scriptureText": "God is our refuge and strength, a very present help in trouble. Therefore we will not fear though the earth gives way.",
+        "context": "Ancient walled cities had strongholds for emergency shelter. God Himself is our impenetrable fortress.",
+        "reflectionPrompt": "What false refuges (food, screens, avoidance) do you run to when stressed?",
+        "prayerPrompt": "Mighty God, You are my fortress. I run into Your presence and am safe.",
+        "practice": "Memorize Psalm 46:1 and recite it when feeling overwhelmed."
+      },
+      {
+        "day": 7,
+        "title": "Be Still and Know",
+        "scriptureRef": "Psalm 46:10",
+        "scriptureText": "Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!",
+        "context": "'Be still' literally means to cease striving, drop your hands, and relax in God's sovereignty.",
+        "reflectionPrompt": "What battle can you stop fighting today because God is already on the throne?",
+        "prayerPrompt": "Sovereign Lord, I drop my weapons and cease my frantic striving. You are God.",
+        "practice": "Sit in silent contemplation for 5 minutes with palms open upward."
+      }
+    ]
+  },
+  {
+    "id": "journey_scripture_meditation",
+    "title": "Lectio Divina & Scripture Meditation",
+    "tagline": "7 Days to move from skimming the Bible to letting Scripture dwell richly within you",
+    "durationDays": 7,
+    "category": "Beginner",
+    "tierRequired": "plus",
+    "overview": "Learn the four ancient movements of devotional Bible reading: Silencio, Lectio, Meditatio, Oratio, and Contemplatio.",
+    "learningOutcomes": [
+      "Slow down reading speed to hear God's whisper",
+      "Digest one verse deeply rather than rushing through chapters",
+      "Form personal prayers directly from biblical phrases"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Reading with the Ear of the Heart",
+        "scriptureRef": "Psalm 119:105",
+        "scriptureText": "Your word is a lamp to my feet and a light to my path.",
+        "context": "In the ancient world, oil lamps illuminated only the immediate next step in the darkness.",
+        "reflectionPrompt": "Are you asking God to show you the whole ten-year map, or trusting Him for the next faithful step?",
+        "prayerPrompt": "Lord, shine Your light on the step right before me today.",
+        "practice": "Read Psalm 119:105 out loud three times slowly, pausing between each reading."
+      },
+      {
+        "day": 2,
+        "title": "Meditating Day and Night",
+        "scriptureRef": "Psalm 1:1-3",
+        "scriptureText": "His delight is in the law of the Lord, and on his law he meditates day and night. He is like a tree planted by streams of water.",
+        "context": "The Hebrew word for meditate (hagah) implies murmuring or quietly repeating Scripture throughout the day.",
+        "reflectionPrompt": "What thoughts occupy your mental background music during the day?",
+        "prayerPrompt": "Holy Spirit, plant my roots deeply by the river of Your living Word.",
+        "practice": "Repeat one short Scripture phrase to yourself every time you take a drink of water today."
+      },
+      {
+        "day": 3,
+        "title": "Dwelling Richly in the Word",
+        "scriptureRef": "Colossians 3:16",
+        "scriptureText": "Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs.",
+        "context": "Paul envisions God's Word setting up permanent residence in the Christian community.",
+        "reflectionPrompt": "Is Scripture an occasional visitor in your life, or an honored resident?",
+        "prayerPrompt": "Lord Jesus, make my heart a welcoming home for Your truth.",
+        "practice": "Write a verse on a sticky note and place it where you will see it multiple times today."
+      },
+      {
+        "day": 4,
+        "title": "Man Does Not Live by Bread Alone",
+        "scriptureRef": "Matthew 4:4",
+        "scriptureText": "Man shall not live by bread alone, but by every word that comes from the mouth of God.",
+        "context": "Jesus quoted Deuteronomy 8 in the wilderness, choosing spiritual nourishment over immediate physical gratification.",
+        "reflectionPrompt": "How does your hunger for God's Word compare with your physical appetite?",
+        "prayerPrompt": "Father, feed my soul with the eternal bread of Your truth.",
+        "practice": "Before your next meal, spend 60 seconds reading Scripture before eating."
+      },
+      {
+        "day": 5,
+        "title": "The Living and Active Word",
+        "scriptureRef": "Hebrews 4:12",
+        "scriptureText": "For the word of God is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit.",
+        "context": "Scripture is not dead ink on a page; the Holy Spirit uses it as a surgical instrument to heal our hidden motives.",
+        "reflectionPrompt": "What tender area of your heart is God's Word exposing recently?",
+        "prayerPrompt": "Great Physician, search my thoughts and intentions. Heal what is broken.",
+        "practice": "Ask the Holy Spirit: 'What is one thing in my life that needs Your correction?'"
+      },
+      {
+        "day": 6,
+        "title": "Be Doers of the Word",
+        "scriptureRef": "James 1:22",
+        "scriptureText": "But be doers of the word, and not hearers only, deceiving yourselves.",
+        "context": "James compares hearing without doing to looking in a mirror and instantly forgetting what you look like.",
+        "reflectionPrompt": "What is one biblical command you have understood but delayed obeying?",
+        "prayerPrompt": "Lord, give me courage to put Your Word into immediate practice today.",
+        "practice": "Take one concrete action of obedience before the sun sets today."
+      },
+      {
+        "day": 7,
+        "title": "Sweeter Than Honey",
+        "scriptureRef": "Psalm 19:9-10",
+        "scriptureText": "The rules of the Lord are true, and righteous altogether. More to be desired are they than gold... sweeter also than honey and drippings of the honeycomb.",
+        "context": "David marvels at the intrinsic sweetness and beauty of God's revealed instruction.",
+        "reflectionPrompt": "How has spending focused time in Scripture softened your heart this week?",
+        "prayerPrompt": "Lord, thank You for the priceless gift of Your Word. May it be sweet to my soul forever.",
+        "practice": "Share one verse that blessed you this week with a friend or family member."
+      }
+    ]
+  },
+  {
+    "id": "journey_humility_servant",
+    "title": "The Path of Christlike Humility",
+    "tagline": "7 Days to die to self-promotion and put on the mindset of the Servant King",
+    "durationDays": 7,
+    "category": "Character",
+    "tierRequired": "plus",
+    "overview": "Examine your ego, cultivate lowliness of mind, and discover the joyful freedom of thinking of yourself less.",
+    "learningOutcomes": [
+      "Detect hidden pride and defensiveness",
+      "Practice quiet, uncredited acts of service",
+      "Embrace the cruciform pattern of Philippians 2"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "The Mindset of Christ",
+        "scriptureRef": "Philippians 2:3-5",
+        "scriptureText": "Do nothing from selfish ambition or conceit, but in humility count others more significant than yourselves. Let each of you look not only to his own interests, but also to the interests of others.",
+        "context": "The Roman world despised humility as weakness; Paul exalts it as the supreme mark of godliness.",
+        "reflectionPrompt": "Where does subtle selfish ambition show up in your conversations or work?",
+        "prayerPrompt": "Lord Jesus, strip away my pride. Give me Your humble heart for others.",
+        "practice": "Look for one opportunity to let someone else take the credit or go first today."
+      },
+      {
+        "day": 2,
+        "title": "Taking the Form of a Servant",
+        "scriptureRef": "Philippians 2:6-7",
+        "scriptureText": "Who, though he was in the form of God, did not count equality with God a thing to be grasped, but emptied himself, by taking the form of a servant.",
+        "context": "The King of the universe emptied Himself of status and privilege to rescue us.",
+        "reflectionPrompt": "What personal rights or privileges do you stubbornly clutch onto?",
+        "prayerPrompt": "King Jesus, teach me how to empty myself for the sake of serving those around me.",
+        "practice": "Perform one quiet act of service in your home or workplace without telling anyone."
+      },
+      {
+        "day": 3,
+        "title": "Washing the Disciples' Feet",
+        "scriptureRef": "John 13:14-15",
+        "scriptureText": "If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet. For I have given you an example.",
+        "context": "Washing road-dust off travelers' feet was reserved for the lowest household slave. Jesus knelt and did it voluntarily.",
+        "reflectionPrompt": "Who is someone you consider 'beneath you' or hard to serve with joy?",
+        "prayerPrompt": "Lord, forgive my haughty attitude. Give me willing knees and servant hands.",
+        "practice": "Do a humble chore that no one else wants to do today."
+      },
+      {
+        "day": 4,
+        "title": "God Opposes the Proud",
+        "scriptureRef": "James 4:6",
+        "scriptureText": "God opposes the proud but gives grace to the humble.",
+        "context": "The Greek word for opposes (antitassetai) is a military term: God actively sets Himself in battle array against human pride.",
+        "reflectionPrompt": "In what relationship are you defending yourself rather than humbling yourself?",
+        "prayerPrompt": "Father, I surrender my defenses. I need Your grace far more than I need to be right.",
+        "practice": "Apologize quickly and without excuses if you make a mistake or hurt someone today."
+      },
+      {
+        "day": 5,
+        "title": "The Freedom of Self-Forgetfulness",
+        "scriptureRef": "1 Corinthians 4:3-4",
+        "scriptureText": "I care very little if I am judged by you or by any human court; indeed, I do not even judge myself... It is the Lord who judges me.",
+        "context": "Paul was liberated from both pride and self-condemnation because his identity rested in God's judgment alone.",
+        "reflectionPrompt": "How much time do you spend worrying about what others think of you?",
+        "prayerPrompt": "Jesus, set me free from the exhaustion of managing my reputation.",
+        "practice": "Notice when you are tempted to boast or drop names, and intentionally keep quiet."
+      },
+      {
+        "day": 6,
+        "title": "Clothe Yourselves with Humility",
+        "scriptureRef": "1 Peter 5:5",
+        "scriptureText": "Clothe yourselves, all of you, with humility toward one another, for 'God opposes the proud but gives grace to the humble.'",
+        "context": "'Clothe yourselves' references tying an apron on, like a servant preparing to work in the kitchen.",
+        "reflectionPrompt": "What would it look like to put on the apron of humility in your home today?",
+        "prayerPrompt": "Holy Spirit, dress my attitude with gentle kindness and patient humility.",
+        "practice": "Listen to someone today without interrupting or pivoting the conversation to yourself."
+      },
+      {
+        "day": 7,
+        "title": "Exalted in Due Time",
+        "scriptureRef": "1 Peter 5:6",
+        "scriptureText": "Humble yourselves, therefore, under the mighty hand of God so that at the proper time he may exalt you.",
+        "context": "True elevation comes from God in His timing, not from our self-promotion.",
+        "reflectionPrompt": "Can you trust God to defend and honor you without you fighting for recognition?",
+        "prayerPrompt": "Father, I place my future in Your mighty hands. May Christ be exalted, not me.",
+        "practice": "Pray a prayer of blessing over someone who has received recognition you desired."
+      }
+    ]
+  },
+  {
+    "id": "journey_solitude_silence",
+    "title": "Solitude, Silence & Secret Prayer",
+    "tagline": "7 Days to silence mental noise and enter the secret place of communion with God",
+    "durationDays": 7,
+    "category": "Prayer",
+    "tierRequired": "plus",
+    "overview": "Learn how Jesus consistently withdrew to desolate places to pray, and build your own sustainable desert of quiet communion.",
+    "learningOutcomes": [
+      "Tame inner fidgeting and boredom in silence",
+      "Construct a dedicated secret place for daily prayer",
+      "Deepen listening attentiveness to God's presence"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jesus Withdrew to Desolate Places",
+        "scriptureRef": "Luke 5:16",
+        "scriptureText": "But he would withdraw to desolate places and pray.",
+        "context": "Even when huge crowds demanded healing and ministry, Jesus prioritized withdrawing into solitude.",
+        "reflectionPrompt": "What makes you feel guilty or anxious when you step away from productivity?",
+        "prayerPrompt": "Lord Jesus, teach me that communion with the Father is the source of all fruitful life.",
+        "practice": "Find a quiet room or corner and sit in complete silence for 5 minutes."
+      },
+      {
+        "day": 2,
+        "title": "Shut the Door",
+        "scriptureRef": "Matthew 6:6",
+        "scriptureText": "When you pray, go into your room and shut the door and pray to your Father who is in secret. And your Father who sees in secret will reward you.",
+        "context": "Jesus dismantles religious performance. Prayer is not a stage for applause; it is an intimate secret rendezvous with the Father.",
+        "reflectionPrompt": "Do you pray differently when others are listening than when you are alone?",
+        "prayerPrompt": "Father in secret, I come to You with an honest heart. Strip away all religious pretending.",
+        "practice": "Shut your door, place your phone in another room, and spend 10 unbroken minutes praying honestly."
+      },
+      {
+        "day": 3,
+        "title": "A Gentle Whisper in the Cave",
+        "scriptureRef": "1 Kings 19:11-12",
+        "scriptureText": "And behold, the Lord passed by... but the Lord was not in the wind... not in the earthquake... not in the fire; and after the fire the sound of a low whisper.",
+        "context": "God revealed His presence to the exhausted prophet Elijah not in violent drama, but in sheer silence.",
+        "reflectionPrompt": "What loud distractions in your life drown out God's quiet whisper?",
+        "prayerPrompt": "Lord, tune my heart to hear Your gentle voice beneath the clamor of the world.",
+        "practice": "Drive or commute today with no radio, podcasts, or music\u2014just quiet presence with God."
+      },
+      {
+        "day": 4,
+        "title": "Calmed and Quieted My Soul",
+        "scriptureRef": "Psalm 131:1-2",
+        "scriptureText": "O Lord, my heart is not lifted up; my eyes are not raised too high... But I have calmed and quieted my soul, like a weaned child with its mother.",
+        "context": "A weaned child rests with its mother not to nurse or demand food, but simply to enjoy being in her presence.",
+        "reflectionPrompt": "Do you seek God only for what He can give you, or for who He is?",
+        "prayerPrompt": "Father, calm my anxious demands. Teach me to rest content in Your presence.",
+        "practice": "Pray: 'Father, I simply want to be with You,' and rest quietly for 3 minutes."
+      },
+      {
+        "day": 5,
+        "title": "Early in the Morning Before Daylight",
+        "scriptureRef": "Mark 1:35",
+        "scriptureText": "And rising very early in the morning, while it was still dark, he departed and went out to a desolate place, and there he prayed.",
+        "context": "Before the demands of the day encroached, Jesus gave His freshest hours to the Father.",
+        "reflectionPrompt": "What is the first thing your eyes and mind look at in the morning?",
+        "prayerPrompt": "Lord, be the first thought of my morning and the anchor of my day.",
+        "practice": "Do not touch your phone or check email until you have spent at least 5 minutes in prayer tomorrow."
+      },
+      {
+        "day": 6,
+        "title": "Waiting for the Lord",
+        "scriptureRef": "Psalm 27:14",
+        "scriptureText": "Wait for the Lord; be strong, and let your heart take courage; wait for the Lord!",
+        "context": "Waiting in Hebrew (qavah) carries the imagery of eagerly twisting threads together to form a strong rope.",
+        "reflectionPrompt": "Where are you rushing ahead of God because waiting feels too vulnerable?",
+        "prayerPrompt": "Lord, I wait on You. Strengthen my heart and align my timing with Yours.",
+        "practice": "Set a timer for 7 minutes of unhurried waiting on the Holy Spirit."
+      },
+      {
+        "day": 7,
+        "title": "Deep Calls Unto Deep",
+        "scriptureRef": "Psalm 42:7-8",
+        "scriptureText": "Deep calls to deep at the roar of your waterfalls... By day the Lord commands his steadfast love, and at night his song is with me.",
+        "context": "Solitude allows the deep longings of our soul to connect with the deep steadfast love of God.",
+        "reflectionPrompt": "How has quiet solitude refreshed your spiritual vitality this week?",
+        "prayerPrompt": "Father, may the secret place of prayer be my permanent spiritual address.",
+        "practice": "Schedule a monthly 2-hour mini-retreat of solitude in your calendar for next week."
+      }
+    ]
+  },
+  {
+    "id": "journey_gospel_identity",
+    "title": "Rooted in Gospel Identity",
+    "tagline": "7 Days to exchange performance anxiety for unshakeable sonship and adoption",
+    "durationDays": 7,
+    "category": "Beginner",
+    "tierRequired": "plus",
+    "overview": "Discover the revolutionary truth that in Christ you are fully loved, fully forgiven, and forever adopted into God's family.",
+    "learningOutcomes": [
+      "Silence the inner prosecutor",
+      "Rest in imputed righteousness",
+      "Live from approval rather than for approval"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "No Condemnation",
+        "scriptureRef": "Romans 8:1",
+        "scriptureText": "There is therefore now no condemnation for those who are in Christ Jesus.",
+        "context": "In Christ, God's verdict on your life is permanently rendered: justified.",
+        "reflectionPrompt": "What past mistake do you still condemn yourself for?",
+        "prayerPrompt": "Father, thank You that the gavel has fallen and I am declared free.",
+        "practice": "Speak out loud: 'I am in Christ. There is no condemnation for me.'"
+      },
+      {
+        "day": 2,
+        "title": "Adopted as Sons and Daughters",
+        "scriptureRef": "Galatians 4:6-7",
+        "scriptureText": "And because you are sons, God has sent the Spirit of his Son into our hearts, crying, 'Abba! Father!' So you are no longer a slave, but a son.",
+        "context": "Roman adoption was legally irrevocable; the child was granted full family rights and inheritance.",
+        "reflectionPrompt": "Do you view God as an exacting boss or a loving Father?",
+        "prayerPrompt": "Abba Father, help me live as a secure child today.",
+        "practice": "Pray the Lord's Prayer focusing deeply on the words 'Our Father'."
+      },
+      {
+        "day": 3,
+        "title": "Clothed in Christ's Righteousness",
+        "scriptureRef": "2 Corinthians 5:21",
+        "scriptureText": "For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God.",
+        "context": "The Great Exchange: Jesus took our filthy rags, and clothed us in His pure robe.",
+        "reflectionPrompt": "When you approach God, do you look at your performance or Christ's righteousness?",
+        "prayerPrompt": "Lord Jesus, Your perfection covers all my shortcomings.",
+        "practice": "Write 'Righteous in Christ' on your bathroom mirror."
+      },
+      {
+        "day": 4,
+        "title": "God's Masterpiece",
+        "scriptureRef": "Ephesians 2:10",
+        "scriptureText": "For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand.",
+        "context": "Workmanship (poi\u0113ma) means poem or crafted artwork. You are God's intentional design.",
+        "reflectionPrompt": "How do comparison and social media tear down your view of God's workmanship in you?",
+        "prayerPrompt": "Creator God, thank You for how You uniquely formed me for Your purposes.",
+        "practice": "Delete or silence apps that stir up comparison for 24 hours."
+      },
+      {
+        "day": 5,
+        "title": "Chosen and Holy",
+        "scriptureRef": "Colossians 3:12",
+        "scriptureText": "Put on then, as God's chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience.",
+        "context": "Identity always precedes ethics. Because you are beloved, you can love.",
+        "reflectionPrompt": "How does knowing you are chosen empower you to extend patience to difficult people?",
+        "prayerPrompt": "Lord, let Your love in me overflow in kindness to those I meet.",
+        "practice": "Offer an unprovoked compliment to someone you usually overlook."
+      },
+      {
+        "day": 6,
+        "title": "Secured in God's Hand",
+        "scriptureRef": "John 10:28-29",
+        "scriptureText": "I give them eternal life, and they will never perish, and no one will snatch them out of my hand.",
+        "context": "Believers are held double-locked in the grip of the Son and the Father.",
+        "reflectionPrompt": "What insecurity makes you feel like God might give up on you?",
+        "prayerPrompt": "Faithful Shepherd, thank You that Your grip on me never loosens.",
+        "practice": "Pray a prayer of assurance thanking God for His eternal faithfulness."
+      },
+      {
+        "day": 7,
+        "title": "More Than Conquerors",
+        "scriptureRef": "Romans 8:37",
+        "scriptureText": "No, in all these things we are more than conquerors through him who loved us.",
+        "context": "Victory is ours not through our brute strength, but through Christ's triumphant love.",
+        "reflectionPrompt": "What trial are you facing that Christ's victory covers today?",
+        "prayerPrompt": "Victor King, I stand firm in Your victory today.",
+        "practice": "Write down a declaration of faith over your current trial."
+      }
+    ]
+  },
+  {
+    "id": "journey_digital_detox",
+    "title": "Digital Fasting & Soul Attentiveness",
+    "tagline": "7 Days to break screen addiction and regain mental and spiritual focus",
+    "durationDays": 7,
+    "category": "Habits",
+    "tierRequired": "plus",
+    "overview": "Break the dopamine loop of endless notifications and restore deep attentiveness to God and neighbor.",
+    "learningOutcomes": [
+      "Audit compulsive phone checking",
+      "Create sacred technology-free zones",
+      "Cultivate sustained concentration for Scripture and prayer"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "The Trap of Distraction",
+        "scriptureRef": "Ephesians 5:15-16",
+        "scriptureText": "Look carefully then how you walk, not as unwise but as wise, making the best use of the time, because the days are evil.",
+        "context": "Time is the currency of our lives; what we attend to forms what we love.",
+        "reflectionPrompt": "How many hours a day do you spend on screens versus in prayer and Scripture?",
+        "prayerPrompt": "Lord, awaken me to the value of every hour You have given me.",
+        "practice": "Check your phone's screen time report and set app limits on your top 2 distractions."
+      },
+      {
+        "day": 2,
+        "title": "Eyes That Truly See",
+        "scriptureRef": "Psalm 119:37",
+        "scriptureText": "Turn my eyes from looking at worthless things; and give me life in your ways.",
+        "context": "Worthless things (sheqer) means illusions that leave the soul empty and depleted.",
+        "reflectionPrompt": "What content leaves your soul feeling restless and dry?",
+        "prayerPrompt": "Father, turn my gaze away from empty pixels toward Your beauty.",
+        "practice": "Keep your phone in your pocket during all in-person meals today."
+      },
+      {
+        "day": 3,
+        "title": "Be Still Before the Lord",
+        "scriptureRef": "Psalm 37:7",
+        "scriptureText": "Be still before the Lord and wait patiently for him; fret not yourself over the one who prospers in his way.",
+        "context": "Endless social media scrolling breeds envy and fretting. God calls us to stillness.",
+        "reflectionPrompt": "When was the last time you sat waiting in a line without pulling out your phone?",
+        "prayerPrompt": "Jesus, heal my twitchy fingers and restless mind.",
+        "practice": "Whenever you wait in line or at a red light today, pray instead of checking your device."
+      },
+      {
+        "day": 4,
+        "title": "The Fruit of Self-Control",
+        "scriptureRef": "Galatians 5:22-23",
+        "scriptureText": "The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control.",
+        "context": "Self-control is the Spirit-empowered capacity to say 'no' to short-term impulses for long-term holiness.",
+        "reflectionPrompt": "Who is in charge of your attention: you or an algorithm?",
+        "prayerPrompt": "Holy Spirit, grow the fruit of self-control in my digital habits.",
+        "practice": "Move all social media apps off your phone's home screen."
+      },
+      {
+        "day": 5,
+        "title": "Present with People",
+        "scriptureRef": "Philippians 2:4",
+        "scriptureText": "Let each of you look not only to his own interests, but also to the interests of others.",
+        "context": "Phubbing (snubbing someone for your phone) damages authentic human connection.",
+        "reflectionPrompt": "Have you neglected eye contact with friends or family members due to screens?",
+        "prayerPrompt": "Lord, give me eyes to see and truly love the person right in front of me.",
+        "practice": "Make undivided eye contact in every conversation today."
+      },
+      {
+        "day": 6,
+        "title": "Evening Peace Without Blue Light",
+        "scriptureRef": "Psalm 4:8",
+        "scriptureText": "In peace I will both lie down and sleep; for you alone, O Lord, make me dwell in safety.",
+        "context": "Nighttime was created for restful trust, not late-night doomscrolling.",
+        "reflectionPrompt": "Does your bedtime phone use contribute to poor sleep and anxious mornings?",
+        "prayerPrompt": "Lord, I surrender my nighttime hours to Your restful peace.",
+        "practice": "Charge your phone outside your bedroom tonight."
+      },
+      {
+        "day": 7,
+        "title": "Reclaiming Soul Presence",
+        "scriptureRef": "Colossians 3:2",
+        "scriptureText": "Set your minds on things that are above, not on things that are on earth.",
+        "context": "Our minds gravitate toward what we continually gaze upon.",
+        "reflectionPrompt": "How has reducing screen distraction cleared space for God's presence?",
+        "prayerPrompt": "Father, may my thoughts continually orbit around Christ.",
+        "practice": "Commit to a recurring weekly digital half-day Sabbath."
+      }
+    ]
+  },
+  {
+    "id": "journey_lament_psalms",
+    "title": "Honest Tears: The Art of Biblical Lament",
+    "tagline": "7 Days to bring your raw grief, confusion, and tears to the God who hears",
+    "durationDays": 7,
+    "category": "Suffering",
+    "tierRequired": "plus",
+    "overview": "One third of the Psalms are songs of lament. Learn how to honestly pour out sorrow to God without losing faith.",
+    "learningOutcomes": [
+      "Express grief without shame",
+      "Navigate unanswered questions with holy trust",
+      "Find comfort in Christ who wept"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "How Long, O Lord?",
+        "scriptureRef": "Psalm 13:1-2",
+        "scriptureText": "How long, O Lord? Will you forget me forever? How long will you hide your face from me?",
+        "context": "Biblical faith does not mean pasting on a fake smile; God welcomes our honest cries.",
+        "reflectionPrompt": "What hurt or disappointment have you held back from God?",
+        "prayerPrompt": "Lord, hear my cry. I bring my honest ache to You.",
+        "practice": "Write an unfiltered letter to God expressing your raw grief, then read it as a prayer."
+      },
+      {
+        "day": 2,
+        "title": "Jesus Wept",
+        "scriptureRef": "John 11:35",
+        "scriptureText": "Jesus wept.",
+        "context": "The shortest verse in the Bible shows Jesus feeling grief over death before raising Lazarus.",
+        "reflectionPrompt": "How does knowing Jesus wept change your view of your own tears?",
+        "prayerPrompt": "Man of Sorrows, thank You that You understand my heartache.",
+        "practice": "Sit in silence and acknowledge your tears as sacred to God."
+      },
+      {
+        "day": 3,
+        "title": "My God, Why Have You Forsaken Me?",
+        "scriptureRef": "Psalm 22:1",
+        "scriptureText": "My God, my God, why have you forsaken me? Why are you so far from saving me?",
+        "context": "Jesus quoted this Psalm from the cross, entering the darkest pit of human anguish.",
+        "reflectionPrompt": "When has God felt distant, and how did you respond?",
+        "prayerPrompt": "Jesus, thank You that because You were forsaken, I am never abandoned.",
+        "practice": "Read Psalm 22 slowly and trace Jesus' sacrifice."
+      },
+      {
+        "day": 4,
+        "title": "Tears in a Bottle",
+        "scriptureRef": "Psalm 56:8",
+        "scriptureText": "You have kept count of my tossings; put my tears in your bottle. Are they not in your book?",
+        "context": "Ancient tear bottles were kept as precious keepsakes. God preserves every tear we shed.",
+        "reflectionPrompt": "Do you believe God notices your private weeping in the night?",
+        "prayerPrompt": "Compassionate Father, thank You that none of my sorrow is lost or wasted.",
+        "practice": "Thank God specifically for His tender attentiveness to your wounds."
+      },
+      {
+        "day": 5,
+        "title": "Lamenting in Community",
+        "scriptureRef": "Romans 12:15",
+        "scriptureText": "Rejoice with those who rejoice, weep with those who weep.",
+        "context": "The church is a body where members carry one another's sorrows together.",
+        "reflectionPrompt": "Who around you is suffering and needs someone to simply sit and weep with them?",
+        "prayerPrompt": "Lord, give me empathy to comfort others with the comfort I have received.",
+        "practice": "Send a short text to someone grieving: 'I am praying for you and remembering your loss today.'"
+      },
+      {
+        "day": 6,
+        "title": "Joy Comes in the Morning",
+        "scriptureRef": "Psalm 30:5",
+        "scriptureText": "Weeping may tarry for the night, but joy comes with the morning.",
+        "context": "Lament is not despair; it is a bridge that moves us through the night toward joy.",
+        "reflectionPrompt": "How has God sustained you through past seasons of grief?",
+        "prayerPrompt": "Lord, anchor my heart in the promise of dawn.",
+        "practice": "Recall one trial God brought you through in the past and thank Him for His faithfulness."
+      },
+      {
+        "day": 7,
+        "title": "He Will Wipe Every Tear",
+        "scriptureRef": "Revelation 21:4",
+        "scriptureText": "He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning.",
+        "context": "The ultimate destination of all Christian lament is eternal resurrection and restoration.",
+        "reflectionPrompt": "How does the promise of eternity give you strength to endure today's tears?",
+        "prayerPrompt": "King of Kings, I look forward to the day when all pain is undone. Amen.",
+        "practice": "Write down Revelation 21:4 on a card and keep it in your Bible."
+      }
+    ]
+  },
+  {
+    "id": "journey_generosity_stewardship",
+    "title": "Open Hands: A Lifestyle of Radical Generosity",
+    "tagline": "7 Days to break the grip of greed and live with open, kingdom-minded hands",
+    "durationDays": 7,
+    "category": "Character",
+    "tierRequired": "plus",
+    "overview": "Learn how Jesus redefines wealth, security, and stewardship, moving from scarcity hoarding into cheerful giving.",
+    "learningOutcomes": [
+      "Diagnose the hidden fear of financial scarcity",
+      "Experience the supernatural joy of giving",
+      "Steward time, money, and hospitality for Christ's glory"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Where Your Treasure Is",
+        "scriptureRef": "Matthew 6:21",
+        "scriptureText": "For where your treasure is, there your heart will be also.",
+        "context": "Jesus teaches that money is not neutral; our checkbook directs our deepest affections.",
+        "reflectionPrompt": "What does your spending reveal about what you truly treasure?",
+        "prayerPrompt": "Lord Jesus, align my finances with Your kingdom priorities.",
+        "practice": "Give an anonymous monetary or material gift to someone in need today."
+      },
+      {
+        "day": 2,
+        "title": "God Loves a Cheerful Giver",
+        "scriptureRef": "2 Corinthians 9:7",
+        "scriptureText": "Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver.",
+        "context": "Greek word for cheerful is hilaros (hilarious)\u2014giving with infectious, overflowing delight.",
+        "reflectionPrompt": "Do you give out of guilt and obligation, or from the overflow of grace?",
+        "prayerPrompt": "Father, transform my giving from duty into genuine joy.",
+        "practice": "Find one tangible way to generously tip or bless a service worker today."
+      },
+      {
+        "day": 3,
+        "title": "The Poor Widow's Two Coins",
+        "scriptureRef": "Luke 21:3-4",
+        "scriptureText": "Truly, I tell you, this poor widow has put in more than all of them... she out of her poverty put in all she had to live on.",
+        "context": "God does not measure the size of the gift, but the depth of the sacrifice.",
+        "reflectionPrompt": "Do you give to God from your leftovers, or from sacrificial faith?",
+        "prayerPrompt": "Lord, I give You my all. Teach me to trust You when giving hurts.",
+        "practice": "Review your monthly giving and pray over your commitments to your local church."
+      },
+      {
+        "day": 4,
+        "title": "Treasures in Heaven",
+        "scriptureRef": "1 Timothy 6:18-19",
+        "scriptureText": "They are to do good, to be rich in good works, to be generous and ready to share, thus storing up treasure for themselves as a good foundation.",
+        "context": "Paul directs Christians to invest earthly currency in eternal kingdom dividends.",
+        "reflectionPrompt": "What earthly possession do you grip too tightly?",
+        "prayerPrompt": "God of abundance, loosen my grip on temporal things.",
+        "practice": "Pick 3 quality possessions you don't need and donate them to someone who does."
+      },
+      {
+        "day": 5,
+        "title": "Practicing Radical Hospitality",
+        "scriptureRef": "Romans 12:13",
+        "scriptureText": "Contribute to the needs of the saints and seek to show hospitality.",
+        "context": "Hospitality (philoxenia) literally means loving the stranger, welcoming outsiders into our homes.",
+        "reflectionPrompt": "Is your living room an open haven of blessing or a closed castle?",
+        "prayerPrompt": "Lord, use my home and table to welcome those who are lonely.",
+        "practice": "Invite someone from your church or neighborhood for coffee or dinner this week."
+      },
+      {
+        "day": 6,
+        "title": "More Blessed to Give Than to Receive",
+        "scriptureRef": "Acts 20:35",
+        "scriptureText": "Remember the words of the Lord Jesus, how he himself said, 'It is more blessed to give than to receive.'",
+        "context": "Paul cites an oral saying of Jesus that captures the inverted upside-down economics of the kingdom.",
+        "reflectionPrompt": "When was the last time giving brought a smile to your face?",
+        "prayerPrompt": "Jesus, teach me the profound joy of being a channel of Your provision.",
+        "practice": "Pay for the person behind you in line or buy groceries for an elderly neighbor."
+      },
+      {
+        "day": 7,
+        "title": "The Inexpressible Gift",
+        "scriptureRef": "2 Corinthians 9:15",
+        "scriptureText": "Thanks be to God for his inexpressible gift!",
+        "context": "The fountain of all Christian generosity is God giving His only Son on the cross.",
+        "reflectionPrompt": "How does meditating on the cross melt away selfish materialism?",
+        "prayerPrompt": "Father, thank You for the infinite gift of Jesus. May my whole life be an act of worship.",
+        "practice": "Write down a commitment of generosity for the next 6 months."
+      }
+    ]
+  },
+  {
+    "id": "journey_relational_peacemaking",
+    "title": "Blessed are the Peacemakers",
+    "tagline": "7 Days to resolve relational friction, initiate reconciliation, and heal fractures",
+    "durationDays": 7,
+    "category": "Character",
+    "tierRequired": "plus",
+    "overview": "Learn biblical principles of conflict resolution: taking the log out of your eye, speaking truth in love, and pursuing peace.",
+    "learningOutcomes": [
+      "Distinguish between fake peace (avoidance) and genuine peacemaking",
+      "Own your part in conflict without defensiveness",
+      "Forgive as God in Christ forgave you"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Peacemakers Called Sons of God",
+        "scriptureRef": "Matthew 5:9",
+        "scriptureText": "Blessed are the peacemakers, for they shall be called sons of God.",
+        "context": "Peacemaking is not peace-faking (pretending everything is fine), but actively pursuing shalom.",
+        "reflectionPrompt": "Are you prone to fight (escalate) or flight (withdraw) when conflict arises?",
+        "prayerPrompt": "Lord Jesus, make me an instrument of Your reconciliation.",
+        "practice": "Identify one strained relationship where you need to take an initiative of peace."
+      },
+      {
+        "day": 2,
+        "title": "The Log in Your Own Eye",
+        "scriptureRef": "Matthew 7:3-5",
+        "scriptureText": "First take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye.",
+        "context": "Jesus uses comedic hyperbole to expose our instinct to judge others while ignoring our own sins.",
+        "reflectionPrompt": "What is your 10% or 50% contribution to the relational tension you are experiencing?",
+        "prayerPrompt": "Father, search my heart. Help me own my faults before pointing fingers.",
+        "practice": "Write down your contribution to a conflict and confess it to God in prayer."
+      },
+      {
+        "day": 3,
+        "title": "Go Directly to Your Brother",
+        "scriptureRef": "Matthew 18:15",
+        "scriptureText": "If your brother sins against you, go and tell him his fault, between you and him alone. If he listens to you, you have gained your brother.",
+        "context": "Jesus forbids gossiping or triangulating; go directly to the person in private.",
+        "reflectionPrompt": "Have you vented to others about someone instead of going directly to them?",
+        "prayerPrompt": "Lord, guard my mouth from gossip. Give me courage for loving directness.",
+        "practice": "Commit to not speak about anyone behind their back today."
+      },
+      {
+        "day": 4,
+        "title": "Speaking Truth in Love",
+        "scriptureRef": "Ephesians 4:15",
+        "scriptureText": "Rather, speaking the truth in love, we are to grow up in every way into him who is the head, into Christ.",
+        "context": "Truth without love is brutality; love without truth is hypocrisy.",
+        "reflectionPrompt": "Do you hold back truth to avoid discomfort, or wield truth like a weapon?",
+        "prayerPrompt": "Holy Spirit, season my speech with salt and wrap my words in genuine love.",
+        "practice": "Before having a hard conversation, pray 5 minutes for the other person's blessing."
+      },
+      {
+        "day": 5,
+        "title": "As Far as It Depends on You",
+        "scriptureRef": "Romans 12:18",
+        "scriptureText": "If possible, so far as it depends on you, live peaceably with all.",
+        "context": "Paul recognizes that reconciliation requires two people, but peace is our personal responsibility.",
+        "reflectionPrompt": "What step of peace can you take today, even if the other person does not reciprocate?",
+        "prayerPrompt": "Lord, I take responsibility for my attitude. I choose peace.",
+        "practice": "Reach out to someone with an olive branch of kindness today."
+      },
+      {
+        "day": 6,
+        "title": "Do Not Let the Sun Go Down on Anger",
+        "scriptureRef": "Ephesians 4:26-27",
+        "scriptureText": "Be angry and do not sin; do not let the sun go down on your anger, and give no opportunity to the devil.",
+        "context": "Unresolved resentment provides a beachhead for spiritual destruction.",
+        "reflectionPrompt": "What lingering resentment are you sleeping on tonight?",
+        "prayerPrompt": "Jesus, take away the poison of bitterness before it takes root in my heart.",
+        "practice": "Clear the air before bedtime with your spouse, family member, or friend."
+      },
+      {
+        "day": 7,
+        "title": "The Ministry of Reconciliation",
+        "scriptureRef": "2 Corinthians 5:18-19",
+        "scriptureText": "All this is from God, who through Christ reconciled us to himself and gave us the ministry of reconciliation.",
+        "context": "Because God crossed the cosmic divide to make peace with us at the cross, we cross human divides.",
+        "reflectionPrompt": "How does Christ's reconciliation inspire you to forgive?",
+        "prayerPrompt": "Reconciling God, use my life to build bridges of Gospel peace. Amen.",
+        "practice": "Bless someone who has criticized you by praying for their family today."
+      }
+    ]
+  },
+  {
+    "id": "journey_holy_desires",
+    "title": "Purifying the Heart: Ordering Desires in Christ",
+    "tagline": "7 Days to detox false loves and align your deepest appetites with God's beauty",
+    "durationDays": 7,
+    "category": "Advanced",
+    "tierRequired": "plus",
+    "overview": "St. Augustine wrote that sin is disordered love. Learn to re-order your desires around the supreme worth of Jesus.",
+    "learningOutcomes": [
+      "Identify surface desires versus deep soul hunger",
+      "Dethrone subtle functional idols",
+      "Cultivate holy delight in Christ's supremacy"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "The Well That Never Runs Dry",
+        "scriptureRef": "John 4:13-14",
+        "scriptureText": "Everyone who drinks of this water will be thirsty again, but whoever drinks of the water that I will give him will never be thirsty again.",
+        "context": "Jesus speaks to a woman who tried five husbands seeking what only God can provide.",
+        "reflectionPrompt": "What broken cisterns (career, approval, comfort) do you drink from to quench your thirst?",
+        "prayerPrompt": "Jesus, Living Water, satisfy the dry places of my heart today.",
+        "practice": "Identify your primary 'quick-fix' comfort and fast from it for 24 hours."
+      },
+      {
+        "day": 2,
+        "title": "Broken Cisterns",
+        "scriptureRef": "Jeremiah 2:13",
+        "scriptureText": "My people have committed two evils: they have forsaken me, the fountain of living waters, and hewed out cisterns for themselves, broken cisterns that can hold no water.",
+        "context": "Cracked limestone cisterns leaked water and collected mud; an idol always promises life but delivers mud.",
+        "reflectionPrompt": "What idol has repeatedly disappointed you with broken promises?",
+        "prayerPrompt": "Father, forgive me for trading Your fountain for muddy puddles.",
+        "practice": "Write down the lie your idol tells you and write the Gospel truth beneath it."
+      },
+      {
+        "day": 3,
+        "title": "Delighting in the Lord",
+        "scriptureRef": "Psalm 37:4",
+        "scriptureText": "Delight yourself in the Lord, and he will give you the desires of your heart.",
+        "context": "When God becomes our supreme delight, our heart's desires are reshaped to match His.",
+        "reflectionPrompt": "What does it look like to delight in God rather than just using Him for gifts?",
+        "prayerPrompt": "Lord, be my supreme treasure and highest joy.",
+        "practice": "Spend 10 minutes praising God for His character attributes alone (wisdom, mercy, holiness)."
+      },
+      {
+        "day": 4,
+        "title": "Counting All as Loss",
+        "scriptureRef": "Philippians 3:8",
+        "scriptureText": "I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord.",
+        "context": "Paul was a theological elite with high pedigree; he considered it all rubbish compared to Christ.",
+        "reflectionPrompt": "What achievement or credential are you tempted to find your worth in?",
+        "prayerPrompt": "Jesus, You are my prize. Nothing in this world compares to knowing You.",
+        "practice": "Mentally place your greatest achievement at Jesus' feet in prayer."
+      },
+      {
+        "day": 5,
+        "title": "Set Your Affections on Things Above",
+        "scriptureRef": "Colossians 3:1-2",
+        "scriptureText": "If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God.",
+        "context": "Affections follow attention. When our mind gazes upon Christ, our loves are reordered.",
+        "reflectionPrompt": "What earthly cares currently crowd out your love for eternal things?",
+        "prayerPrompt": "Holy Spirit, recalibrate my affections today around Your kingdom.",
+        "practice": "Read Colossians 3:1-4 out loud before starting work today."
+      },
+      {
+        "day": 6,
+        "title": "Blessed are the Pure in Heart",
+        "scriptureRef": "Matthew 5:8",
+        "scriptureText": "Blessed are the pure in heart, for they shall see God.",
+        "context": "Purity of heart (kardia) means singleness of focus\u2014desiring one thing: God Himself.",
+        "reflectionPrompt": "Where is your heart divided between God and the world?",
+        "prayerPrompt": "Lord, give me an undivided heart to fear Your name.",
+        "practice": "Pray Psalm 86:11 throughout the day: 'Unite my heart to fear Your name.'"
+      },
+      {
+        "day": 7,
+        "title": "In Your Presence Is Fullness of Joy",
+        "scriptureRef": "Psalm 16:11",
+        "scriptureText": "You make known to me the path of life; in your presence there is fullness of joy; at your right hand are pleasures forevermore.",
+        "context": "David discovers that God does not subtract joy; He provides fullness of eternal joy.",
+        "reflectionPrompt": "How has ordering your loves around Christ brought true freedom this week?",
+        "prayerPrompt": "Father, You are the source of all joy. I rest in Your presence forever. Amen.",
+        "practice": "Write a prayer committing your heart's desires into God's sovereign keeping."
+      }
+    ]
+  },
+  {
+    "id": "journey_armor_of_god",
+    "title": "Spiritual Warfare: The Armor of God",
+    "tagline": "7 Days to stand firm against spiritual deception and walk in Christ's victory",
+    "durationDays": 7,
+    "category": "Advanced",
+    "tierRequired": "plus",
+    "overview": "Walk through Ephesians 6:10-18 to put on the belt of truth, breastplate of righteousness, shield of faith, and sword of the Spirit.",
+    "learningOutcomes": [
+      "Identify spiritual attacks versus everyday problems",
+      "Wield the Word of God against accusations",
+      "Stand firm in prayer and communion with the saints"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Be Strong in the Lord",
+        "scriptureRef": "Ephesians 6:10-11",
+        "scriptureText": "Finally, be strong in the Lord and in the strength of his might. Put on the whole armor of God, that you may be able to stand against the schemes of the devil.",
+        "context": "Our strength is derivative; we stand not in our own will-power, but in Christ's mighty victory.",
+        "reflectionPrompt": "Where have you tried to fight spiritual battles with mere fleshly grit?",
+        "prayerPrompt": "Mighty God, I put off self-reliance and clothe myself in Your power.",
+        "practice": "Pray Ephesians 6:10 over yourself before stepping out into your day."
+      },
+      {
+        "day": 2,
+        "title": "The Belt of Truth & Breastplate of Righteousness",
+        "scriptureRef": "Ephesians 6:14",
+        "scriptureText": "Stand therefore, having fastened on the belt of truth, and having put on the breastplate of righteousness.",
+        "context": "The Roman soldier's leather belt held all weapons in place; truth holds our spiritual life secure.",
+        "reflectionPrompt": "What lie of the enemy are you dismantling with biblical truth today?",
+        "prayerPrompt": "Lord, buckle me with Your truth and protect my heart with Christ's righteousness.",
+        "practice": "Memorize a Scripture verse that refutes a specific lie you battle."
+      },
+      {
+        "day": 3,
+        "title": "Shoes of the Gospel of Peace",
+        "scriptureRef": "Ephesians 6:15",
+        "scriptureText": "And, as shoes for your feet, having put on the readiness given by the gospel of peace.",
+        "context": "Roman sandals (caligae) had hobnails that gripped the ground in battle so soldiers would not slip.",
+        "reflectionPrompt": "Are your feet firmly planted in Gospel peace, or slipping on anxiety?",
+        "prayerPrompt": "Jesus, anchor my footing in Your reconciliation and peace.",
+        "practice": "Walk with confidence today knowing your peace is sealed by Christ."
+      },
+      {
+        "day": 4,
+        "title": "The Shield of Faith",
+        "scriptureRef": "Ephesians 6:16",
+        "scriptureText": "In all circumstances take up the shield of faith, with which you can extinguish all the flaming darts of the evil one.",
+        "context": "Large Roman shields (scutum) were soaked in water to extinguish pitch-tipped fire arrows.",
+        "reflectionPrompt": "What flaming dart of doubt, shame, or fear has the enemy shot at you lately?",
+        "prayerPrompt": "Father, I lift up the shield of faith. I trust Your character over my feelings.",
+        "practice": "When an accusing thought enters, extinguish it immediately with Scripture."
+      },
+      {
+        "day": 5,
+        "title": "Helmet of Salvation & Sword of the Spirit",
+        "scriptureRef": "Ephesians 6:17",
+        "scriptureText": "And take the helmet of salvation, and the sword of the Spirit, which is the word of God.",
+        "context": "The sword (machaira) was a close-combat dagger; Jesus wielded it in the wilderness by quoting Deuteronomy.",
+        "reflectionPrompt": "How well do you know Scripture to wield it when tempted?",
+        "prayerPrompt": "Holy Spirit, place Your living Word on my lips when temptation strikes.",
+        "practice": "Speak God's Word out loud when facing dark or discouraging thoughts."
+      },
+      {
+        "day": 6,
+        "title": "Praying at All Times in the Spirit",
+        "scriptureRef": "Ephesians 6:18",
+        "scriptureText": "Praying at all times in the Spirit, with all prayer and supplication. To that end, keep alert with all perseverance.",
+        "context": "Prayer is not the seventh piece of armor; it is the atmosphere in which the battle is waged.",
+        "reflectionPrompt": "Is your prayer life a casual peacetime routine or an alert wartime lifeline?",
+        "prayerPrompt": "Lord, make me a watchful intercessor for my family and church.",
+        "practice": "Pray for 3 brothers or sisters in your church who are facing trials today."
+      },
+      {
+        "day": 7,
+        "title": "Standing Firm to the End",
+        "scriptureRef": "Romans 16:20",
+        "scriptureText": "The God of peace will soon crush Satan under your feet. The grace of our Lord Jesus Christ be with you.",
+        "context": "The outcome of the war is already decided at Calvary and the empty tomb.",
+        "reflectionPrompt": "How does the final victory of Christ bring peace to today's struggles?",
+        "prayerPrompt": "Triumphant King, thank You that the battle belongs to You. Amen.",
+        "practice": "Sing or listen to 'A Mighty Fortress Is Our God' as an act of defiance against the darkness."
+      }
+    ]
+  },
+  {
+    "id": "journey_kingdom_vocation",
+    "title": "Everyday Faith: Glorifying God in Work & Craft",
+    "tagline": "7 Days to sanctify your 9-to-5, trade careerism for calling, and work as unto the Lord",
+    "durationDays": 7,
+    "category": "Advanced",
+    "tierRequired": "plus",
+    "overview": "Bridge the sacred-secular divide. Discover how spreadsheets, parenting, teaching, trades, and meetings become altars of worship.",
+    "learningOutcomes": [
+      "See secular work as legitimate spiritual service",
+      "Handle difficult bosses and coworkers with grace",
+      "Work with excellence as an act of kingdom witness"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Whatever You Do, Do It for the Lord",
+        "scriptureRef": "Colossians 3:23-24",
+        "scriptureText": "Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ.",
+        "context": "Paul tells slaves in the Roman empire that their ordinary chores are direct service to Jesus.",
+        "reflectionPrompt": "Who do you work for on Monday morning: your boss, paycheck, ego, or Christ?",
+        "prayerPrompt": "Lord Jesus, I dedicate my hands and mind to You. You are my true Boss.",
+        "practice": "Pause before starting work today and dedicate your tasks to Jesus in prayer."
+      },
+      {
+        "day": 2,
+        "title": "God the First Worker",
+        "scriptureRef": "Genesis 2:15",
+        "scriptureText": "The Lord God took the man and put him in the garden of Eden to work it and keep it.",
+        "context": "Work is not a result of the Fall; work was given in paradise as a noble reflection of God's creativity.",
+        "reflectionPrompt": "Do you view work as a curse or as a divine stewardship?",
+        "prayerPrompt": "Creator God, thank You for the gift of labor and creativity.",
+        "practice": "Bring excellence and attentiveness to one mundane task you usually rush through."
+      },
+      {
+        "day": 3,
+        "title": "Shining as Lights in the Workplace",
+        "scriptureRef": "Matthew 5:16",
+        "scriptureText": "In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven.",
+        "context": "Christian integrity, kindness, and calm under deadline pressure shine brightly in toxic workplaces.",
+        "reflectionPrompt": "What does your posture during workplace stress communicate to colleagues?",
+        "prayerPrompt": "Lord, make me an agent of calm, truth, and grace in my workplace.",
+        "practice": "Encourage a stressed colleague with a kind word or cup of coffee today."
+      },
+      {
+        "day": 4,
+        "title": "Integrity in the Details",
+        "scriptureRef": "Proverbs 11:1",
+        "scriptureText": "A false balance is an abomination to the Lord, but a just weight is his delight.",
+        "context": "Ancient traders tampered with scale weights to cheat buyers; God delights in rigorous honesty.",
+        "reflectionPrompt": "Are you tempted to cut corners, exaggerate numbers, or misrepresent hours?",
+        "prayerPrompt": "God of truth, give me uncompromising integrity in the smallest details.",
+        "practice": "Double-check your work today to ensure complete accuracy and honesty."
+      },
+      {
+        "day": 5,
+        "title": "Redeeming Ambition",
+        "scriptureRef": "Jeremiah 45:5",
+        "scriptureText": "And do you seek great things for yourself? Seek them not, says the Lord.",
+        "context": "God redirects Baruch from self-aggrandizing ambition toward faithful service in hard times.",
+        "reflectionPrompt": "Is your career driven by a desire to be great, or a desire to make Christ look great?",
+        "prayerPrompt": "Lord, deliver me from vain glory. May my work lift up others.",
+        "practice": "Pray for the flourishing and success of a professional peer or competitor."
+      },
+      {
+        "day": 6,
+        "title": "Resting from Career Anxiety",
+        "scriptureRef": "Psalm 127:2",
+        "scriptureText": "It is in vain that you rise up early and go late to rest, eating the bread of anxious toil; for he gives to his beloved sleep.",
+        "context": "Working late with frantic dread is a sign of self-reliance; God provides even while we sleep.",
+        "reflectionPrompt": "Does your work schedule violate God's rhythm of rest and family?",
+        "prayerPrompt": "Father, I close my laptop and trust You with the unfinished emails.",
+        "practice": "Set a firm shutdown time for your workday and honor it tonight."
+      },
+      {
+        "day": 7,
+        "title": "Work That Lasts into Eternity",
+        "scriptureRef": "1 Corinthians 15:58",
+        "scriptureText": "Therefore, my beloved brothers, be steadfast, immovable, always abounding in the work of the Lord, knowing that in the Lord your labor is not in vain.",
+        "context": "Because Christ rose bodily from the grave, acts of faithful love and service ripple into eternity.",
+        "reflectionPrompt": "How does resurrection hope give dignity to your daily vocation?",
+        "prayerPrompt": "Resurrected Lord, establish the work of my hands for Your kingdom glory. Amen.",
+        "practice": "Write down a one-sentence personal mission statement for your daily vocation."
+      }
+    ]
+  },
+  {
+    "id": "journey_gratitude_doxology",
+    "title": "Cultivating a Continual Spirit of Gratitude",
+    "tagline": "7 Days to dismantle complaining, open your eyes to daily grace, and live in doxology",
+    "durationDays": 7,
+    "category": "Prayer",
+    "tierRequired": "plus",
+    "overview": "Shift your perspective from scarcity to abundance through 1 Thessalonians 5, Psalm 103, and the practice of thanksgiving.",
+    "learningOutcomes": [
+      "Kill grumbling at the root",
+      "Notice micro-mercies throughout the day",
+      "Turn ordinary moments into doxological worship"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Give Thanks in All Circumstances",
+        "scriptureRef": "1 Thessalonians 5:16-18",
+        "scriptureText": "Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.",
+        "context": "Paul specifies 'in' all circumstances, not necessarily 'for' evil circumstances, finding God's presence everywhere.",
+        "reflectionPrompt": "What frustrating situation are you tempted to grumble about today?",
+        "prayerPrompt": "Lord, open my eyes to find Your hand even in this frustrating moment.",
+        "practice": "Write down 5 things you are genuinely grateful for right now."
+      },
+      {
+        "day": 2,
+        "title": "Forget Not All His Benefits",
+        "scriptureRef": "Psalm 103:2-4",
+        "scriptureText": "Bless the Lord, O my soul, and forget not all his benefits, who forgives all your iniquity, who heals all your diseases, who redeems your life from the pit.",
+        "context": "The soul suffers from spiritual amnesia; David commands his inner self to remember God's grace.",
+        "reflectionPrompt": "What great deliverances from God have you taken for granted lately?",
+        "prayerPrompt": "Soul, remember God's faithfulness! He has redeemed my life from the pit.",
+        "practice": "Take 3 minutes to list past prayers God has faithfully answered in your life."
+      },
+      {
+        "day": 3,
+        "title": "Enter His Gates with Thanksgiving",
+        "scriptureRef": "Psalm 100:4-5",
+        "scriptureText": "Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name! For the Lord is good; his steadfast love endures forever.",
+        "context": "Worship begins at the gates with grateful thanksgiving before petitioning for requests.",
+        "reflectionPrompt": "Do your prayers consist mainly of asking for things or thanking God?",
+        "prayerPrompt": "Good and Faithful God, I enter Your presence with thanksgiving today.",
+        "practice": "Spend the first 5 minutes of your prayer time today offering only thanksgiving\u2014no requests."
+      },
+      {
+        "day": 4,
+        "title": "The Poison of Grumbling",
+        "scriptureRef": "Philippians 2:14-15",
+        "scriptureText": "Do all things without grumbling or disputing, that you may be blameless and innocent, children of God without blemish.",
+        "context": "Israel wanderers died in the desert because of perpetual grumbling; gratitude is the antidote.",
+        "reflectionPrompt": "How often do you complain in traffic, at work, or at home?",
+        "prayerPrompt": "Father, cleanse my mouth from complaining. Give me words of praise.",
+        "practice": "Go the entire day without voicing a single complaint out loud."
+      },
+      {
+        "day": 5,
+        "title": "Abounding in Thanksgiving",
+        "scriptureRef": "Colossians 2:6-7",
+        "scriptureText": "Therefore, as you received Christ Jesus the Lord, so walk in him, rooted and built up in him and established in the faith, just as you were taught, abounding in thanksgiving.",
+        "context": "'Abounding' carries the image of a river overflowing its banks; thanksgiving should flood out.",
+        "reflectionPrompt": "Does your presence bring gratitude or cynicism to your social circle?",
+        "prayerPrompt": "Jesus, let my heart overflow with thanks so that others catch the fragrance of grace.",
+        "practice": "Send an unprompted thank-you message to someone who has invested in your faith."
+      },
+      {
+        "day": 6,
+        "title": "Thanking God for Unlikely Blessings",
+        "scriptureRef": "Habakkuk 3:17-18",
+        "scriptureText": "Though the fig tree should not blossom, nor fruit be on the vines... yet I will rejoice in the Lord; I will take joy in the God of my salvation.",
+        "context": "Even when crops fail and devastation looms, the prophet finds joy in God's salvation.",
+        "reflectionPrompt": "Can you rejoice in God when earthly comforts are stripped away?",
+        "prayerPrompt": "Lord, even if everything else fails, You are enough for my soul.",
+        "practice": "Thank God specifically for what He is teaching you through a difficult trial."
+      },
+      {
+        "day": 7,
+        "title": "Living as a Doxology",
+        "scriptureRef": "Romans 11:36",
+        "scriptureText": "For from him and through him and to him are all things. To him be glory forever. Amen.",
+        "context": "Paul erupts into spontaneous doxology after surveying the vast theological landscape of salvation.",
+        "reflectionPrompt": "How does viewing all things as 'from Him, through Him, to Him' change your mindset?",
+        "prayerPrompt": "To You, O God, be glory forever and ever! My whole life is a hymn of praise. Amen.",
+        "practice": "Sing the Doxology or your favorite hymn of praise out loud before you sleep."
+      }
+    ]
+  },
+  {
+    "id": "journey_fruit_of_spirit",
+    "title": "Abiding in Fruitfulness: The Fruit of the Spirit",
+    "tagline": "7 Days to cultivate supernatural love, joy, peace, patience, kindness, and self-control",
+    "durationDays": 7,
+    "category": "Character",
+    "tierRequired": "plus",
+    "overview": "Fruit cannot be manufactured by gritting your teeth; it grows naturally when you abide in the Vine.",
+    "learningOutcomes": [
+      "Distinguish between religious performance and Spirit-grown fruit",
+      "Allow the Holy Spirit to prune barren habits",
+      "Walk in visible gentleness and love"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Abide in Me and I in You",
+        "scriptureRef": "John 15:4-5",
+        "scriptureText": "Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. I am the vine; you are the branches.",
+        "context": "A branch never strains or grunts to produce grapes; it simply remains attached to the life-giving sap.",
+        "reflectionPrompt": "Are you trying to produce Christian character in your own strength?",
+        "prayerPrompt": "True Vine, I abide in You. Flow Your life and love through my heart today.",
+        "practice": "Every hour today, pause for 10 seconds to say: 'I am a branch; You are the Vine.'"
+      },
+      {
+        "day": 2,
+        "title": "Love and Joy",
+        "scriptureRef": "Galatians 5:22",
+        "scriptureText": "The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness.",
+        "context": "Fruit is singular (karpos)\u2014one integrated cluster of Christ's character produced by the Spirit.",
+        "reflectionPrompt": "Which aspect of love or joy is most lacking in your daily demeanor?",
+        "prayerPrompt": "Holy Spirit, pour God's agape love and deep joy into my heart.",
+        "practice": "Choose to smile and greet someone warmly who is having a stressful day."
+      },
+      {
+        "day": 3,
+        "title": "Peace and Patience",
+        "scriptureRef": "Colossians 3:12-13",
+        "scriptureText": "Put on then, as God's chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience, bearing with one another.",
+        "context": "Patience (makrothumia) means having a long fuse when provoked by difficult people.",
+        "reflectionPrompt": "What person or situation triggers impatience in you most quickly?",
+        "prayerPrompt": "Lord, lengthen my fuse. Give me Christlike patience when challenged.",
+        "practice": "When interrupted or delayed today, count to 5 and respond with grace."
+      },
+      {
+        "day": 4,
+        "title": "Kindness and Goodness",
+        "scriptureRef": "Titus 3:4-5",
+        "scriptureText": "When the goodness and loving kindness of God our Savior appeared, he saved us, not because of works done by us in righteousness, but according to his own mercy.",
+        "context": "God's kindness is what melted our stubborn rebellion; kindness softens hard hearts.",
+        "reflectionPrompt": "How can you show tangible goodness to someone who cannot repay you?",
+        "prayerPrompt": "Lord, make me an instrument of Your loving kindness today.",
+        "practice": "Perform a kind act for a stranger or colleague without seeking recognition."
+      },
+      {
+        "day": 5,
+        "title": "Faithfulness",
+        "scriptureRef": "Lamentations 3:23",
+        "scriptureText": "Great is your faithfulness.",
+        "context": "God's steadfast dependability is the model for Christian reliability and trustworthiness.",
+        "reflectionPrompt": "Are your promises and commitments trustworthy in the eyes of others?",
+        "prayerPrompt": "Faithful Father, make my 'yes' be yes and my 'no' be no.",
+        "practice": "Fulfill one delayed promise or chore you told someone you would do."
+      },
+      {
+        "day": 6,
+        "title": "Gentleness and Meekness",
+        "scriptureRef": "Galatians 6:1",
+        "scriptureText": "Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness.",
+        "context": "Gentleness is power under control\u2014like a war horse submitting to the gentle tug of the bridle.",
+        "reflectionPrompt": "Do you use harsh words to win arguments or gentle words to win hearts?",
+        "prayerPrompt": "Gentle Jesus, tame my sharp tongue and soften my harsh reactions.",
+        "practice": "Lower your voice and speak with gentleness in any disagreement today."
+      },
+      {
+        "day": 7,
+        "title": "The Father Prunes to Bear More Fruit",
+        "scriptureRef": "John 15:2",
+        "scriptureText": "Every branch that does bear fruit he prunes, that it may bear more fruit.",
+        "context": "Vinedressers cut away good shoots so that maximum energy flows into producing prize clusters.",
+        "reflectionPrompt": "What good but non-essential activity is God pruning from your schedule?",
+        "prayerPrompt": "Heavenly Vinedresser, cut away distractions so that Christ's fruit may abound in me.",
+        "practice": "Say 'no' to one non-essential commitment to protect your core spiritual rhythms."
+      }
+    ]
+  },
+  {
+    "id": "journey_covenant_community",
+    "title": "Life Together: Devotion to Church & Fellowship",
+    "tagline": "7 Days to move from spectator Christianity into committed, sacrificial church life",
+    "durationDays": 7,
+    "category": "Habits",
+    "tierRequired": "plus",
+    "overview": "Rediscover Dietrich Bonhoeffer's 'Life Together' and the Acts 2 vision of shared meals, burdens, and worship.",
+    "learningOutcomes": [
+      "Overcome church consumerism and individualism",
+      "Learn how to confess sin to trusted brothers and sisters",
+      "Devote yourself to authentic weekly fellowship"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "They Devoted Themselves",
+        "scriptureRef": "Acts 2:42",
+        "scriptureText": "And they devoted themselves to the apostles' teaching and the fellowship, to the breaking of bread and the prayers.",
+        "context": "The early church did not 'attend' an event; they devoted their whole lives to one another.",
+        "reflectionPrompt": "Are you a consumer of church services or a committed family member of the body?",
+        "prayerPrompt": "Lord, knit my heart in deep devotion to my local church community.",
+        "practice": "Pray by name for your pastor and small group leaders today."
+      },
+      {
+        "day": 2,
+        "title": "One Body with Many Members",
+        "scriptureRef": "1 Corinthians 12:20-21",
+        "scriptureText": "As it is, there are many parts, yet one body. The eye cannot say to the hand, 'I have no need of you.'",
+        "context": "Every believer has an indispensable spiritual gift needed for the health of the whole church.",
+        "reflectionPrompt": "What unique gift has God given you to build up others in your congregation?",
+        "prayerPrompt": "Lord, show me how to serve the body of Christ with the gifts You gave me.",
+        "practice": "Sign up or volunteer for one practical area of service in your church."
+      },
+      {
+        "day": 3,
+        "title": "Confessing Sin to One Another",
+        "scriptureRef": "James 5:16",
+        "scriptureText": "Therefore, confess your sins to one another and pray for one another, that you may be healed.",
+        "context": "Sin thrives in dark secrecy; bringing it into the light of safe fellowship breaks its power.",
+        "reflectionPrompt": "Do you have at least one trusted Christian friend who knows your real struggles?",
+        "prayerPrompt": "Father, deliver me from the fear of vulnerability. Give me trustworthy friends.",
+        "practice": "Reach out to a mature mentor or group leader and share one honest prayer burden."
+      },
+      {
+        "day": 4,
+        "title": "Bear One Another's Burdens",
+        "scriptureRef": "Galatians 6:2",
+        "scriptureText": "Bear one another's burdens, and so fulfill the law of Christ.",
+        "context": "Burdens (bar\u0113) refers to crushing heavy weights no single person was meant to carry alone.",
+        "reflectionPrompt": "Who in your church community is carrying a heavy grief or burden right now?",
+        "prayerPrompt": "Jesus, open my eyes to shoulder the burdens of my brothers and sisters.",
+        "practice": "Deliver a meal, run an errand, or send a financial blessing to someone carrying a burden."
+      },
+      {
+        "day": 5,
+        "title": "Stirring Up Love and Good Works",
+        "scriptureRef": "Hebrews 10:24-25",
+        "scriptureText": "And let us consider how to stir up one another to love and good works, not neglecting to meet together, as is the habit of some.",
+        "context": "Meeting together is an indispensable lifeline for perseverance in a hostile culture.",
+        "reflectionPrompt": "What excuses tempt you to skip small group or church gatherings?",
+        "prayerPrompt": "Lord, renew my passion for corporate worship and Christian fellowship.",
+        "practice": "Commit to attend church this Sunday with a heart prepared to encourage others."
+      },
+      {
+        "day": 6,
+        "title": "Speaking the Truth in Love",
+        "scriptureRef": "Ephesians 4:25",
+        "scriptureText": "Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another.",
+        "context": "False politeness destroys community; biblical fellowship embraces loving honesty.",
+        "reflectionPrompt": "Is there someone in your church you need to speak with in love to resolve a tension?",
+        "prayerPrompt": "Lord, give me courage and gentleness to speak truth in love.",
+        "practice": "Encourage someone in your church by highlighting where you see Christ in them."
+      },
+      {
+        "day": 7,
+        "title": "Behold How Good and Pleasant",
+        "scriptureRef": "Psalm 133:1",
+        "scriptureText": "Behold, how good and pleasant it is when brothers dwell in unity!",
+        "context": "Unity is compared to holy anointing oil flowing down Aaron's beard, spreading blessing everywhere.",
+        "reflectionPrompt": "How can you protect the unity and peace of your church family?",
+        "prayerPrompt": "Great Shepherd, protect our church from division. May our love prove we are Your disciples. Amen.",
+        "practice": "Host or invite church members over for an unhurried post-service lunch."
+      }
+    ]
+  },
+  {
+    "id": "journey_finishing_well",
+    "title": "Finishing Well: Endurance for the Long Run",
+    "tagline": "7 Days to build resilient, persevering faith that outlasts burnout and cynicism",
+    "durationDays": 7,
+    "category": "Advanced",
+    "tierRequired": "plus",
+    "overview": "Discipleship is a marathon, not a sprint. Learn how Paul, Timothy, and the heroes of faith persevered to the finish line.",
+    "learningOutcomes": [
+      "Avoid shipwrecking faith on cynicism or burnout",
+      "Run with endurance keeping eyes fixed on Jesus",
+      "Leave a multi-generational legacy of faithfulness"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Run with Endurance",
+        "scriptureRef": "Hebrews 12:1-2",
+        "scriptureText": "Let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus.",
+        "context": "Ancient Olympic runners stripped down naked to avoid any drag; we must lay aside subtle weights.",
+        "reflectionPrompt": "What 'weight' (not necessarily sin, but clutter or worry) is slowing down your spiritual stride?",
+        "prayerPrompt": "Jesus, Author and Finisher of my faith, I strip away all weights and fix my gaze on You.",
+        "practice": "Identify one non-sinful distraction you will give up to regain spiritual endurance."
+      },
+      {
+        "day": 2,
+        "title": "I Have Fought the Good Fight",
+        "scriptureRef": "2 Timothy 4:7-8",
+        "scriptureText": "I have fought the good fight, I have finished the race, I have kept the faith. Henceforth there is laid up for me the crown of righteousness.",
+        "context": "Paul wrote this from a dungeon awaiting execution by Nero, looking forward to the victor's wreath.",
+        "reflectionPrompt": "When you reach the end of your life, what will matter most to you?",
+        "prayerPrompt": "Lord, keep me faithful to the very end. Let me not stumble in the final miles.",
+        "practice": "Write down what you hope will be true of your walk with God at age 80."
+      },
+      {
+        "day": 3,
+        "title": "Do Not Grow Weary in Doing Good",
+        "scriptureRef": "Galatians 6:9",
+        "scriptureText": "And let us not grow weary of doing good, for in due season we will reap, if we do not give up.",
+        "context": "Farmers face months of dirt, sweat, and waiting with no visible harvest before the crop arrives.",
+        "reflectionPrompt": "Where are you tempted to quit because you haven't seen immediate fruit?",
+        "prayerPrompt": "Lord, give me holy stamina. I trust that my labor in You is never in vain.",
+        "practice": "Continue doing one good deed or prayer you felt like abandoning this week."
+      },
+      {
+        "day": 4,
+        "title": "He Who Began a Good Work",
+        "scriptureRef": "Philippians 1:6",
+        "scriptureText": "And I am sure of this, that he who began a good work in you will bring it to completion at the day of Jesus Christ.",
+        "context": "God never abandons a half-finished sculpture; He finishes what He starts.",
+        "reflectionPrompt": "How does God's commitment to complete you give you peace when you stumble?",
+        "prayerPrompt": "Faithful Creator, finish the work You started in my heart.",
+        "practice": "Recite Philippians 1:6 whenever self-doubt creeps in today."
+      },
+      {
+        "day": 5,
+        "title": "Standing on the Promises",
+        "scriptureRef": "1 Corinthians 10:13",
+        "scriptureText": "God is faithful, and he will not let you be tempted beyond your ability, but with the temptation he will also provide the way of escape.",
+        "context": "No trial is unprecedented; God always provides an exit ramp of grace.",
+        "reflectionPrompt": "What recurring temptation threatens to undermine your spiritual integrity?",
+        "prayerPrompt": "Lord, open my eyes to Your way of escape every time temptation knocks.",
+        "practice": "Put a physical barrier or accountability measure in place around your weakest area."
+      },
+      {
+        "day": 6,
+        "title": "Passing the Torch to Others",
+        "scriptureRef": "2 Timothy 2:2",
+        "scriptureText": "And what you have heard from me in the presence of many witnesses entrust to faithful men, who will be able to teach others also.",
+        "context": "Four generations in one verse: Paul -> Timothy -> faithful men -> others also.",
+        "reflectionPrompt": "Who are you investing in so that faith continues beyond your lifetime?",
+        "prayerPrompt": "Lord, make my life a catalyst that blesses the next generation.",
+        "practice": "Encourage a younger believer with a Scripture or note of prayer today."
+      },
+      {
+        "day": 7,
+        "title": "Well Done, Good and Faithful Servant",
+        "scriptureRef": "Matthew 25:21",
+        "scriptureText": "Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master.",
+        "context": "The ultimate commendation in the universe is not fame or fortune, but the smile of the Master.",
+        "reflectionPrompt": "How does living for the Master's 'Well done' simplify your life choices?",
+        "prayerPrompt": "King Jesus, my only ambition is to hear Your voice say 'Well done.' Amen.",
+        "practice": "Write a prayer of lifelong dedication committing your future to Jesus."
+      }
+    ]
+  },
+  {
+    "id": "journey_trinity_communion",
+    "title": "Communion with the Triune God",
+    "tagline": "7 Days to enter the eternal fellowship of Father, Son, and Holy Spirit",
+    "durationDays": 7,
+    "category": "Advanced",
+    "tierRequired": "plus",
+    "overview": "Discipleship is not merely obeying moral commands; it is being swept up into the eternal, self-giving fellowship of the Trinity.",
+    "learningOutcomes": [
+      "Understand the relational nature of God",
+      "Pray with Trinitarian awareness",
+      "Live in community reflecting God's inner life"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "The Grace, Love, and Fellowship",
+        "scriptureRef": "2 Corinthians 13:14",
+        "scriptureText": "The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.",
+        "context": "Paul's final apostolic benediction anchors all Christian life in the three persons of the Godhead.",
+        "reflectionPrompt": "How does knowing God is an eternal community of love change how you relate to Him?",
+        "prayerPrompt": "Triune God—Father, Son, and Spirit—I worship You in Your perfect, harmonious glory.",
+        "practice": "Begin each prayer today by addressing each person of the Trinity with specific thanksgiving."
+      },
+      {
+        "day": 2,
+        "title": "The Father's Beloved Son",
+        "scriptureRef": "Matthew 3:16-17",
+        "scriptureText": "This is my beloved Son, with whom I am well pleased.",
+        "context": "At Jesus' baptism, the Father speaks, the Son emerges from the water, and the Spirit descends like a dove.",
+        "reflectionPrompt": "Do you realize that in Christ, the Father rejoices over you with that same delight?",
+        "prayerPrompt": "Father, thank You that in Jesus, I am Your beloved child.",
+        "practice": "Rest for 3 minutes receiving the Father's delight over you."
+      },
+      {
+        "day": 3,
+        "title": "The Son Who Reveals the Father",
+        "scriptureRef": "John 14:9",
+        "scriptureText": "Whoever has seen me has seen the Father.",
+        "context": "Jesus is the exact imprint of God's nature; we never have to guess what God is like.",
+        "reflectionPrompt": "What false pictures of God (cold, distant, unpredictable) are corrected when looking at Jesus?",
+        "prayerPrompt": "Jesus, You show me the true heart of God. I trust Your tender mercy.",
+        "practice": "Read a Gospel healing story and notice the compassionate heart of God."
+      },
+      {
+        "day": 4,
+        "title": "The Spirit Who Intercedes",
+        "scriptureRef": "Romans 8:26-27",
+        "scriptureText": "The Spirit helps us in our weakness. For we do not know what to pray for as we ought, but the Spirit himself intercedes for us with groanings too deep for words.",
+        "context": "When we run out of words, the Holy Spirit carries our sighs directly into the heart of God.",
+        "reflectionPrompt": "When words fail you, can you rest in the Spirit's intercession for you?",
+        "prayerPrompt": "Holy Spirit, pray through me today. Align my groans with the Father's will.",
+        "practice": "Spend 5 minutes in wordless prayer, letting the Spirit intercede for your soul."
+      },
+      {
+        "day": 5,
+        "title": "That They May All Be One",
+        "scriptureRef": "John 17:21",
+        "scriptureText": "That they may all be one, just as you, Father, are in me, and I in you, that they also may be in us.",
+        "context": "In His High Priestly prayer, Jesus prays that Christian unity would mirror the Trinitarian oneness.",
+        "reflectionPrompt": "How does Trinitarian unity challenge consumeristic or isolated Christianity?",
+        "prayerPrompt": "Lord, make us one as You and the Father are one.",
+        "practice": "Initiate an act of unity with a Christian from a different denomination or background."
+      },
+      {
+        "day": 6,
+        "title": "Partakers of the Divine Nature",
+        "scriptureRef": "2 Peter 1:4",
+        "scriptureText": "He has granted to us his precious and very great promises, so that through them you may become partakers of the divine nature.",
+        "context": "Early church fathers called this theosis: we are brought into the fellowship and character of God.",
+        "reflectionPrompt": "Are you living like someone who shares in the divine nature?",
+        "prayerPrompt": "Holy God, fill me with Your divine love and righteous character today.",
+        "practice": "Speak a word of grace instead of anger when provoked."
+      },
+      {
+        "day": 7,
+        "title": "The Doxology of the Trinity",
+        "scriptureRef": "Ephesians 1:3-14",
+        "scriptureText": "Blessed be the God and Father of our Lord Jesus Christ... in him we have redemption through his blood... you were sealed with the promised Holy Spirit.",
+        "context": "Paul writes one 202-word Greek sentence praising the Father who chooses, the Son who redeems, and the Spirit who seals.",
+        "reflectionPrompt": "How does the fullness of the Trinity give you rock-solid security in your salvation?",
+        "prayerPrompt": "Glory be to the Father, and to the Son, and to the Holy Ghost; as it was in the beginning, is now, and ever shall be, world without end. Amen.",
+        "practice": "Recite the Gloria Patri in worship before ending your day."
+      }
+    ]
+  }
+,
+{
+    "id": "journey_renewal_21",
+    "title": "21-Day Habit Transformation & Heart Renewal",
+    "tagline": "21 Days of daily Scripture, holy habit loops, and soul detox to break chronic distraction",
+    "durationDays": 21,
+    "category": "Habits",
+    "tierRequired": "plus",
+    "overview": "A comprehensive 3-week transformational journey moving through Awakening (Week 1), Uprooting False Desires (Week 2), and Deep Abiding (Week 3).",
+    "learningOutcomes": [
+      "Break chronic digital distraction and morning scrolling",
+      "Establish sustainable daily Scripture meditation and silence rhythms",
+      "Anchor life-giving spiritual disciplines that last for decades"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "The Power of Small Rhythms",
+        "scriptureRef": "Zechariah 4:10",
+        "scriptureText": "Do not despise the day of small things, for the Lord rejoices to see the work begin.",
+        "context": "Spiritual habits compound over time. Faithfulness in five minutes opens the door to holy transformation.",
+        "reflectionPrompt": "Where have you grown cynical about small acts of daily obedience?",
+        "prayerPrompt": "Lord, take my mustard-seed efforts and multiply them by Your grace today.",
+        "practice": "Begin your morning with 3 minutes of unhurried silence before touching any device."
+      },
+      {
+        "day": 2,
+        "title": "Naming the Hidden Addictions",
+        "scriptureRef": "1 Corinthians 6:12",
+        "scriptureText": "All things are lawful for me, but not all things are helpful. All things are lawful for me, but I will not be dominated by anything.",
+        "context": "Habits are often unconscious coping mechanisms for stress or boredom. Christ calls us into conscious holy freedom.",
+        "reflectionPrompt": "What digital or emotional habit is currently dominating your subconscious attention?",
+        "prayerPrompt": "Jesus, shine Your light on my habits. Free me from subtle idolatries.",
+        "practice": "Write down your top 3 time-wasting impulse triggers and place the note where you can see it."
+      },
+      {
+        "day": 3,
+        "title": "The Sacred Morning Threshold",
+        "scriptureRef": "Psalm 5:3",
+        "scriptureText": "O Lord, in the morning you hear my voice; in the morning I prepare a sacrifice for you and watch.",
+        "context": "The first input of the day sets the spiritual trajectory for every conversation and task that follows.",
+        "reflectionPrompt": "What is the very first thing your mind reaches for when waking up?",
+        "prayerPrompt": "Father, before the world demands my attention, I give my first gaze to You.",
+        "practice": "Leave your phone in another room or charging station overnight."
+      },
+      {
+        "day": 4,
+        "title": "Silence as Soul Detox",
+        "scriptureRef": "Psalm 62:1",
+        "scriptureText": "For God alone my soul waits in silence; from him comes my salvation.",
+        "context": "Silence exposes the noise inside us. It is the soil in which deep prayer takes root.",
+        "reflectionPrompt": "Why do we rush to fill every quiet moment with podcasts, music, or news?",
+        "prayerPrompt": "Still my restless soul, O Lord. Teach me to be quiet in Your presence.",
+        "practice": "Spend 5 minutes sitting in absolute silence with empty hands."
+      },
+      {
+        "day": 5,
+        "title": "Uprooting Comparison Triggers",
+        "scriptureRef": "Galatians 6:4",
+        "scriptureText": "Let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor.",
+        "context": "Scrolling through other lives creates envy and discontentment, poisoning gratitude.",
+        "reflectionPrompt": "Where does comparison rob you of joy in your actual, God-given life?",
+        "prayerPrompt": "Lord, deliver me from comparing my private struggles with others curated highlights.",
+        "practice": "Unfollow or mute 3 accounts that provoke comparison or insecurity."
+      },
+      {
+        "day": 6,
+        "title": "The Breath Prayer Rhythm",
+        "scriptureRef": "1 Thessalonians 5:17",
+        "scriptureText": "Pray without ceasing.",
+        "context": "Breath prayers anchor our awareness in Christ amid busy schedules and frantic meetings.",
+        "reflectionPrompt": "How can you turn ordinary transitions between tasks into invitations to pray?",
+        "prayerPrompt": "Lord Jesus Christ, Son of God, have mercy on me, a sinner.",
+        "practice": "Practice a 3-breath pause before each phone call or meeting today."
+      },
+      {
+        "day": 7,
+        "title": "First Sabbath Reset",
+        "scriptureRef": "Genesis 2:3",
+        "scriptureText": "So God blessed the seventh day and made it holy, because on it God rested from all his work that he had done.",
+        "context": "Sabbath ceasing reminds us that God runs the universe without our help.",
+        "reflectionPrompt": "What would happen if you stopped being productive for an entire 12-hour period?",
+        "prayerPrompt": "Creator God, I surrender the illusion of control. I choose holy rest in Your finished work.",
+        "practice": "Plan a 12-hour digital fast and unhurried rest window for this weekend."
+      },
+      {
+        "day": 8,
+        "title": "The Mid-Day Pause: Remembering God",
+        "scriptureRef": "Daniel 6:10",
+        "scriptureText": "He got down on his knees three times a day and prayed and gave thanks before his God, as he had done previously.",
+        "context": "Daniel maintained holy focus amidst the high-stakes politics of Babylon through fixed-hour prayer.",
+        "reflectionPrompt": "How easily does your morning devotion evaporate by 2:00 PM?",
+        "prayerPrompt": "God, I pause at midday to acknowledge You as King over my work and conversations.",
+        "practice": "Set a quiet reminder at 12:30 PM to breathe, read one Psalm verse, and pray."
+      },
+      {
+        "day": 9,
+        "title": "Fasting from Cynicism and Criticism",
+        "scriptureRef": "Ephesians 4:29",
+        "scriptureText": "Let no corrupting talk come out of your mouths, but only such as is good for building up, as fits the occasion.",
+        "context": "Habitual criticism is spiritual poison disguised as discernment.",
+        "reflectionPrompt": "How frequently do you find yourself complaining, gossiping, or making sarcastic remarks?",
+        "prayerPrompt": "Holy Spirit, put a guard over my mouth. Fill my speech with life and encouragement.",
+        "practice": "Go the entire day without voicing a single complaint or critical remark."
+      },
+      {
+        "day": 10,
+        "title": "Sacred Attention Over Mindless Scrolling",
+        "scriptureRef": "Psalm 119:37",
+        "scriptureText": "Turn my eyes from looking at worthless things; and give me life in your ways.",
+        "context": "Attention is the currency of formation. What you look at, you become.",
+        "reflectionPrompt": "What are you allowing into your eyes that drains your spiritual vitality?",
+        "prayerPrompt": "Father, purify my desires. Let my attention dwell on things that are true and lovely.",
+        "practice": "Replace 15 minutes of evening screen time with reading Scripture out loud."
+      },
+      {
+        "day": 11,
+        "title": "Crucifying the Need to Prove Yourself",
+        "scriptureRef": "Galatians 2:20",
+        "scriptureText": "I have been crucified with Christ. It is no longer I who live, but Christ who lives in me.",
+        "context": "Religious exhaustion comes from performing for approval rather than abiding in love.",
+        "reflectionPrompt": "Where are you currently striving to prove your worth to God or others?",
+        "prayerPrompt": "Jesus, thank You that my acceptance was paid in full at the cross. I rest in You.",
+        "practice": "Perform one act of kindness today in secret with zero credit."
+      },
+      {
+        "day": 12,
+        "title": "Practicing the Hidden Life",
+        "scriptureRef": "Matthew 6:6",
+        "scriptureText": "When you pray, go into your room and shut the door and pray to your Father who is in secret.",
+        "context": "Spiritual depth is cultivated where nobody is watching or clapping.",
+        "reflectionPrompt": "Does your public religious persona exceed your private secret life with God?",
+        "prayerPrompt": "Father in secret, draw my heart deeper into the joy of hidden communion with You.",
+        "practice": "Spend 10 minutes in secret prayer with your door closed."
+      },
+      {
+        "day": 13,
+        "title": "Confession to a Trusted Brother or Sister",
+        "scriptureRef": "James 5:16",
+        "scriptureText": "Therefore, confess your sins to one another and pray for one another, that you may be healed.",
+        "context": "Sin thrives in darkness and isolation; confession brings healing light.",
+        "reflectionPrompt": "What burden or persistent struggle have you been carrying entirely alone?",
+        "prayerPrompt": "Lord, give me the courage of humility. Deliver me from the prison of image management.",
+        "practice": "Reach out to a trusted Christian friend, mentor, or pastor for honest prayer."
+      },
+      {
+        "day": 14,
+        "title": "Second Sabbath: Deep Delight",
+        "scriptureRef": "Isaiah 58:13-14",
+        "scriptureText": "If you call the Sabbath a delight and the holy day of the Lord honorable... then you shall take delight in the Lord.",
+        "context": "Sabbath is not merely stopping work; it is feasting on God presence and simple gifts.",
+        "reflectionPrompt": "What brings your soul holy, innocent joy that you rarely make time for?",
+        "prayerPrompt": "Father, thank You for the beauty of Your world and the gift of unhurried fellowship.",
+        "practice": "Cook or share an unhurried dinner with someone you love, talking about God faithfulness."
+      },
+      {
+        "day": 15,
+        "title": "Spiritual Warfare at the Threshold",
+        "scriptureRef": "Ephesians 6:10-11",
+        "scriptureText": "Finally, be strong in the Lord and in the strength of his might. Put on the whole armor of God.",
+        "context": "Whenever we build godly habits, resistance, discouragement, and old temptations flare up.",
+        "reflectionPrompt": "Where have you felt subtle discouragement trying to derail your new rhythms?",
+        "prayerPrompt": "Lord, I take up the shield of faith. No weapon formed against my spiritual growth will prosper.",
+        "practice": "Declare aloud Ephesians 6:10-17 when you feel tempted to return to old patterns."
+      },
+      {
+        "day": 16,
+        "title": "Generosity That Breaks the Grip of Money",
+        "scriptureRef": "1 Timothy 6:17-19",
+        "scriptureText": "They are to do good, to be rich in good works, to be generous and ready to share.",
+        "context": "Money promises security that only God can provide; giving breaks its spell.",
+        "reflectionPrompt": "How does fear about finances make you hold back from generous giving?",
+        "prayerPrompt": "Provider God, everything I have belongs to You. Free my hands to give cheerfully.",
+        "practice": "Give an unexpected financial gift or bless someone in need today."
+      },
+      {
+        "day": 17,
+        "title": "The Grace of Holy Slowness",
+        "scriptureRef": "Psalm 46:10",
+        "scriptureText": "Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!",
+        "context": "Hurry is the great enemy of spiritual life. Jesus was never hurried.",
+        "reflectionPrompt": "Where is hurry causing you to be short-tempered, anxious, or unloving?",
+        "prayerPrompt": "Lord, teach me to walk at the pace of grace, noticing people along the way.",
+        "practice": "Walk at a deliberately slower pace today and deliberately let someone go ahead of you."
+      },
+      {
+        "day": 18,
+        "title": "Cultivating Unbroken Thanksgiving",
+        "scriptureRef": "Colossians 3:15",
+        "scriptureText": "And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful.",
+        "context": "Thanksgiving is the antidote to bitterness, envy, and spiritual blindness.",
+        "reflectionPrompt": "What is a difficult circumstance right now that you have not yet thanked God for?",
+        "prayerPrompt": "Father, even in trials, You are working for my good. I give You heartfelt thanks.",
+        "practice": "Write down 7 specific, unexpected things you are grateful for today."
+      },
+      {
+        "day": 19,
+        "title": "Interceding for Those Who Oppose You",
+        "scriptureRef": "Luke 6:28",
+        "scriptureText": "Bless those who curse you, pray for those who abuse you.",
+        "context": "Praying for difficult people changes our heart toward them and releases God mercy.",
+        "reflectionPrompt": "Who has irritated, hurt, or misunderstood you recently?",
+        "prayerPrompt": "Jesus, soften my heart. Pour out Your mercy on those who have wronged me.",
+        "practice": "Spend 3 minutes praying for the flourishing and salvation of someone who hurts you."
+      },
+      {
+        "day": 20,
+        "title": "Living from Overflow, Not Depletion",
+        "scriptureRef": "John 7:38",
+        "scriptureText": "Whoever believes in me, as the Scripture has said, out of his heart will flow rivers of living water.",
+        "context": "We cannot give what we do not have; ministry must flow from personal abiding.",
+        "reflectionPrompt": "Are you serving God out of exhausted willpower or joyful overflow?",
+        "prayerPrompt": "Holy Spirit, fill me afresh to overflowing so that others may taste Your goodness.",
+        "practice": "Take 15 minutes to simply abide in Scripture and prayer before doing any chores."
+      },
+      {
+        "day": 21,
+        "title": "Sealing the Rhythms into Lifelong Grace",
+        "scriptureRef": "Philippians 1:6",
+        "scriptureText": "And I am sure of this, that he who began a good work in you will bring it to completion at the day of Jesus Christ.",
+        "context": "Formation is not a 21-day challenge that ends; it is a lifetime of walking with Christ.",
+        "reflectionPrompt": "How has your heart, peace, and closeness to God shifted over these 21 days?",
+        "prayerPrompt": "Faithful Father, thank You for beginning this work in me. Anchor these rhythms for a lifetime.",
+        "practice": "Write a prayer of commitment thanking God for the spiritual ground gained."
+      }
+    ]
+  },
+  {
+    "id": "journey_peace_21",
+    "title": "21 Days to Biblical Peace: Freedom from Anxiety",
+    "tagline": "21 Days of Scripture meditation and body-and-soul rhythms to uproot chronic hurry & dread",
+    "durationDays": 21,
+    "category": "Suffering",
+    "tierRequired": "plus",
+    "overview": "Move beyond temporary coping mechanisms into deep, Gospel-rooted peace that guards your heart and mind in every storm.",
+    "learningOutcomes": [
+      "Silence catastrophizing thoughts with God covenant faithfulness",
+      "Integrate breath prayer, Sabbath rest, and physiological calm in Christ",
+      "Experience the peace that surpasses human understanding"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Casting Every Care",
+        "scriptureRef": "1 Peter 5:7",
+        "scriptureText": "Casting all your anxieties on him, because he cares for you.",
+        "context": "The word casting means hurling a heavy backpack onto someone stronger. God shoulders what crushes you.",
+        "reflectionPrompt": "What specific anxiety have you been carrying as if God does not know or care?",
+        "prayerPrompt": "Father, I throw this weight onto Your capable shoulders. You care for me.",
+        "practice": "Write your heaviest current worry on a sticky note and place it face down before the Lord."
+      },
+      {
+        "day": 2,
+        "title": "The God Who Sees Your Secret Panic",
+        "scriptureRef": "Genesis 16:13",
+        "scriptureText": "So she called the name of the Lord who spoke to her, 'You are a God of seeing.'",
+        "context": "Hagar was discarded in the desert, yet God met her by a well. He sees every unspoken fear.",
+        "reflectionPrompt": "When anxiety strikes, do you feel invisible or abandoned?",
+        "prayerPrompt": "El Roi, the God who sees me, thank You that no panic or tear is hidden from Your sight.",
+        "practice": "Sit in quiet confidence for 5 minutes, whispering: 'You see me, Lord.'"
+      },
+      {
+        "day": 3,
+        "title": "Breathing in God's Holy Ruach",
+        "scriptureRef": "Ezekiel 37:5",
+        "scriptureText": "Thus says the Lord God to these bones: Behold, I will cause breath to enter you, and you shall live.",
+        "context": "God breathed physical and spiritual life into dust. Physical tension eases when we remember His breath.",
+        "reflectionPrompt": "Where is anxiety causing tightness or shallow breathing in your body today?",
+        "prayerPrompt": "Holy Spirit, breathe Your peace into my lungs, my heart, and my troubled thoughts.",
+        "practice": "Take 7 slow, deep diaphragmatic breaths, inhaling grace and exhaling tension."
+      },
+      {
+        "day": 4,
+        "title": "Replacing Catastrophe with Covenant",
+        "scriptureRef": "Lamentations 3:22-23",
+        "scriptureText": "The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning.",
+        "context": "Jeremiah watched Jerusalem burn, yet rooted his peace in God covenant nature, not his circumstances.",
+        "reflectionPrompt": "What worst-case scenario does your imagination repeatedly catastrophize?",
+        "prayerPrompt": "Lord, my future is held by Your steadfast covenant, not by chance or disaster.",
+        "practice": "List 3 times in your past when God proved faithful during an acute crisis."
+      },
+      {
+        "day": 5,
+        "title": "The Peace That Transcends Understanding",
+        "scriptureRef": "Philippians 4:6-7",
+        "scriptureText": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.",
+        "context": "Biblical peace does not mean the storm is gone; it means Christ stands inside the boat with you.",
+        "reflectionPrompt": "What happens when you pray with thanksgiving instead of pure panic?",
+        "prayerPrompt": "Prince of Peace, guard my heart and mind in Christ Jesus today.",
+        "practice": "Pray for 5 minutes replacing every 'What if?' with 'Even if, God is faithful.'"
+      },
+      {
+        "day": 6,
+        "title": "Releasing Financial and Future Dread",
+        "scriptureRef": "Matthew 6:25-34",
+        "scriptureText": "Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself.",
+        "context": "Jesus points to sparrows and lilies: God feeds and clothes them without their frantic striving.",
+        "reflectionPrompt": "Where are financial worries or retirement dread stealing today's peace?",
+        "prayerPrompt": "Heavenly Father, You know what I need before I ask. I trust Your provision today.",
+        "practice": "Give away a small amount of money or buy lunch for someone as an act of financial trust."
+      },
+      {
+        "day": 7,
+        "title": "Sabbath Ceasing: The World Does Not Depend on Me",
+        "scriptureRef": "Psalm 127:2",
+        "scriptureText": "It is in vain that you rise up early and go late to rest, eating the bread of anxious toil; for he gives to his beloved sleep.",
+        "context": "Anxious toil is the belief that if we stop working, everything collapses.",
+        "reflectionPrompt": "Do you feel guilty when you rest? Where does that guilt come from?",
+        "prayerPrompt": "Lord, You give sleep to Your beloved. I cease my striving and trust Your sovereignty.",
+        "practice": "Go to sleep 30 minutes earlier tonight, committing tomorrow's tasks to God."
+      },
+      {
+        "day": 8,
+        "title": "Taking Thoughts Captive to Christ",
+        "scriptureRef": "2 Corinthians 10:5",
+        "scriptureText": "We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.",
+        "context": "You do not have to believe every anxious narrative your brain manufactures.",
+        "reflectionPrompt": "What lie does anxiety whisper about your safety, worth, or future?",
+        "prayerPrompt": "Jesus, I take this anxious thought captive. I submit it to the authority of Your Gospel.",
+        "practice": "When an anxious loop begins, state out loud: 'That is fear speaking, not the truth of Christ.'"
+      },
+      {
+        "day": 9,
+        "title": "The Gentle and Lowly Heart of Jesus",
+        "scriptureRef": "Matthew 11:28-30",
+        "scriptureText": "Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls.",
+        "context": "Jesus does not greet anxious, struggling disciples with frustration, but with gentle tenderness.",
+        "reflectionPrompt": "Do you imagine Jesus is disappointed in you when you struggle with anxiety?",
+        "prayerPrompt": "Gentle Jesus, thank You that You meet my trembling heart with patient embrace.",
+        "practice": "Sit for 5 minutes visualizing Jesus sitting beside you in gentleness and compassion."
+      },
+      {
+        "day": 10,
+        "title": "Ending the Tyranny of Hurry",
+        "scriptureRef": "Proverbs 19:2",
+        "scriptureText": "Desire without knowledge is not good, and whoever makes haste with his feet misses his way.",
+        "context": "Hurry elevates cortisol, shortens patience, and blinds us to God presence.",
+        "reflectionPrompt": "How many times today did you rush unnecessarily between ordinary tasks?",
+        "prayerPrompt": "Lord, teach me the unforced rhythms of grace. Deliver me from the idol of speed.",
+        "practice": "Drive in the right lane without passing anyone or walk deliberately at half-speed."
+      },
+      {
+        "day": 11,
+        "title": "God's Steadfast Love in the Night Watch",
+        "scriptureRef": "Psalm 63:6",
+        "scriptureText": "When I remember you upon my bed, and meditate on you in the watches of the night.",
+        "context": "3:00 AM panic shrinks when we turn insomnia into intimate communion with God.",
+        "reflectionPrompt": "What worries tend to wake you up in the middle of the night?",
+        "prayerPrompt": "Lord, in the darkness, You are my light. You never sleep nor slumber.",
+        "practice": "If you wake up anxious tonight, recite Psalm 23 slowly rather than checking your phone."
+      },
+      {
+        "day": 12,
+        "title": "Silencing the Inner Critic with Justification",
+        "scriptureRef": "Romans 8:1",
+        "scriptureText": "There is therefore now no condemnation for those who are in Christ Jesus.",
+        "context": "Anxiety often wears the mask of chronic moral perfectionism and self-loathing.",
+        "reflectionPrompt": "Where is self-criticism generating constant internal tension?",
+        "prayerPrompt": "Jesus, You bore my condemnation. I silence the accuser with Your shed blood.",
+        "practice": "Whisper Romans 8:1 whenever self-blame tries to steal your peace today."
+      },
+      {
+        "day": 13,
+        "title": "Releasing Control of Other People",
+        "scriptureRef": "Romans 12:18",
+        "scriptureText": "If possible, so far as it depends on you, live peaceably with all.",
+        "context": "We burn immense emotional fuel attempting to manage, fix, or control other adults.",
+        "reflectionPrompt": "Whose mood or behavior are you obsessively trying to manage or fix?",
+        "prayerPrompt": "Father, I am responsible to love them, not to control them. I release them to You.",
+        "practice": "Pray a blessing over that person and let go of trying to control their outcome."
+      },
+      {
+        "day": 14,
+        "title": "Sabbath Feasting: Joy Overwhelms Anxiety",
+        "scriptureRef": "Nehemiah 8:10",
+        "scriptureText": "Do not be grieved, for the joy of the Lord is your strength.",
+        "context": "Joy is not the absence of trouble; it is the presence of God goodness celebrated.",
+        "reflectionPrompt": "When was the last time you experienced deep, unhurried laughter and celebration?",
+        "prayerPrompt": "Lord, restore the joy of my salvation. Let Your gladness be my fortress.",
+        "practice": "Do something purely joyful and celebratory with family or friends today."
+      },
+      {
+        "day": 15,
+        "title": "Physical Rest as a Spiritual Act",
+        "scriptureRef": "1 Kings 19:5-8",
+        "scriptureText": "And he lay down and slept under a broom tree. And behold, an angel touched him and said to him, 'Arise and eat.'",
+        "context": "When Elijah was terrified and suicidal, God did not give him a lecture; He gave him cake and sleep.",
+        "reflectionPrompt": "Are you spiritually exhausted primarily because you are physically depleted?",
+        "prayerPrompt": "Creator God, thank You for my physical body. Grant me wisdom to care for it well.",
+        "practice": "Drink plenty of water, take a 20-minute nap or walk, and eat a nourishing meal without rushing."
+      },
+      {
+        "day": 16,
+        "title": "The Shield of Faith Extinguishing Fiery Darts",
+        "scriptureRef": "Ephesians 6:16",
+        "scriptureText": "In all circumstances take up the shield of faith, with which you can extinguish all the flaming darts of the evil one.",
+        "context": "Anxious 'what-ifs' are fiery darts aimed at your trust in God's fatherly heart.",
+        "reflectionPrompt": "What dart of terror has been lodged in your imagination lately?",
+        "prayerPrompt": "Father, I take up the shield of faith. You are my sun and shield.",
+        "practice": "Memorize Ephesians 6:16 and declare it when sudden dread flares up."
+      },
+      {
+        "day": 17,
+        "title": "Praying Scripture Over Your Loved Ones",
+        "scriptureRef": "Colossians 1:9-11",
+        "scriptureText": "We have not ceased to pray for you, asking that you may be filled with the knowledge of his will in all spiritual wisdom.",
+        "context": "Anxiety for our children and family turns into peace when channeled into intercession.",
+        "reflectionPrompt": "Which family member are you most anxious about right now?",
+        "prayerPrompt": "Lord, You love my family even more than I do. Wrap them in Your saving mercy.",
+        "practice": "Pray Paul's prayer in Colossians 1:9-11 specifically inserting their name."
+      },
+      {
+        "day": 18,
+        "title": "Shelter Under the Wings of the Almighty",
+        "scriptureRef": "Psalm 91:1-4",
+        "scriptureText": "He who dwells in the shelter of the Most High will abide in the shadow of the Almighty.",
+        "context": "We do not seek shelter from life's storms; we seek shelter inside God's presence.",
+        "reflectionPrompt": "Where do you run for shelter when panic hits: screens, food, isolation, or God?",
+        "prayerPrompt": "Most High God, You are my refuge and my fortress. In You I trust.",
+        "practice": "Spend 5 minutes reading Psalm 91 out loud with slow, deliberate faith."
+      },
+      {
+        "day": 19,
+        "title": "The Healing Power of Forgiving Old Debts",
+        "scriptureRef": "Matthew 18:35",
+        "scriptureText": "So also my heavenly Father will do to every one of you, if you do not forgive your brother from your heart.",
+        "context": "Unforgiveness keeps our nervous system in chronic fight-or-flight alert.",
+        "reflectionPrompt": "Who are you holding a grudge against that is secretly feeding your anxiety?",
+        "prayerPrompt": "Lord Jesus, You canceled my immense debt. I release this person from my emotional prison.",
+        "practice": "Consciously release resentment against one specific person today."
+      },
+      {
+        "day": 20,
+        "title": "Anointed with the Oil of Gladness",
+        "scriptureRef": "Psalm 23:5",
+        "scriptureText": "You prepare a table before me in the presence of my enemies; you anoint my head with oil; my cup overflows.",
+        "context": "God feasts with us right in the presence of our enemies and uncertainties.",
+        "reflectionPrompt": "Can you see God's banqueting table set before you even while trials persist?",
+        "prayerPrompt": "Good Shepherd, thank You for anointing my weary head with gladness and peace.",
+        "practice": "Enjoy a quiet cup of tea or favorite meal while meditating on Psalm 23:5."
+      },
+      {
+        "day": 21,
+        "title": "Established in Unshakable Peace",
+        "scriptureRef": "John 14:27",
+        "scriptureText": "Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.",
+        "context": "Jesus bequeaths His own indestructible peace to His disciples as a permanent inheritance.",
+        "reflectionPrompt": "How will you walk differently into tomorrow knowing Christ's peace is inside you?",
+        "prayerPrompt": "King Jesus, I receive Your peace. My heart is not troubled, for You have overcome the world. Amen.",
+        "practice": "Write John 14:27 on a card and carry it in your pocket as an anchor today."
+      }
+    ]
+  },
+  {
+    "id": "journey_cruciform_12week",
+    "title": "The Cruciform Life: 12-Week Discipleship Masterclass",
+    "tagline": "12 Weeks (84 Days): Flagship spiritual formation cohort through the Sermon on the Mount",
+    "durationDays": 84,
+    "category": "Advanced",
+    "tierRequired": "pro",
+    "overview": "The definitive 12-week advanced discipleship journey. Master the Sermon on the Mount, deep soul examination, cruciform character, and sacrificial Christian living.",
+    "learningOutcomes": [
+      "Embody the Beatitudes and the Sermon on the Mount in everyday modern life",
+      "Deconstruct cultural idols and crucify subtle self-reliance",
+      "Cultivate unbroken communion with the Triune God over 84 days"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Week 1, Day 1: The Beatitudes: The Upside-Down Kingdom - Step 1",
+        "scriptureRef": "Matthew 5:1-12",
+        "scriptureText": "Scripture meditation for Week 1: Blessed are the poor in spirit, for theirs is the kingdom of heaven.",
+        "context": "Week 1 Cohort Focus: The Beatitudes: The Upside-Down Kingdom. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Beatitudes: The Upside-Down Kingdom challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Beatitudes: The Upside-Down Kingdom today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 2,
+        "title": "Week 1, Day 2: The Beatitudes: The Upside-Down Kingdom - Step 2",
+        "scriptureRef": "Matthew 5:1-12",
+        "scriptureText": "Scripture meditation for Week 1: Blessed are the poor in spirit, for theirs is the kingdom of heaven.",
+        "context": "Week 1 Cohort Focus: The Beatitudes: The Upside-Down Kingdom. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Beatitudes: The Upside-Down Kingdom challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Beatitudes: The Upside-Down Kingdom today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 3,
+        "title": "Week 1, Day 3: The Beatitudes: The Upside-Down Kingdom - Step 3",
+        "scriptureRef": "Matthew 5:1-12",
+        "scriptureText": "Scripture meditation for Week 1: Blessed are the poor in spirit, for theirs is the kingdom of heaven.",
+        "context": "Week 1 Cohort Focus: The Beatitudes: The Upside-Down Kingdom. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Beatitudes: The Upside-Down Kingdom challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Beatitudes: The Upside-Down Kingdom today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 4,
+        "title": "Week 1, Day 4: The Beatitudes: The Upside-Down Kingdom - Step 4",
+        "scriptureRef": "Matthew 5:1-12",
+        "scriptureText": "Scripture meditation for Week 1: Blessed are the poor in spirit, for theirs is the kingdom of heaven.",
+        "context": "Week 1 Cohort Focus: The Beatitudes: The Upside-Down Kingdom. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Beatitudes: The Upside-Down Kingdom challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Beatitudes: The Upside-Down Kingdom today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 5,
+        "title": "Week 1, Day 5: The Beatitudes: The Upside-Down Kingdom - Step 5",
+        "scriptureRef": "Matthew 5:1-12",
+        "scriptureText": "Scripture meditation for Week 1: Blessed are the poor in spirit, for theirs is the kingdom of heaven.",
+        "context": "Week 1 Cohort Focus: The Beatitudes: The Upside-Down Kingdom. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Beatitudes: The Upside-Down Kingdom challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Beatitudes: The Upside-Down Kingdom today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 6,
+        "title": "Week 1, Day 6: The Beatitudes: The Upside-Down Kingdom - Step 6",
+        "scriptureRef": "Matthew 5:1-12",
+        "scriptureText": "Scripture meditation for Week 1: Blessed are the poor in spirit, for theirs is the kingdom of heaven.",
+        "context": "Week 1 Cohort Focus: The Beatitudes: The Upside-Down Kingdom. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Beatitudes: The Upside-Down Kingdom challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Beatitudes: The Upside-Down Kingdom today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 7,
+        "title": "Week 1, Day 7: The Beatitudes: The Upside-Down Kingdom - Step 7",
+        "scriptureRef": "Matthew 5:1-12",
+        "scriptureText": "Scripture meditation for Week 1: Blessed are the poor in spirit, for theirs is the kingdom of heaven.",
+        "context": "Week 1 Cohort Focus: The Beatitudes: The Upside-Down Kingdom. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Beatitudes: The Upside-Down Kingdom challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Beatitudes: The Upside-Down Kingdom today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 8,
+        "title": "Week 2, Day 1: Salt & Light: Public Witness in Modern Culture - Step 1",
+        "scriptureRef": "Matthew 5:13-16",
+        "scriptureText": "Scripture meditation for Week 2: You are the light of the world. A city set on a hill cannot be hidden.",
+        "context": "Week 2 Cohort Focus: Salt & Light: Public Witness in Modern Culture. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Salt & Light: Public Witness in Modern Culture challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Salt & Light: Public Witness in Modern Culture today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 9,
+        "title": "Week 2, Day 2: Salt & Light: Public Witness in Modern Culture - Step 2",
+        "scriptureRef": "Matthew 5:13-16",
+        "scriptureText": "Scripture meditation for Week 2: You are the light of the world. A city set on a hill cannot be hidden.",
+        "context": "Week 2 Cohort Focus: Salt & Light: Public Witness in Modern Culture. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Salt & Light: Public Witness in Modern Culture challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Salt & Light: Public Witness in Modern Culture today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 10,
+        "title": "Week 2, Day 3: Salt & Light: Public Witness in Modern Culture - Step 3",
+        "scriptureRef": "Matthew 5:13-16",
+        "scriptureText": "Scripture meditation for Week 2: You are the light of the world. A city set on a hill cannot be hidden.",
+        "context": "Week 2 Cohort Focus: Salt & Light: Public Witness in Modern Culture. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Salt & Light: Public Witness in Modern Culture challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Salt & Light: Public Witness in Modern Culture today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 11,
+        "title": "Week 2, Day 4: Salt & Light: Public Witness in Modern Culture - Step 4",
+        "scriptureRef": "Matthew 5:13-16",
+        "scriptureText": "Scripture meditation for Week 2: You are the light of the world. A city set on a hill cannot be hidden.",
+        "context": "Week 2 Cohort Focus: Salt & Light: Public Witness in Modern Culture. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Salt & Light: Public Witness in Modern Culture challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Salt & Light: Public Witness in Modern Culture today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 12,
+        "title": "Week 2, Day 5: Salt & Light: Public Witness in Modern Culture - Step 5",
+        "scriptureRef": "Matthew 5:13-16",
+        "scriptureText": "Scripture meditation for Week 2: You are the light of the world. A city set on a hill cannot be hidden.",
+        "context": "Week 2 Cohort Focus: Salt & Light: Public Witness in Modern Culture. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Salt & Light: Public Witness in Modern Culture challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Salt & Light: Public Witness in Modern Culture today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 13,
+        "title": "Week 2, Day 6: Salt & Light: Public Witness in Modern Culture - Step 6",
+        "scriptureRef": "Matthew 5:13-16",
+        "scriptureText": "Scripture meditation for Week 2: You are the light of the world. A city set on a hill cannot be hidden.",
+        "context": "Week 2 Cohort Focus: Salt & Light: Public Witness in Modern Culture. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Salt & Light: Public Witness in Modern Culture challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Salt & Light: Public Witness in Modern Culture today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 14,
+        "title": "Week 2, Day 7: Salt & Light: Public Witness in Modern Culture - Step 7",
+        "scriptureRef": "Matthew 5:13-16",
+        "scriptureText": "Scripture meditation for Week 2: You are the light of the world. A city set on a hill cannot be hidden.",
+        "context": "Week 2 Cohort Focus: Salt & Light: Public Witness in Modern Culture. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Salt & Light: Public Witness in Modern Culture challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Salt & Light: Public Witness in Modern Culture today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 15,
+        "title": "Week 3, Day 1: Reordering the Inner Heart: Uprooting Anger & Lust - Step 1",
+        "scriptureRef": "Matthew 5:21-30",
+        "scriptureText": "Scripture meditation for Week 3: Out of the abundance of the heart the mouth speaks.",
+        "context": "Week 3 Cohort Focus: Reordering the Inner Heart: Uprooting Anger & Lust. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Reordering the Inner Heart: Uprooting Anger & Lust challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Reordering the Inner Heart: Uprooting Anger & Lust today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 16,
+        "title": "Week 3, Day 2: Reordering the Inner Heart: Uprooting Anger & Lust - Step 2",
+        "scriptureRef": "Matthew 5:21-30",
+        "scriptureText": "Scripture meditation for Week 3: Out of the abundance of the heart the mouth speaks.",
+        "context": "Week 3 Cohort Focus: Reordering the Inner Heart: Uprooting Anger & Lust. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Reordering the Inner Heart: Uprooting Anger & Lust challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Reordering the Inner Heart: Uprooting Anger & Lust today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 17,
+        "title": "Week 3, Day 3: Reordering the Inner Heart: Uprooting Anger & Lust - Step 3",
+        "scriptureRef": "Matthew 5:21-30",
+        "scriptureText": "Scripture meditation for Week 3: Out of the abundance of the heart the mouth speaks.",
+        "context": "Week 3 Cohort Focus: Reordering the Inner Heart: Uprooting Anger & Lust. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Reordering the Inner Heart: Uprooting Anger & Lust challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Reordering the Inner Heart: Uprooting Anger & Lust today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 18,
+        "title": "Week 3, Day 4: Reordering the Inner Heart: Uprooting Anger & Lust - Step 4",
+        "scriptureRef": "Matthew 5:21-30",
+        "scriptureText": "Scripture meditation for Week 3: Out of the abundance of the heart the mouth speaks.",
+        "context": "Week 3 Cohort Focus: Reordering the Inner Heart: Uprooting Anger & Lust. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Reordering the Inner Heart: Uprooting Anger & Lust challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Reordering the Inner Heart: Uprooting Anger & Lust today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 19,
+        "title": "Week 3, Day 5: Reordering the Inner Heart: Uprooting Anger & Lust - Step 5",
+        "scriptureRef": "Matthew 5:21-30",
+        "scriptureText": "Scripture meditation for Week 3: Out of the abundance of the heart the mouth speaks.",
+        "context": "Week 3 Cohort Focus: Reordering the Inner Heart: Uprooting Anger & Lust. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Reordering the Inner Heart: Uprooting Anger & Lust challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Reordering the Inner Heart: Uprooting Anger & Lust today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 20,
+        "title": "Week 3, Day 6: Reordering the Inner Heart: Uprooting Anger & Lust - Step 6",
+        "scriptureRef": "Matthew 5:21-30",
+        "scriptureText": "Scripture meditation for Week 3: Out of the abundance of the heart the mouth speaks.",
+        "context": "Week 3 Cohort Focus: Reordering the Inner Heart: Uprooting Anger & Lust. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Reordering the Inner Heart: Uprooting Anger & Lust challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Reordering the Inner Heart: Uprooting Anger & Lust today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 21,
+        "title": "Week 3, Day 7: Reordering the Inner Heart: Uprooting Anger & Lust - Step 7",
+        "scriptureRef": "Matthew 5:21-30",
+        "scriptureText": "Scripture meditation for Week 3: Out of the abundance of the heart the mouth speaks.",
+        "context": "Week 3 Cohort Focus: Reordering the Inner Heart: Uprooting Anger & Lust. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Reordering the Inner Heart: Uprooting Anger & Lust challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Reordering the Inner Heart: Uprooting Anger & Lust today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 22,
+        "title": "Week 4, Day 1: Radical Love for Enemies & Canceling Retaliation - Step 1",
+        "scriptureRef": "Matthew 5:38-48",
+        "scriptureText": "Scripture meditation for Week 4: Love your enemies and pray for those who persecute you.",
+        "context": "Week 4 Cohort Focus: Radical Love for Enemies & Canceling Retaliation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Radical Love for Enemies & Canceling Retaliation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Radical Love for Enemies & Canceling Retaliation today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 23,
+        "title": "Week 4, Day 2: Radical Love for Enemies & Canceling Retaliation - Step 2",
+        "scriptureRef": "Matthew 5:38-48",
+        "scriptureText": "Scripture meditation for Week 4: Love your enemies and pray for those who persecute you.",
+        "context": "Week 4 Cohort Focus: Radical Love for Enemies & Canceling Retaliation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Radical Love for Enemies & Canceling Retaliation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Radical Love for Enemies & Canceling Retaliation today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 24,
+        "title": "Week 4, Day 3: Radical Love for Enemies & Canceling Retaliation - Step 3",
+        "scriptureRef": "Matthew 5:38-48",
+        "scriptureText": "Scripture meditation for Week 4: Love your enemies and pray for those who persecute you.",
+        "context": "Week 4 Cohort Focus: Radical Love for Enemies & Canceling Retaliation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Radical Love for Enemies & Canceling Retaliation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Radical Love for Enemies & Canceling Retaliation today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 25,
+        "title": "Week 4, Day 4: Radical Love for Enemies & Canceling Retaliation - Step 4",
+        "scriptureRef": "Matthew 5:38-48",
+        "scriptureText": "Scripture meditation for Week 4: Love your enemies and pray for those who persecute you.",
+        "context": "Week 4 Cohort Focus: Radical Love for Enemies & Canceling Retaliation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Radical Love for Enemies & Canceling Retaliation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Radical Love for Enemies & Canceling Retaliation today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 26,
+        "title": "Week 4, Day 5: Radical Love for Enemies & Canceling Retaliation - Step 5",
+        "scriptureRef": "Matthew 5:38-48",
+        "scriptureText": "Scripture meditation for Week 4: Love your enemies and pray for those who persecute you.",
+        "context": "Week 4 Cohort Focus: Radical Love for Enemies & Canceling Retaliation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Radical Love for Enemies & Canceling Retaliation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Radical Love for Enemies & Canceling Retaliation today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 27,
+        "title": "Week 4, Day 6: Radical Love for Enemies & Canceling Retaliation - Step 6",
+        "scriptureRef": "Matthew 5:38-48",
+        "scriptureText": "Scripture meditation for Week 4: Love your enemies and pray for those who persecute you.",
+        "context": "Week 4 Cohort Focus: Radical Love for Enemies & Canceling Retaliation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Radical Love for Enemies & Canceling Retaliation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Radical Love for Enemies & Canceling Retaliation today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 28,
+        "title": "Week 4, Day 7: Radical Love for Enemies & Canceling Retaliation - Step 7",
+        "scriptureRef": "Matthew 5:38-48",
+        "scriptureText": "Scripture meditation for Week 4: Love your enemies and pray for those who persecute you.",
+        "context": "Week 4 Cohort Focus: Radical Love for Enemies & Canceling Retaliation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Radical Love for Enemies & Canceling Retaliation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Radical Love for Enemies & Canceling Retaliation today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 29,
+        "title": "Week 5, Day 1: The Secret Life: Fasting, Prayer & Hidden Generosity - Step 1",
+        "scriptureRef": "Matthew 6:1-18",
+        "scriptureText": "Scripture meditation for Week 5: Your Father who sees in secret will reward you.",
+        "context": "Week 5 Cohort Focus: The Secret Life: Fasting, Prayer & Hidden Generosity. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Secret Life: Fasting, Prayer & Hidden Generosity challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Secret Life: Fasting, Prayer & Hidden Generosity today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 30,
+        "title": "Week 5, Day 2: The Secret Life: Fasting, Prayer & Hidden Generosity - Step 2",
+        "scriptureRef": "Matthew 6:1-18",
+        "scriptureText": "Scripture meditation for Week 5: Your Father who sees in secret will reward you.",
+        "context": "Week 5 Cohort Focus: The Secret Life: Fasting, Prayer & Hidden Generosity. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Secret Life: Fasting, Prayer & Hidden Generosity challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Secret Life: Fasting, Prayer & Hidden Generosity today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 31,
+        "title": "Week 5, Day 3: The Secret Life: Fasting, Prayer & Hidden Generosity - Step 3",
+        "scriptureRef": "Matthew 6:1-18",
+        "scriptureText": "Scripture meditation for Week 5: Your Father who sees in secret will reward you.",
+        "context": "Week 5 Cohort Focus: The Secret Life: Fasting, Prayer & Hidden Generosity. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Secret Life: Fasting, Prayer & Hidden Generosity challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Secret Life: Fasting, Prayer & Hidden Generosity today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 32,
+        "title": "Week 5, Day 4: The Secret Life: Fasting, Prayer & Hidden Generosity - Step 4",
+        "scriptureRef": "Matthew 6:1-18",
+        "scriptureText": "Scripture meditation for Week 5: Your Father who sees in secret will reward you.",
+        "context": "Week 5 Cohort Focus: The Secret Life: Fasting, Prayer & Hidden Generosity. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Secret Life: Fasting, Prayer & Hidden Generosity challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Secret Life: Fasting, Prayer & Hidden Generosity today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 33,
+        "title": "Week 5, Day 5: The Secret Life: Fasting, Prayer & Hidden Generosity - Step 5",
+        "scriptureRef": "Matthew 6:1-18",
+        "scriptureText": "Scripture meditation for Week 5: Your Father who sees in secret will reward you.",
+        "context": "Week 5 Cohort Focus: The Secret Life: Fasting, Prayer & Hidden Generosity. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Secret Life: Fasting, Prayer & Hidden Generosity challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Secret Life: Fasting, Prayer & Hidden Generosity today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 34,
+        "title": "Week 5, Day 6: The Secret Life: Fasting, Prayer & Hidden Generosity - Step 6",
+        "scriptureRef": "Matthew 6:1-18",
+        "scriptureText": "Scripture meditation for Week 5: Your Father who sees in secret will reward you.",
+        "context": "Week 5 Cohort Focus: The Secret Life: Fasting, Prayer & Hidden Generosity. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Secret Life: Fasting, Prayer & Hidden Generosity challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Secret Life: Fasting, Prayer & Hidden Generosity today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 35,
+        "title": "Week 5, Day 7: The Secret Life: Fasting, Prayer & Hidden Generosity - Step 7",
+        "scriptureRef": "Matthew 6:1-18",
+        "scriptureText": "Scripture meditation for Week 5: Your Father who sees in secret will reward you.",
+        "context": "Week 5 Cohort Focus: The Secret Life: Fasting, Prayer & Hidden Generosity. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Secret Life: Fasting, Prayer & Hidden Generosity challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Secret Life: Fasting, Prayer & Hidden Generosity today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 36,
+        "title": "Week 6, Day 1: Treasure, Mammon & Freedom from Anxiety - Step 1",
+        "scriptureRef": "Matthew 6:19-34",
+        "scriptureText": "Scripture meditation for Week 6: Seek first the kingdom of God and his righteousness.",
+        "context": "Week 6 Cohort Focus: Treasure, Mammon & Freedom from Anxiety. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Treasure, Mammon & Freedom from Anxiety challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Treasure, Mammon & Freedom from Anxiety today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 37,
+        "title": "Week 6, Day 2: Treasure, Mammon & Freedom from Anxiety - Step 2",
+        "scriptureRef": "Matthew 6:19-34",
+        "scriptureText": "Scripture meditation for Week 6: Seek first the kingdom of God and his righteousness.",
+        "context": "Week 6 Cohort Focus: Treasure, Mammon & Freedom from Anxiety. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Treasure, Mammon & Freedom from Anxiety challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Treasure, Mammon & Freedom from Anxiety today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 38,
+        "title": "Week 6, Day 3: Treasure, Mammon & Freedom from Anxiety - Step 3",
+        "scriptureRef": "Matthew 6:19-34",
+        "scriptureText": "Scripture meditation for Week 6: Seek first the kingdom of God and his righteousness.",
+        "context": "Week 6 Cohort Focus: Treasure, Mammon & Freedom from Anxiety. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Treasure, Mammon & Freedom from Anxiety challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Treasure, Mammon & Freedom from Anxiety today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 39,
+        "title": "Week 6, Day 4: Treasure, Mammon & Freedom from Anxiety - Step 4",
+        "scriptureRef": "Matthew 6:19-34",
+        "scriptureText": "Scripture meditation for Week 6: Seek first the kingdom of God and his righteousness.",
+        "context": "Week 6 Cohort Focus: Treasure, Mammon & Freedom from Anxiety. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Treasure, Mammon & Freedom from Anxiety challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Treasure, Mammon & Freedom from Anxiety today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 40,
+        "title": "Week 6, Day 5: Treasure, Mammon & Freedom from Anxiety - Step 5",
+        "scriptureRef": "Matthew 6:19-34",
+        "scriptureText": "Scripture meditation for Week 6: Seek first the kingdom of God and his righteousness.",
+        "context": "Week 6 Cohort Focus: Treasure, Mammon & Freedom from Anxiety. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Treasure, Mammon & Freedom from Anxiety challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Treasure, Mammon & Freedom from Anxiety today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 41,
+        "title": "Week 6, Day 6: Treasure, Mammon & Freedom from Anxiety - Step 6",
+        "scriptureRef": "Matthew 6:19-34",
+        "scriptureText": "Scripture meditation for Week 6: Seek first the kingdom of God and his righteousness.",
+        "context": "Week 6 Cohort Focus: Treasure, Mammon & Freedom from Anxiety. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Treasure, Mammon & Freedom from Anxiety challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Treasure, Mammon & Freedom from Anxiety today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 42,
+        "title": "Week 6, Day 7: Treasure, Mammon & Freedom from Anxiety - Step 7",
+        "scriptureRef": "Matthew 6:19-34",
+        "scriptureText": "Scripture meditation for Week 6: Seek first the kingdom of God and his righteousness.",
+        "context": "Week 6 Cohort Focus: Treasure, Mammon & Freedom from Anxiety. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Treasure, Mammon & Freedom from Anxiety challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Treasure, Mammon & Freedom from Anxiety today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 43,
+        "title": "Week 7, Day 1: Judging, Discernment & The Golden Rule - Step 1",
+        "scriptureRef": "Matthew 7:1-12",
+        "scriptureText": "Scripture meditation for Week 7: First take the log out of your own eye.",
+        "context": "Week 7 Cohort Focus: Judging, Discernment & The Golden Rule. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Judging, Discernment & The Golden Rule challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Judging, Discernment & The Golden Rule today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 44,
+        "title": "Week 7, Day 2: Judging, Discernment & The Golden Rule - Step 2",
+        "scriptureRef": "Matthew 7:1-12",
+        "scriptureText": "Scripture meditation for Week 7: First take the log out of your own eye.",
+        "context": "Week 7 Cohort Focus: Judging, Discernment & The Golden Rule. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Judging, Discernment & The Golden Rule challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Judging, Discernment & The Golden Rule today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 45,
+        "title": "Week 7, Day 3: Judging, Discernment & The Golden Rule - Step 3",
+        "scriptureRef": "Matthew 7:1-12",
+        "scriptureText": "Scripture meditation for Week 7: First take the log out of your own eye.",
+        "context": "Week 7 Cohort Focus: Judging, Discernment & The Golden Rule. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Judging, Discernment & The Golden Rule challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Judging, Discernment & The Golden Rule today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 46,
+        "title": "Week 7, Day 4: Judging, Discernment & The Golden Rule - Step 4",
+        "scriptureRef": "Matthew 7:1-12",
+        "scriptureText": "Scripture meditation for Week 7: First take the log out of your own eye.",
+        "context": "Week 7 Cohort Focus: Judging, Discernment & The Golden Rule. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Judging, Discernment & The Golden Rule challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Judging, Discernment & The Golden Rule today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 47,
+        "title": "Week 7, Day 5: Judging, Discernment & The Golden Rule - Step 5",
+        "scriptureRef": "Matthew 7:1-12",
+        "scriptureText": "Scripture meditation for Week 7: First take the log out of your own eye.",
+        "context": "Week 7 Cohort Focus: Judging, Discernment & The Golden Rule. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Judging, Discernment & The Golden Rule challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Judging, Discernment & The Golden Rule today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 48,
+        "title": "Week 7, Day 6: Judging, Discernment & The Golden Rule - Step 6",
+        "scriptureRef": "Matthew 7:1-12",
+        "scriptureText": "Scripture meditation for Week 7: First take the log out of your own eye.",
+        "context": "Week 7 Cohort Focus: Judging, Discernment & The Golden Rule. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Judging, Discernment & The Golden Rule challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Judging, Discernment & The Golden Rule today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 49,
+        "title": "Week 7, Day 7: Judging, Discernment & The Golden Rule - Step 7",
+        "scriptureRef": "Matthew 7:1-12",
+        "scriptureText": "Scripture meditation for Week 7: First take the log out of your own eye.",
+        "context": "Week 7 Cohort Focus: Judging, Discernment & The Golden Rule. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Judging, Discernment & The Golden Rule challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Judging, Discernment & The Golden Rule today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 50,
+        "title": "Week 8, Day 1: Building on the Rock: Hearing & Doing Christ's Words - Step 1",
+        "scriptureRef": "Matthew 7:24-27",
+        "scriptureText": "Scripture meditation for Week 8: Everyone who hears these words of mine and does them is like a wise builder.",
+        "context": "Week 8 Cohort Focus: Building on the Rock: Hearing & Doing Christ's Words. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building on the Rock: Hearing & Doing Christ's Words challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building on the Rock: Hearing & Doing Christ's Words today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 51,
+        "title": "Week 8, Day 2: Building on the Rock: Hearing & Doing Christ's Words - Step 2",
+        "scriptureRef": "Matthew 7:24-27",
+        "scriptureText": "Scripture meditation for Week 8: Everyone who hears these words of mine and does them is like a wise builder.",
+        "context": "Week 8 Cohort Focus: Building on the Rock: Hearing & Doing Christ's Words. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building on the Rock: Hearing & Doing Christ's Words challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building on the Rock: Hearing & Doing Christ's Words today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 52,
+        "title": "Week 8, Day 3: Building on the Rock: Hearing & Doing Christ's Words - Step 3",
+        "scriptureRef": "Matthew 7:24-27",
+        "scriptureText": "Scripture meditation for Week 8: Everyone who hears these words of mine and does them is like a wise builder.",
+        "context": "Week 8 Cohort Focus: Building on the Rock: Hearing & Doing Christ's Words. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building on the Rock: Hearing & Doing Christ's Words challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building on the Rock: Hearing & Doing Christ's Words today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 53,
+        "title": "Week 8, Day 4: Building on the Rock: Hearing & Doing Christ's Words - Step 4",
+        "scriptureRef": "Matthew 7:24-27",
+        "scriptureText": "Scripture meditation for Week 8: Everyone who hears these words of mine and does them is like a wise builder.",
+        "context": "Week 8 Cohort Focus: Building on the Rock: Hearing & Doing Christ's Words. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building on the Rock: Hearing & Doing Christ's Words challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building on the Rock: Hearing & Doing Christ's Words today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 54,
+        "title": "Week 8, Day 5: Building on the Rock: Hearing & Doing Christ's Words - Step 5",
+        "scriptureRef": "Matthew 7:24-27",
+        "scriptureText": "Scripture meditation for Week 8: Everyone who hears these words of mine and does them is like a wise builder.",
+        "context": "Week 8 Cohort Focus: Building on the Rock: Hearing & Doing Christ's Words. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building on the Rock: Hearing & Doing Christ's Words challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building on the Rock: Hearing & Doing Christ's Words today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 55,
+        "title": "Week 8, Day 6: Building on the Rock: Hearing & Doing Christ's Words - Step 6",
+        "scriptureRef": "Matthew 7:24-27",
+        "scriptureText": "Scripture meditation for Week 8: Everyone who hears these words of mine and does them is like a wise builder.",
+        "context": "Week 8 Cohort Focus: Building on the Rock: Hearing & Doing Christ's Words. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building on the Rock: Hearing & Doing Christ's Words challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building on the Rock: Hearing & Doing Christ's Words today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 56,
+        "title": "Week 8, Day 7: Building on the Rock: Hearing & Doing Christ's Words - Step 7",
+        "scriptureRef": "Matthew 7:24-27",
+        "scriptureText": "Scripture meditation for Week 8: Everyone who hears these words of mine and does them is like a wise builder.",
+        "context": "Week 8 Cohort Focus: Building on the Rock: Hearing & Doing Christ's Words. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building on the Rock: Hearing & Doing Christ's Words challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building on the Rock: Hearing & Doing Christ's Words today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 57,
+        "title": "Week 9, Day 1: The Cruciform Mind: Living Philippians 2 - Step 1",
+        "scriptureRef": "Philippians 2:5-11",
+        "scriptureText": "Scripture meditation for Week 9: Have this mind among yourselves, which is yours in Christ Jesus.",
+        "context": "Week 9 Cohort Focus: The Cruciform Mind: Living Philippians 2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Cruciform Mind: Living Philippians 2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Cruciform Mind: Living Philippians 2 today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 58,
+        "title": "Week 9, Day 2: The Cruciform Mind: Living Philippians 2 - Step 2",
+        "scriptureRef": "Philippians 2:5-11",
+        "scriptureText": "Scripture meditation for Week 9: Have this mind among yourselves, which is yours in Christ Jesus.",
+        "context": "Week 9 Cohort Focus: The Cruciform Mind: Living Philippians 2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Cruciform Mind: Living Philippians 2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Cruciform Mind: Living Philippians 2 today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 59,
+        "title": "Week 9, Day 3: The Cruciform Mind: Living Philippians 2 - Step 3",
+        "scriptureRef": "Philippians 2:5-11",
+        "scriptureText": "Scripture meditation for Week 9: Have this mind among yourselves, which is yours in Christ Jesus.",
+        "context": "Week 9 Cohort Focus: The Cruciform Mind: Living Philippians 2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Cruciform Mind: Living Philippians 2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Cruciform Mind: Living Philippians 2 today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 60,
+        "title": "Week 9, Day 4: The Cruciform Mind: Living Philippians 2 - Step 4",
+        "scriptureRef": "Philippians 2:5-11",
+        "scriptureText": "Scripture meditation for Week 9: Have this mind among yourselves, which is yours in Christ Jesus.",
+        "context": "Week 9 Cohort Focus: The Cruciform Mind: Living Philippians 2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Cruciform Mind: Living Philippians 2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Cruciform Mind: Living Philippians 2 today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 61,
+        "title": "Week 9, Day 5: The Cruciform Mind: Living Philippians 2 - Step 5",
+        "scriptureRef": "Philippians 2:5-11",
+        "scriptureText": "Scripture meditation for Week 9: Have this mind among yourselves, which is yours in Christ Jesus.",
+        "context": "Week 9 Cohort Focus: The Cruciform Mind: Living Philippians 2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Cruciform Mind: Living Philippians 2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Cruciform Mind: Living Philippians 2 today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 62,
+        "title": "Week 9, Day 6: The Cruciform Mind: Living Philippians 2 - Step 6",
+        "scriptureRef": "Philippians 2:5-11",
+        "scriptureText": "Scripture meditation for Week 9: Have this mind among yourselves, which is yours in Christ Jesus.",
+        "context": "Week 9 Cohort Focus: The Cruciform Mind: Living Philippians 2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Cruciform Mind: Living Philippians 2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Cruciform Mind: Living Philippians 2 today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 63,
+        "title": "Week 9, Day 7: The Cruciform Mind: Living Philippians 2 - Step 7",
+        "scriptureRef": "Philippians 2:5-11",
+        "scriptureText": "Scripture meditation for Week 9: Have this mind among yourselves, which is yours in Christ Jesus.",
+        "context": "Week 9 Cohort Focus: The Cruciform Mind: Living Philippians 2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Cruciform Mind: Living Philippians 2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Cruciform Mind: Living Philippians 2 today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 64,
+        "title": "Week 10, Day 1: Mortifying the Flesh: Colossians 3 Transformation - Step 1",
+        "scriptureRef": "Colossians 3:1-17",
+        "scriptureText": "Scripture meditation for Week 10: Put to death therefore what is earthly in you.",
+        "context": "Week 10 Cohort Focus: Mortifying the Flesh: Colossians 3 Transformation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Mortifying the Flesh: Colossians 3 Transformation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Mortifying the Flesh: Colossians 3 Transformation today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 65,
+        "title": "Week 10, Day 2: Mortifying the Flesh: Colossians 3 Transformation - Step 2",
+        "scriptureRef": "Colossians 3:1-17",
+        "scriptureText": "Scripture meditation for Week 10: Put to death therefore what is earthly in you.",
+        "context": "Week 10 Cohort Focus: Mortifying the Flesh: Colossians 3 Transformation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Mortifying the Flesh: Colossians 3 Transformation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Mortifying the Flesh: Colossians 3 Transformation today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 66,
+        "title": "Week 10, Day 3: Mortifying the Flesh: Colossians 3 Transformation - Step 3",
+        "scriptureRef": "Colossians 3:1-17",
+        "scriptureText": "Scripture meditation for Week 10: Put to death therefore what is earthly in you.",
+        "context": "Week 10 Cohort Focus: Mortifying the Flesh: Colossians 3 Transformation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Mortifying the Flesh: Colossians 3 Transformation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Mortifying the Flesh: Colossians 3 Transformation today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 67,
+        "title": "Week 10, Day 4: Mortifying the Flesh: Colossians 3 Transformation - Step 4",
+        "scriptureRef": "Colossians 3:1-17",
+        "scriptureText": "Scripture meditation for Week 10: Put to death therefore what is earthly in you.",
+        "context": "Week 10 Cohort Focus: Mortifying the Flesh: Colossians 3 Transformation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Mortifying the Flesh: Colossians 3 Transformation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Mortifying the Flesh: Colossians 3 Transformation today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 68,
+        "title": "Week 10, Day 5: Mortifying the Flesh: Colossians 3 Transformation - Step 5",
+        "scriptureRef": "Colossians 3:1-17",
+        "scriptureText": "Scripture meditation for Week 10: Put to death therefore what is earthly in you.",
+        "context": "Week 10 Cohort Focus: Mortifying the Flesh: Colossians 3 Transformation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Mortifying the Flesh: Colossians 3 Transformation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Mortifying the Flesh: Colossians 3 Transformation today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 69,
+        "title": "Week 10, Day 6: Mortifying the Flesh: Colossians 3 Transformation - Step 6",
+        "scriptureRef": "Colossians 3:1-17",
+        "scriptureText": "Scripture meditation for Week 10: Put to death therefore what is earthly in you.",
+        "context": "Week 10 Cohort Focus: Mortifying the Flesh: Colossians 3 Transformation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Mortifying the Flesh: Colossians 3 Transformation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Mortifying the Flesh: Colossians 3 Transformation today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 70,
+        "title": "Week 10, Day 7: Mortifying the Flesh: Colossians 3 Transformation - Step 7",
+        "scriptureRef": "Colossians 3:1-17",
+        "scriptureText": "Scripture meditation for Week 10: Put to death therefore what is earthly in you.",
+        "context": "Week 10 Cohort Focus: Mortifying the Flesh: Colossians 3 Transformation. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Mortifying the Flesh: Colossians 3 Transformation challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Mortifying the Flesh: Colossians 3 Transformation today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 71,
+        "title": "Week 11, Day 1: The Fruit of the Spirit as Habitual Character - Step 1",
+        "scriptureRef": "Galatians 5:22-26",
+        "scriptureText": "Scripture meditation for Week 11: The fruit of the Spirit is love, joy, peace, patience...",
+        "context": "Week 11 Cohort Focus: The Fruit of the Spirit as Habitual Character. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Fruit of the Spirit as Habitual Character challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Fruit of the Spirit as Habitual Character today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 72,
+        "title": "Week 11, Day 2: The Fruit of the Spirit as Habitual Character - Step 2",
+        "scriptureRef": "Galatians 5:22-26",
+        "scriptureText": "Scripture meditation for Week 11: The fruit of the Spirit is love, joy, peace, patience...",
+        "context": "Week 11 Cohort Focus: The Fruit of the Spirit as Habitual Character. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Fruit of the Spirit as Habitual Character challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Fruit of the Spirit as Habitual Character today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 73,
+        "title": "Week 11, Day 3: The Fruit of the Spirit as Habitual Character - Step 3",
+        "scriptureRef": "Galatians 5:22-26",
+        "scriptureText": "Scripture meditation for Week 11: The fruit of the Spirit is love, joy, peace, patience...",
+        "context": "Week 11 Cohort Focus: The Fruit of the Spirit as Habitual Character. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Fruit of the Spirit as Habitual Character challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Fruit of the Spirit as Habitual Character today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 74,
+        "title": "Week 11, Day 4: The Fruit of the Spirit as Habitual Character - Step 4",
+        "scriptureRef": "Galatians 5:22-26",
+        "scriptureText": "Scripture meditation for Week 11: The fruit of the Spirit is love, joy, peace, patience...",
+        "context": "Week 11 Cohort Focus: The Fruit of the Spirit as Habitual Character. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Fruit of the Spirit as Habitual Character challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Fruit of the Spirit as Habitual Character today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 75,
+        "title": "Week 11, Day 5: The Fruit of the Spirit as Habitual Character - Step 5",
+        "scriptureRef": "Galatians 5:22-26",
+        "scriptureText": "Scripture meditation for Week 11: The fruit of the Spirit is love, joy, peace, patience...",
+        "context": "Week 11 Cohort Focus: The Fruit of the Spirit as Habitual Character. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Fruit of the Spirit as Habitual Character challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Fruit of the Spirit as Habitual Character today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 76,
+        "title": "Week 11, Day 6: The Fruit of the Spirit as Habitual Character - Step 6",
+        "scriptureRef": "Galatians 5:22-26",
+        "scriptureText": "Scripture meditation for Week 11: The fruit of the Spirit is love, joy, peace, patience...",
+        "context": "Week 11 Cohort Focus: The Fruit of the Spirit as Habitual Character. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Fruit of the Spirit as Habitual Character challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Fruit of the Spirit as Habitual Character today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 77,
+        "title": "Week 11, Day 7: The Fruit of the Spirit as Habitual Character - Step 7",
+        "scriptureRef": "Galatians 5:22-26",
+        "scriptureText": "Scripture meditation for Week 11: The fruit of the Spirit is love, joy, peace, patience...",
+        "context": "Week 11 Cohort Focus: The Fruit of the Spirit as Habitual Character. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Fruit of the Spirit as Habitual Character challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Fruit of the Spirit as Habitual Character today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 78,
+        "title": "Week 12, Day 1: Sent as Ambassadors: Commissioning for Lifelong Discipleship - Step 1",
+        "scriptureRef": "2 Corinthians 5:17-21",
+        "scriptureText": "Scripture meditation for Week 12: We are ambassadors for Christ, God making his appeal through us.",
+        "context": "Week 12 Cohort Focus: Sent as Ambassadors: Commissioning for Lifelong Discipleship. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Sent as Ambassadors: Commissioning for Lifelong Discipleship challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Sent as Ambassadors: Commissioning for Lifelong Discipleship today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 79,
+        "title": "Week 12, Day 2: Sent as Ambassadors: Commissioning for Lifelong Discipleship - Step 2",
+        "scriptureRef": "2 Corinthians 5:17-21",
+        "scriptureText": "Scripture meditation for Week 12: We are ambassadors for Christ, God making his appeal through us.",
+        "context": "Week 12 Cohort Focus: Sent as Ambassadors: Commissioning for Lifelong Discipleship. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Sent as Ambassadors: Commissioning for Lifelong Discipleship challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Sent as Ambassadors: Commissioning for Lifelong Discipleship today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 80,
+        "title": "Week 12, Day 3: Sent as Ambassadors: Commissioning for Lifelong Discipleship - Step 3",
+        "scriptureRef": "2 Corinthians 5:17-21",
+        "scriptureText": "Scripture meditation for Week 12: We are ambassadors for Christ, God making his appeal through us.",
+        "context": "Week 12 Cohort Focus: Sent as Ambassadors: Commissioning for Lifelong Discipleship. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Sent as Ambassadors: Commissioning for Lifelong Discipleship challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Sent as Ambassadors: Commissioning for Lifelong Discipleship today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 81,
+        "title": "Week 12, Day 4: Sent as Ambassadors: Commissioning for Lifelong Discipleship - Step 4",
+        "scriptureRef": "2 Corinthians 5:17-21",
+        "scriptureText": "Scripture meditation for Week 12: We are ambassadors for Christ, God making his appeal through us.",
+        "context": "Week 12 Cohort Focus: Sent as Ambassadors: Commissioning for Lifelong Discipleship. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Sent as Ambassadors: Commissioning for Lifelong Discipleship challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Sent as Ambassadors: Commissioning for Lifelong Discipleship today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 82,
+        "title": "Week 12, Day 5: Sent as Ambassadors: Commissioning for Lifelong Discipleship - Step 5",
+        "scriptureRef": "2 Corinthians 5:17-21",
+        "scriptureText": "Scripture meditation for Week 12: We are ambassadors for Christ, God making his appeal through us.",
+        "context": "Week 12 Cohort Focus: Sent as Ambassadors: Commissioning for Lifelong Discipleship. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Sent as Ambassadors: Commissioning for Lifelong Discipleship challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Sent as Ambassadors: Commissioning for Lifelong Discipleship today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 83,
+        "title": "Week 12, Day 6: Sent as Ambassadors: Commissioning for Lifelong Discipleship - Step 6",
+        "scriptureRef": "2 Corinthians 5:17-21",
+        "scriptureText": "Scripture meditation for Week 12: We are ambassadors for Christ, God making his appeal through us.",
+        "context": "Week 12 Cohort Focus: Sent as Ambassadors: Commissioning for Lifelong Discipleship. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Sent as Ambassadors: Commissioning for Lifelong Discipleship challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Sent as Ambassadors: Commissioning for Lifelong Discipleship today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 84,
+        "title": "Week 12, Day 7: Sent as Ambassadors: Commissioning for Lifelong Discipleship - Step 7",
+        "scriptureRef": "2 Corinthians 5:17-21",
+        "scriptureText": "Scripture meditation for Week 12: We are ambassadors for Christ, God making his appeal through us.",
+        "context": "Week 12 Cohort Focus: Sent as Ambassadors: Commissioning for Lifelong Discipleship. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Sent as Ambassadors: Commissioning for Lifelong Discipleship challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Sent as Ambassadors: Commissioning for Lifelong Discipleship today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      }
+    ]
+  },
+  {
+    "id": "journey_leadership_12week",
+    "title": "Spiritual Leadership & Multiplying Disciples (12-Week Journey)",
+    "tagline": "12 Weeks (84 Days): Advanced mentoring, spiritual fatherhood/motherhood, and church leadership",
+    "durationDays": 84,
+    "category": "Advanced",
+    "tierRequired": "pro",
+    "overview": "Equipping mature disciples, small group leaders, and pastors to shepherd, counsel, mentor, and multiply resilient disciples in the Kingdom of God.",
+    "learningOutcomes": [
+      "Master the 1-on-1 discipleship process and spiritual guidance",
+      "Lead small groups with pastoral wisdom, vulnerability, and theological depth",
+      "Raise up the next generation of spiritually rooted leaders"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Week 1, Day 1: The Shepherd's Heart: Ministry from Intimacy - Step 1",
+        "scriptureRef": "John 15:1-8",
+        "scriptureText": "Scripture meditation for Week 1: Abide in me, and I in you. As the branch cannot bear fruit by itself...",
+        "context": "Week 1 Cohort Focus: The Shepherd's Heart: Ministry from Intimacy. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Shepherd's Heart: Ministry from Intimacy challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Shepherd's Heart: Ministry from Intimacy today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 2,
+        "title": "Week 1, Day 2: The Shepherd's Heart: Ministry from Intimacy - Step 2",
+        "scriptureRef": "John 15:1-8",
+        "scriptureText": "Scripture meditation for Week 1: Abide in me, and I in you. As the branch cannot bear fruit by itself...",
+        "context": "Week 1 Cohort Focus: The Shepherd's Heart: Ministry from Intimacy. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Shepherd's Heart: Ministry from Intimacy challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Shepherd's Heart: Ministry from Intimacy today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 3,
+        "title": "Week 1, Day 3: The Shepherd's Heart: Ministry from Intimacy - Step 3",
+        "scriptureRef": "John 15:1-8",
+        "scriptureText": "Scripture meditation for Week 1: Abide in me, and I in you. As the branch cannot bear fruit by itself...",
+        "context": "Week 1 Cohort Focus: The Shepherd's Heart: Ministry from Intimacy. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Shepherd's Heart: Ministry from Intimacy challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Shepherd's Heart: Ministry from Intimacy today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 4,
+        "title": "Week 1, Day 4: The Shepherd's Heart: Ministry from Intimacy - Step 4",
+        "scriptureRef": "John 15:1-8",
+        "scriptureText": "Scripture meditation for Week 1: Abide in me, and I in you. As the branch cannot bear fruit by itself...",
+        "context": "Week 1 Cohort Focus: The Shepherd's Heart: Ministry from Intimacy. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Shepherd's Heart: Ministry from Intimacy challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Shepherd's Heart: Ministry from Intimacy today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 5,
+        "title": "Week 1, Day 5: The Shepherd's Heart: Ministry from Intimacy - Step 5",
+        "scriptureRef": "John 15:1-8",
+        "scriptureText": "Scripture meditation for Week 1: Abide in me, and I in you. As the branch cannot bear fruit by itself...",
+        "context": "Week 1 Cohort Focus: The Shepherd's Heart: Ministry from Intimacy. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Shepherd's Heart: Ministry from Intimacy challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Shepherd's Heart: Ministry from Intimacy today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 6,
+        "title": "Week 1, Day 6: The Shepherd's Heart: Ministry from Intimacy - Step 6",
+        "scriptureRef": "John 15:1-8",
+        "scriptureText": "Scripture meditation for Week 1: Abide in me, and I in you. As the branch cannot bear fruit by itself...",
+        "context": "Week 1 Cohort Focus: The Shepherd's Heart: Ministry from Intimacy. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Shepherd's Heart: Ministry from Intimacy challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Shepherd's Heart: Ministry from Intimacy today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 7,
+        "title": "Week 1, Day 7: The Shepherd's Heart: Ministry from Intimacy - Step 7",
+        "scriptureRef": "John 15:1-8",
+        "scriptureText": "Scripture meditation for Week 1: Abide in me, and I in you. As the branch cannot bear fruit by itself...",
+        "context": "Week 1 Cohort Focus: The Shepherd's Heart: Ministry from Intimacy. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Shepherd's Heart: Ministry from Intimacy challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Shepherd's Heart: Ministry from Intimacy today.",
+        "practice": "Engage in today's Week 1 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 8,
+        "title": "Week 2, Day 1: The Towel and Basin: Biblical Servant Leadership - Step 1",
+        "scriptureRef": "John 13:1-17",
+        "scriptureText": "Scripture meditation for Week 2: If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet.",
+        "context": "Week 2 Cohort Focus: The Towel and Basin: Biblical Servant Leadership. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Towel and Basin: Biblical Servant Leadership challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Towel and Basin: Biblical Servant Leadership today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 9,
+        "title": "Week 2, Day 2: The Towel and Basin: Biblical Servant Leadership - Step 2",
+        "scriptureRef": "John 13:1-17",
+        "scriptureText": "Scripture meditation for Week 2: If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet.",
+        "context": "Week 2 Cohort Focus: The Towel and Basin: Biblical Servant Leadership. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Towel and Basin: Biblical Servant Leadership challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Towel and Basin: Biblical Servant Leadership today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 10,
+        "title": "Week 2, Day 3: The Towel and Basin: Biblical Servant Leadership - Step 3",
+        "scriptureRef": "John 13:1-17",
+        "scriptureText": "Scripture meditation for Week 2: If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet.",
+        "context": "Week 2 Cohort Focus: The Towel and Basin: Biblical Servant Leadership. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Towel and Basin: Biblical Servant Leadership challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Towel and Basin: Biblical Servant Leadership today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 11,
+        "title": "Week 2, Day 4: The Towel and Basin: Biblical Servant Leadership - Step 4",
+        "scriptureRef": "John 13:1-17",
+        "scriptureText": "Scripture meditation for Week 2: If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet.",
+        "context": "Week 2 Cohort Focus: The Towel and Basin: Biblical Servant Leadership. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Towel and Basin: Biblical Servant Leadership challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Towel and Basin: Biblical Servant Leadership today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 12,
+        "title": "Week 2, Day 5: The Towel and Basin: Biblical Servant Leadership - Step 5",
+        "scriptureRef": "John 13:1-17",
+        "scriptureText": "Scripture meditation for Week 2: If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet.",
+        "context": "Week 2 Cohort Focus: The Towel and Basin: Biblical Servant Leadership. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Towel and Basin: Biblical Servant Leadership challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Towel and Basin: Biblical Servant Leadership today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 13,
+        "title": "Week 2, Day 6: The Towel and Basin: Biblical Servant Leadership - Step 6",
+        "scriptureRef": "John 13:1-17",
+        "scriptureText": "Scripture meditation for Week 2: If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet.",
+        "context": "Week 2 Cohort Focus: The Towel and Basin: Biblical Servant Leadership. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Towel and Basin: Biblical Servant Leadership challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Towel and Basin: Biblical Servant Leadership today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 14,
+        "title": "Week 2, Day 7: The Towel and Basin: Biblical Servant Leadership - Step 7",
+        "scriptureRef": "John 13:1-17",
+        "scriptureText": "Scripture meditation for Week 2: If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet.",
+        "context": "Week 2 Cohort Focus: The Towel and Basin: Biblical Servant Leadership. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Towel and Basin: Biblical Servant Leadership challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Towel and Basin: Biblical Servant Leadership today.",
+        "practice": "Engage in today's Week 2 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 15,
+        "title": "Week 3, Day 1: Spiritual Fatherhood and Motherhood - Step 1",
+        "scriptureRef": "1 Thessalonians 2:7-12",
+        "scriptureText": "Scripture meditation for Week 3: We were gentle among you, like a nursing mother taking care of her own children.",
+        "context": "Week 3 Cohort Focus: Spiritual Fatherhood and Motherhood. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Fatherhood and Motherhood challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Fatherhood and Motherhood today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 16,
+        "title": "Week 3, Day 2: Spiritual Fatherhood and Motherhood - Step 2",
+        "scriptureRef": "1 Thessalonians 2:7-12",
+        "scriptureText": "Scripture meditation for Week 3: We were gentle among you, like a nursing mother taking care of her own children.",
+        "context": "Week 3 Cohort Focus: Spiritual Fatherhood and Motherhood. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Fatherhood and Motherhood challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Fatherhood and Motherhood today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 17,
+        "title": "Week 3, Day 3: Spiritual Fatherhood and Motherhood - Step 3",
+        "scriptureRef": "1 Thessalonians 2:7-12",
+        "scriptureText": "Scripture meditation for Week 3: We were gentle among you, like a nursing mother taking care of her own children.",
+        "context": "Week 3 Cohort Focus: Spiritual Fatherhood and Motherhood. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Fatherhood and Motherhood challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Fatherhood and Motherhood today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 18,
+        "title": "Week 3, Day 4: Spiritual Fatherhood and Motherhood - Step 4",
+        "scriptureRef": "1 Thessalonians 2:7-12",
+        "scriptureText": "Scripture meditation for Week 3: We were gentle among you, like a nursing mother taking care of her own children.",
+        "context": "Week 3 Cohort Focus: Spiritual Fatherhood and Motherhood. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Fatherhood and Motherhood challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Fatherhood and Motherhood today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 19,
+        "title": "Week 3, Day 5: Spiritual Fatherhood and Motherhood - Step 5",
+        "scriptureRef": "1 Thessalonians 2:7-12",
+        "scriptureText": "Scripture meditation for Week 3: We were gentle among you, like a nursing mother taking care of her own children.",
+        "context": "Week 3 Cohort Focus: Spiritual Fatherhood and Motherhood. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Fatherhood and Motherhood challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Fatherhood and Motherhood today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 20,
+        "title": "Week 3, Day 6: Spiritual Fatherhood and Motherhood - Step 6",
+        "scriptureRef": "1 Thessalonians 2:7-12",
+        "scriptureText": "Scripture meditation for Week 3: We were gentle among you, like a nursing mother taking care of her own children.",
+        "context": "Week 3 Cohort Focus: Spiritual Fatherhood and Motherhood. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Fatherhood and Motherhood challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Fatherhood and Motherhood today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 21,
+        "title": "Week 3, Day 7: Spiritual Fatherhood and Motherhood - Step 7",
+        "scriptureRef": "1 Thessalonians 2:7-12",
+        "scriptureText": "Scripture meditation for Week 3: We were gentle among you, like a nursing mother taking care of her own children.",
+        "context": "Week 3 Cohort Focus: Spiritual Fatherhood and Motherhood. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Fatherhood and Motherhood challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Fatherhood and Motherhood today.",
+        "practice": "Engage in today's Week 3 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 22,
+        "title": "Week 4, Day 1: The Art of Disciple-Making: 2 Timothy 2:2 - Step 1",
+        "scriptureRef": "2 Timothy 2:1-2",
+        "scriptureText": "Scripture meditation for Week 4: What you have heard from me... entrust to faithful people who will be able to teach others also.",
+        "context": "Week 4 Cohort Focus: The Art of Disciple-Making: 2 Timothy 2:2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Art of Disciple-Making: 2 Timothy 2:2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Art of Disciple-Making: 2 Timothy 2:2 today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 23,
+        "title": "Week 4, Day 2: The Art of Disciple-Making: 2 Timothy 2:2 - Step 2",
+        "scriptureRef": "2 Timothy 2:1-2",
+        "scriptureText": "Scripture meditation for Week 4: What you have heard from me... entrust to faithful people who will be able to teach others also.",
+        "context": "Week 4 Cohort Focus: The Art of Disciple-Making: 2 Timothy 2:2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Art of Disciple-Making: 2 Timothy 2:2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Art of Disciple-Making: 2 Timothy 2:2 today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 24,
+        "title": "Week 4, Day 3: The Art of Disciple-Making: 2 Timothy 2:2 - Step 3",
+        "scriptureRef": "2 Timothy 2:1-2",
+        "scriptureText": "Scripture meditation for Week 4: What you have heard from me... entrust to faithful people who will be able to teach others also.",
+        "context": "Week 4 Cohort Focus: The Art of Disciple-Making: 2 Timothy 2:2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Art of Disciple-Making: 2 Timothy 2:2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Art of Disciple-Making: 2 Timothy 2:2 today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 25,
+        "title": "Week 4, Day 4: The Art of Disciple-Making: 2 Timothy 2:2 - Step 4",
+        "scriptureRef": "2 Timothy 2:1-2",
+        "scriptureText": "Scripture meditation for Week 4: What you have heard from me... entrust to faithful people who will be able to teach others also.",
+        "context": "Week 4 Cohort Focus: The Art of Disciple-Making: 2 Timothy 2:2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Art of Disciple-Making: 2 Timothy 2:2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Art of Disciple-Making: 2 Timothy 2:2 today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 26,
+        "title": "Week 4, Day 5: The Art of Disciple-Making: 2 Timothy 2:2 - Step 5",
+        "scriptureRef": "2 Timothy 2:1-2",
+        "scriptureText": "Scripture meditation for Week 4: What you have heard from me... entrust to faithful people who will be able to teach others also.",
+        "context": "Week 4 Cohort Focus: The Art of Disciple-Making: 2 Timothy 2:2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Art of Disciple-Making: 2 Timothy 2:2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Art of Disciple-Making: 2 Timothy 2:2 today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 27,
+        "title": "Week 4, Day 6: The Art of Disciple-Making: 2 Timothy 2:2 - Step 6",
+        "scriptureRef": "2 Timothy 2:1-2",
+        "scriptureText": "Scripture meditation for Week 4: What you have heard from me... entrust to faithful people who will be able to teach others also.",
+        "context": "Week 4 Cohort Focus: The Art of Disciple-Making: 2 Timothy 2:2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Art of Disciple-Making: 2 Timothy 2:2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Art of Disciple-Making: 2 Timothy 2:2 today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 28,
+        "title": "Week 4, Day 7: The Art of Disciple-Making: 2 Timothy 2:2 - Step 7",
+        "scriptureRef": "2 Timothy 2:1-2",
+        "scriptureText": "Scripture meditation for Week 4: What you have heard from me... entrust to faithful people who will be able to teach others also.",
+        "context": "Week 4 Cohort Focus: The Art of Disciple-Making: 2 Timothy 2:2. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of The Art of Disciple-Making: 2 Timothy 2:2 challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in The Art of Disciple-Making: 2 Timothy 2:2 today.",
+        "practice": "Engage in today's Week 4 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 29,
+        "title": "Week 5, Day 1: Listening Prayer & Spiritual Discernment with Mentees - Step 1",
+        "scriptureRef": "1 Kings 19:11-13",
+        "scriptureText": "Scripture meditation for Week 5: And after the fire a low whisper.",
+        "context": "Week 5 Cohort Focus: Listening Prayer & Spiritual Discernment with Mentees. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Listening Prayer & Spiritual Discernment with Mentees challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Listening Prayer & Spiritual Discernment with Mentees today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 30,
+        "title": "Week 5, Day 2: Listening Prayer & Spiritual Discernment with Mentees - Step 2",
+        "scriptureRef": "1 Kings 19:11-13",
+        "scriptureText": "Scripture meditation for Week 5: And after the fire a low whisper.",
+        "context": "Week 5 Cohort Focus: Listening Prayer & Spiritual Discernment with Mentees. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Listening Prayer & Spiritual Discernment with Mentees challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Listening Prayer & Spiritual Discernment with Mentees today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 31,
+        "title": "Week 5, Day 3: Listening Prayer & Spiritual Discernment with Mentees - Step 3",
+        "scriptureRef": "1 Kings 19:11-13",
+        "scriptureText": "Scripture meditation for Week 5: And after the fire a low whisper.",
+        "context": "Week 5 Cohort Focus: Listening Prayer & Spiritual Discernment with Mentees. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Listening Prayer & Spiritual Discernment with Mentees challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Listening Prayer & Spiritual Discernment with Mentees today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 32,
+        "title": "Week 5, Day 4: Listening Prayer & Spiritual Discernment with Mentees - Step 4",
+        "scriptureRef": "1 Kings 19:11-13",
+        "scriptureText": "Scripture meditation for Week 5: And after the fire a low whisper.",
+        "context": "Week 5 Cohort Focus: Listening Prayer & Spiritual Discernment with Mentees. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Listening Prayer & Spiritual Discernment with Mentees challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Listening Prayer & Spiritual Discernment with Mentees today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 33,
+        "title": "Week 5, Day 5: Listening Prayer & Spiritual Discernment with Mentees - Step 5",
+        "scriptureRef": "1 Kings 19:11-13",
+        "scriptureText": "Scripture meditation for Week 5: And after the fire a low whisper.",
+        "context": "Week 5 Cohort Focus: Listening Prayer & Spiritual Discernment with Mentees. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Listening Prayer & Spiritual Discernment with Mentees challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Listening Prayer & Spiritual Discernment with Mentees today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 34,
+        "title": "Week 5, Day 6: Listening Prayer & Spiritual Discernment with Mentees - Step 6",
+        "scriptureRef": "1 Kings 19:11-13",
+        "scriptureText": "Scripture meditation for Week 5: And after the fire a low whisper.",
+        "context": "Week 5 Cohort Focus: Listening Prayer & Spiritual Discernment with Mentees. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Listening Prayer & Spiritual Discernment with Mentees challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Listening Prayer & Spiritual Discernment with Mentees today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 35,
+        "title": "Week 5, Day 7: Listening Prayer & Spiritual Discernment with Mentees - Step 7",
+        "scriptureRef": "1 Kings 19:11-13",
+        "scriptureText": "Scripture meditation for Week 5: And after the fire a low whisper.",
+        "context": "Week 5 Cohort Focus: Listening Prayer & Spiritual Discernment with Mentees. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Listening Prayer & Spiritual Discernment with Mentees challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Listening Prayer & Spiritual Discernment with Mentees today.",
+        "practice": "Engage in today's Week 5 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 36,
+        "title": "Week 6, Day 1: Guiding Others Through the Crucible of Suffering - Step 1",
+        "scriptureRef": "2 Corinthians 1:3-7",
+        "scriptureText": "Scripture meditation for Week 6: Comfort those who are in any affliction, with the comfort with which we ourselves are comforted by God.",
+        "context": "Week 6 Cohort Focus: Guiding Others Through the Crucible of Suffering. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guiding Others Through the Crucible of Suffering challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guiding Others Through the Crucible of Suffering today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 37,
+        "title": "Week 6, Day 2: Guiding Others Through the Crucible of Suffering - Step 2",
+        "scriptureRef": "2 Corinthians 1:3-7",
+        "scriptureText": "Scripture meditation for Week 6: Comfort those who are in any affliction, with the comfort with which we ourselves are comforted by God.",
+        "context": "Week 6 Cohort Focus: Guiding Others Through the Crucible of Suffering. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guiding Others Through the Crucible of Suffering challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guiding Others Through the Crucible of Suffering today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 38,
+        "title": "Week 6, Day 3: Guiding Others Through the Crucible of Suffering - Step 3",
+        "scriptureRef": "2 Corinthians 1:3-7",
+        "scriptureText": "Scripture meditation for Week 6: Comfort those who are in any affliction, with the comfort with which we ourselves are comforted by God.",
+        "context": "Week 6 Cohort Focus: Guiding Others Through the Crucible of Suffering. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guiding Others Through the Crucible of Suffering challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guiding Others Through the Crucible of Suffering today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 39,
+        "title": "Week 6, Day 4: Guiding Others Through the Crucible of Suffering - Step 4",
+        "scriptureRef": "2 Corinthians 1:3-7",
+        "scriptureText": "Scripture meditation for Week 6: Comfort those who are in any affliction, with the comfort with which we ourselves are comforted by God.",
+        "context": "Week 6 Cohort Focus: Guiding Others Through the Crucible of Suffering. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guiding Others Through the Crucible of Suffering challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guiding Others Through the Crucible of Suffering today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 40,
+        "title": "Week 6, Day 5: Guiding Others Through the Crucible of Suffering - Step 5",
+        "scriptureRef": "2 Corinthians 1:3-7",
+        "scriptureText": "Scripture meditation for Week 6: Comfort those who are in any affliction, with the comfort with which we ourselves are comforted by God.",
+        "context": "Week 6 Cohort Focus: Guiding Others Through the Crucible of Suffering. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guiding Others Through the Crucible of Suffering challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guiding Others Through the Crucible of Suffering today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 41,
+        "title": "Week 6, Day 6: Guiding Others Through the Crucible of Suffering - Step 6",
+        "scriptureRef": "2 Corinthians 1:3-7",
+        "scriptureText": "Scripture meditation for Week 6: Comfort those who are in any affliction, with the comfort with which we ourselves are comforted by God.",
+        "context": "Week 6 Cohort Focus: Guiding Others Through the Crucible of Suffering. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guiding Others Through the Crucible of Suffering challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guiding Others Through the Crucible of Suffering today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 42,
+        "title": "Week 6, Day 7: Guiding Others Through the Crucible of Suffering - Step 7",
+        "scriptureRef": "2 Corinthians 1:3-7",
+        "scriptureText": "Scripture meditation for Week 6: Comfort those who are in any affliction, with the comfort with which we ourselves are comforted by God.",
+        "context": "Week 6 Cohort Focus: Guiding Others Through the Crucible of Suffering. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guiding Others Through the Crucible of Suffering challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guiding Others Through the Crucible of Suffering today.",
+        "practice": "Engage in today's Week 6 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 43,
+        "title": "Week 7, Day 1: Confrontation with Gentleness: Restoring the Fallen - Step 1",
+        "scriptureRef": "Galatians 6:1-2",
+        "scriptureText": "Scripture meditation for Week 7: If anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness.",
+        "context": "Week 7 Cohort Focus: Confrontation with Gentleness: Restoring the Fallen. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Confrontation with Gentleness: Restoring the Fallen challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Confrontation with Gentleness: Restoring the Fallen today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 44,
+        "title": "Week 7, Day 2: Confrontation with Gentleness: Restoring the Fallen - Step 2",
+        "scriptureRef": "Galatians 6:1-2",
+        "scriptureText": "Scripture meditation for Week 7: If anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness.",
+        "context": "Week 7 Cohort Focus: Confrontation with Gentleness: Restoring the Fallen. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Confrontation with Gentleness: Restoring the Fallen challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Confrontation with Gentleness: Restoring the Fallen today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 45,
+        "title": "Week 7, Day 3: Confrontation with Gentleness: Restoring the Fallen - Step 3",
+        "scriptureRef": "Galatians 6:1-2",
+        "scriptureText": "Scripture meditation for Week 7: If anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness.",
+        "context": "Week 7 Cohort Focus: Confrontation with Gentleness: Restoring the Fallen. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Confrontation with Gentleness: Restoring the Fallen challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Confrontation with Gentleness: Restoring the Fallen today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 46,
+        "title": "Week 7, Day 4: Confrontation with Gentleness: Restoring the Fallen - Step 4",
+        "scriptureRef": "Galatians 6:1-2",
+        "scriptureText": "Scripture meditation for Week 7: If anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness.",
+        "context": "Week 7 Cohort Focus: Confrontation with Gentleness: Restoring the Fallen. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Confrontation with Gentleness: Restoring the Fallen challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Confrontation with Gentleness: Restoring the Fallen today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 47,
+        "title": "Week 7, Day 5: Confrontation with Gentleness: Restoring the Fallen - Step 5",
+        "scriptureRef": "Galatians 6:1-2",
+        "scriptureText": "Scripture meditation for Week 7: If anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness.",
+        "context": "Week 7 Cohort Focus: Confrontation with Gentleness: Restoring the Fallen. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Confrontation with Gentleness: Restoring the Fallen challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Confrontation with Gentleness: Restoring the Fallen today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 48,
+        "title": "Week 7, Day 6: Confrontation with Gentleness: Restoring the Fallen - Step 6",
+        "scriptureRef": "Galatians 6:1-2",
+        "scriptureText": "Scripture meditation for Week 7: If anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness.",
+        "context": "Week 7 Cohort Focus: Confrontation with Gentleness: Restoring the Fallen. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Confrontation with Gentleness: Restoring the Fallen challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Confrontation with Gentleness: Restoring the Fallen today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 49,
+        "title": "Week 7, Day 7: Confrontation with Gentleness: Restoring the Fallen - Step 7",
+        "scriptureRef": "Galatians 6:1-2",
+        "scriptureText": "Scripture meditation for Week 7: If anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness.",
+        "context": "Week 7 Cohort Focus: Confrontation with Gentleness: Restoring the Fallen. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Confrontation with Gentleness: Restoring the Fallen challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Confrontation with Gentleness: Restoring the Fallen today.",
+        "practice": "Engage in today's Week 7 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 50,
+        "title": "Week 8, Day 1: Equipping Small Group Leaders for Pastoral Care - Step 1",
+        "scriptureRef": "Ephesians 4:11-16",
+        "scriptureText": "Scripture meditation for Week 8: To equip the saints for the work of ministry, for building up the body of Christ.",
+        "context": "Week 8 Cohort Focus: Equipping Small Group Leaders for Pastoral Care. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Equipping Small Group Leaders for Pastoral Care challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Equipping Small Group Leaders for Pastoral Care today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 51,
+        "title": "Week 8, Day 2: Equipping Small Group Leaders for Pastoral Care - Step 2",
+        "scriptureRef": "Ephesians 4:11-16",
+        "scriptureText": "Scripture meditation for Week 8: To equip the saints for the work of ministry, for building up the body of Christ.",
+        "context": "Week 8 Cohort Focus: Equipping Small Group Leaders for Pastoral Care. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Equipping Small Group Leaders for Pastoral Care challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Equipping Small Group Leaders for Pastoral Care today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 52,
+        "title": "Week 8, Day 3: Equipping Small Group Leaders for Pastoral Care - Step 3",
+        "scriptureRef": "Ephesians 4:11-16",
+        "scriptureText": "Scripture meditation for Week 8: To equip the saints for the work of ministry, for building up the body of Christ.",
+        "context": "Week 8 Cohort Focus: Equipping Small Group Leaders for Pastoral Care. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Equipping Small Group Leaders for Pastoral Care challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Equipping Small Group Leaders for Pastoral Care today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 53,
+        "title": "Week 8, Day 4: Equipping Small Group Leaders for Pastoral Care - Step 4",
+        "scriptureRef": "Ephesians 4:11-16",
+        "scriptureText": "Scripture meditation for Week 8: To equip the saints for the work of ministry, for building up the body of Christ.",
+        "context": "Week 8 Cohort Focus: Equipping Small Group Leaders for Pastoral Care. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Equipping Small Group Leaders for Pastoral Care challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Equipping Small Group Leaders for Pastoral Care today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 54,
+        "title": "Week 8, Day 5: Equipping Small Group Leaders for Pastoral Care - Step 5",
+        "scriptureRef": "Ephesians 4:11-16",
+        "scriptureText": "Scripture meditation for Week 8: To equip the saints for the work of ministry, for building up the body of Christ.",
+        "context": "Week 8 Cohort Focus: Equipping Small Group Leaders for Pastoral Care. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Equipping Small Group Leaders for Pastoral Care challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Equipping Small Group Leaders for Pastoral Care today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 55,
+        "title": "Week 8, Day 6: Equipping Small Group Leaders for Pastoral Care - Step 6",
+        "scriptureRef": "Ephesians 4:11-16",
+        "scriptureText": "Scripture meditation for Week 8: To equip the saints for the work of ministry, for building up the body of Christ.",
+        "context": "Week 8 Cohort Focus: Equipping Small Group Leaders for Pastoral Care. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Equipping Small Group Leaders for Pastoral Care challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Equipping Small Group Leaders for Pastoral Care today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 56,
+        "title": "Week 8, Day 7: Equipping Small Group Leaders for Pastoral Care - Step 7",
+        "scriptureRef": "Ephesians 4:11-16",
+        "scriptureText": "Scripture meditation for Week 8: To equip the saints for the work of ministry, for building up the body of Christ.",
+        "context": "Week 8 Cohort Focus: Equipping Small Group Leaders for Pastoral Care. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Equipping Small Group Leaders for Pastoral Care challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Equipping Small Group Leaders for Pastoral Care today.",
+        "practice": "Engage in today's Week 8 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 57,
+        "title": "Week 9, Day 1: Guarding the Leader's Marriage, Family & Soul - Step 1",
+        "scriptureRef": "1 Timothy 3:1-7",
+        "scriptureText": "Scripture meditation for Week 9: If someone does not know how to manage his own household, how will he care for God's church?",
+        "context": "Week 9 Cohort Focus: Guarding the Leader's Marriage, Family & Soul. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guarding the Leader's Marriage, Family & Soul challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guarding the Leader's Marriage, Family & Soul today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 58,
+        "title": "Week 9, Day 2: Guarding the Leader's Marriage, Family & Soul - Step 2",
+        "scriptureRef": "1 Timothy 3:1-7",
+        "scriptureText": "Scripture meditation for Week 9: If someone does not know how to manage his own household, how will he care for God's church?",
+        "context": "Week 9 Cohort Focus: Guarding the Leader's Marriage, Family & Soul. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guarding the Leader's Marriage, Family & Soul challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guarding the Leader's Marriage, Family & Soul today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 59,
+        "title": "Week 9, Day 3: Guarding the Leader's Marriage, Family & Soul - Step 3",
+        "scriptureRef": "1 Timothy 3:1-7",
+        "scriptureText": "Scripture meditation for Week 9: If someone does not know how to manage his own household, how will he care for God's church?",
+        "context": "Week 9 Cohort Focus: Guarding the Leader's Marriage, Family & Soul. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guarding the Leader's Marriage, Family & Soul challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guarding the Leader's Marriage, Family & Soul today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 60,
+        "title": "Week 9, Day 4: Guarding the Leader's Marriage, Family & Soul - Step 4",
+        "scriptureRef": "1 Timothy 3:1-7",
+        "scriptureText": "Scripture meditation for Week 9: If someone does not know how to manage his own household, how will he care for God's church?",
+        "context": "Week 9 Cohort Focus: Guarding the Leader's Marriage, Family & Soul. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guarding the Leader's Marriage, Family & Soul challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guarding the Leader's Marriage, Family & Soul today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 61,
+        "title": "Week 9, Day 5: Guarding the Leader's Marriage, Family & Soul - Step 5",
+        "scriptureRef": "1 Timothy 3:1-7",
+        "scriptureText": "Scripture meditation for Week 9: If someone does not know how to manage his own household, how will he care for God's church?",
+        "context": "Week 9 Cohort Focus: Guarding the Leader's Marriage, Family & Soul. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guarding the Leader's Marriage, Family & Soul challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guarding the Leader's Marriage, Family & Soul today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 62,
+        "title": "Week 9, Day 6: Guarding the Leader's Marriage, Family & Soul - Step 6",
+        "scriptureRef": "1 Timothy 3:1-7",
+        "scriptureText": "Scripture meditation for Week 9: If someone does not know how to manage his own household, how will he care for God's church?",
+        "context": "Week 9 Cohort Focus: Guarding the Leader's Marriage, Family & Soul. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guarding the Leader's Marriage, Family & Soul challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guarding the Leader's Marriage, Family & Soul today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 63,
+        "title": "Week 9, Day 7: Guarding the Leader's Marriage, Family & Soul - Step 7",
+        "scriptureRef": "1 Timothy 3:1-7",
+        "scriptureText": "Scripture meditation for Week 9: If someone does not know how to manage his own household, how will he care for God's church?",
+        "context": "Week 9 Cohort Focus: Guarding the Leader's Marriage, Family & Soul. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Guarding the Leader's Marriage, Family & Soul challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Guarding the Leader's Marriage, Family & Soul today.",
+        "practice": "Engage in today's Week 9 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 64,
+        "title": "Week 10, Day 1: Spiritual Warfare & Protecting the Flock - Step 1",
+        "scriptureRef": "1 Peter 5:1-11",
+        "scriptureText": "Scripture meditation for Week 10: Shepherd the flock of God that is among you... be sober-minded; be watchful.",
+        "context": "Week 10 Cohort Focus: Spiritual Warfare & Protecting the Flock. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Warfare & Protecting the Flock challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Warfare & Protecting the Flock today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 65,
+        "title": "Week 10, Day 2: Spiritual Warfare & Protecting the Flock - Step 2",
+        "scriptureRef": "1 Peter 5:1-11",
+        "scriptureText": "Scripture meditation for Week 10: Shepherd the flock of God that is among you... be sober-minded; be watchful.",
+        "context": "Week 10 Cohort Focus: Spiritual Warfare & Protecting the Flock. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Warfare & Protecting the Flock challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Warfare & Protecting the Flock today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 66,
+        "title": "Week 10, Day 3: Spiritual Warfare & Protecting the Flock - Step 3",
+        "scriptureRef": "1 Peter 5:1-11",
+        "scriptureText": "Scripture meditation for Week 10: Shepherd the flock of God that is among you... be sober-minded; be watchful.",
+        "context": "Week 10 Cohort Focus: Spiritual Warfare & Protecting the Flock. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Warfare & Protecting the Flock challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Warfare & Protecting the Flock today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 67,
+        "title": "Week 10, Day 4: Spiritual Warfare & Protecting the Flock - Step 4",
+        "scriptureRef": "1 Peter 5:1-11",
+        "scriptureText": "Scripture meditation for Week 10: Shepherd the flock of God that is among you... be sober-minded; be watchful.",
+        "context": "Week 10 Cohort Focus: Spiritual Warfare & Protecting the Flock. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Warfare & Protecting the Flock challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Warfare & Protecting the Flock today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 68,
+        "title": "Week 10, Day 5: Spiritual Warfare & Protecting the Flock - Step 5",
+        "scriptureRef": "1 Peter 5:1-11",
+        "scriptureText": "Scripture meditation for Week 10: Shepherd the flock of God that is among you... be sober-minded; be watchful.",
+        "context": "Week 10 Cohort Focus: Spiritual Warfare & Protecting the Flock. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Warfare & Protecting the Flock challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Warfare & Protecting the Flock today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 69,
+        "title": "Week 10, Day 6: Spiritual Warfare & Protecting the Flock - Step 6",
+        "scriptureRef": "1 Peter 5:1-11",
+        "scriptureText": "Scripture meditation for Week 10: Shepherd the flock of God that is among you... be sober-minded; be watchful.",
+        "context": "Week 10 Cohort Focus: Spiritual Warfare & Protecting the Flock. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Warfare & Protecting the Flock challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Warfare & Protecting the Flock today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 70,
+        "title": "Week 10, Day 7: Spiritual Warfare & Protecting the Flock - Step 7",
+        "scriptureRef": "1 Peter 5:1-11",
+        "scriptureText": "Scripture meditation for Week 10: Shepherd the flock of God that is among you... be sober-minded; be watchful.",
+        "context": "Week 10 Cohort Focus: Spiritual Warfare & Protecting the Flock. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Spiritual Warfare & Protecting the Flock challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Spiritual Warfare & Protecting the Flock today.",
+        "practice": "Engage in today's Week 10 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 71,
+        "title": "Week 11, Day 1: Building a Culture of Discipleship in the Local Church - Step 1",
+        "scriptureRef": "Acts 2:42-47",
+        "scriptureText": "Scripture meditation for Week 11: And they devoted themselves to the apostles' teaching and the fellowship...",
+        "context": "Week 11 Cohort Focus: Building a Culture of Discipleship in the Local Church. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building a Culture of Discipleship in the Local Church challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building a Culture of Discipleship in the Local Church today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 72,
+        "title": "Week 11, Day 2: Building a Culture of Discipleship in the Local Church - Step 2",
+        "scriptureRef": "Acts 2:42-47",
+        "scriptureText": "Scripture meditation for Week 11: And they devoted themselves to the apostles' teaching and the fellowship...",
+        "context": "Week 11 Cohort Focus: Building a Culture of Discipleship in the Local Church. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building a Culture of Discipleship in the Local Church challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building a Culture of Discipleship in the Local Church today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 73,
+        "title": "Week 11, Day 3: Building a Culture of Discipleship in the Local Church - Step 3",
+        "scriptureRef": "Acts 2:42-47",
+        "scriptureText": "Scripture meditation for Week 11: And they devoted themselves to the apostles' teaching and the fellowship...",
+        "context": "Week 11 Cohort Focus: Building a Culture of Discipleship in the Local Church. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building a Culture of Discipleship in the Local Church challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building a Culture of Discipleship in the Local Church today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 74,
+        "title": "Week 11, Day 4: Building a Culture of Discipleship in the Local Church - Step 4",
+        "scriptureRef": "Acts 2:42-47",
+        "scriptureText": "Scripture meditation for Week 11: And they devoted themselves to the apostles' teaching and the fellowship...",
+        "context": "Week 11 Cohort Focus: Building a Culture of Discipleship in the Local Church. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building a Culture of Discipleship in the Local Church challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building a Culture of Discipleship in the Local Church today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 75,
+        "title": "Week 11, Day 5: Building a Culture of Discipleship in the Local Church - Step 5",
+        "scriptureRef": "Acts 2:42-47",
+        "scriptureText": "Scripture meditation for Week 11: And they devoted themselves to the apostles' teaching and the fellowship...",
+        "context": "Week 11 Cohort Focus: Building a Culture of Discipleship in the Local Church. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building a Culture of Discipleship in the Local Church challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building a Culture of Discipleship in the Local Church today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 76,
+        "title": "Week 11, Day 6: Building a Culture of Discipleship in the Local Church - Step 6",
+        "scriptureRef": "Acts 2:42-47",
+        "scriptureText": "Scripture meditation for Week 11: And they devoted themselves to the apostles' teaching and the fellowship...",
+        "context": "Week 11 Cohort Focus: Building a Culture of Discipleship in the Local Church. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building a Culture of Discipleship in the Local Church challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building a Culture of Discipleship in the Local Church today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 77,
+        "title": "Week 11, Day 7: Building a Culture of Discipleship in the Local Church - Step 7",
+        "scriptureRef": "Acts 2:42-47",
+        "scriptureText": "Scripture meditation for Week 11: And they devoted themselves to the apostles' teaching and the fellowship...",
+        "context": "Week 11 Cohort Focus: Building a Culture of Discipleship in the Local Church. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Building a Culture of Discipleship in the Local Church challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Building a Culture of Discipleship in the Local Church today.",
+        "practice": "Engage in today's Week 11 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 78,
+        "title": "Week 12, Day 1: Multiplying Generations: Finishing the Race Well - Step 1",
+        "scriptureRef": "2 Timothy 4:1-8",
+        "scriptureText": "Scripture meditation for Week 12: I have fought the good fight, I have finished the race, I have kept the faith.",
+        "context": "Week 12 Cohort Focus: Multiplying Generations: Finishing the Race Well. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Multiplying Generations: Finishing the Race Well challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Multiplying Generations: Finishing the Race Well today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 79,
+        "title": "Week 12, Day 2: Multiplying Generations: Finishing the Race Well - Step 2",
+        "scriptureRef": "2 Timothy 4:1-8",
+        "scriptureText": "Scripture meditation for Week 12: I have fought the good fight, I have finished the race, I have kept the faith.",
+        "context": "Week 12 Cohort Focus: Multiplying Generations: Finishing the Race Well. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Multiplying Generations: Finishing the Race Well challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Multiplying Generations: Finishing the Race Well today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 80,
+        "title": "Week 12, Day 3: Multiplying Generations: Finishing the Race Well - Step 3",
+        "scriptureRef": "2 Timothy 4:1-8",
+        "scriptureText": "Scripture meditation for Week 12: I have fought the good fight, I have finished the race, I have kept the faith.",
+        "context": "Week 12 Cohort Focus: Multiplying Generations: Finishing the Race Well. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Multiplying Generations: Finishing the Race Well challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Multiplying Generations: Finishing the Race Well today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 81,
+        "title": "Week 12, Day 4: Multiplying Generations: Finishing the Race Well - Step 4",
+        "scriptureRef": "2 Timothy 4:1-8",
+        "scriptureText": "Scripture meditation for Week 12: I have fought the good fight, I have finished the race, I have kept the faith.",
+        "context": "Week 12 Cohort Focus: Multiplying Generations: Finishing the Race Well. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Multiplying Generations: Finishing the Race Well challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Multiplying Generations: Finishing the Race Well today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 82,
+        "title": "Week 12, Day 5: Multiplying Generations: Finishing the Race Well - Step 5",
+        "scriptureRef": "2 Timothy 4:1-8",
+        "scriptureText": "Scripture meditation for Week 12: I have fought the good fight, I have finished the race, I have kept the faith.",
+        "context": "Week 12 Cohort Focus: Multiplying Generations: Finishing the Race Well. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Multiplying Generations: Finishing the Race Well challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Multiplying Generations: Finishing the Race Well today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 83,
+        "title": "Week 12, Day 6: Multiplying Generations: Finishing the Race Well - Step 6",
+        "scriptureRef": "2 Timothy 4:1-8",
+        "scriptureText": "Scripture meditation for Week 12: I have fought the good fight, I have finished the race, I have kept the faith.",
+        "context": "Week 12 Cohort Focus: Multiplying Generations: Finishing the Race Well. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Multiplying Generations: Finishing the Race Well challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Multiplying Generations: Finishing the Race Well today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      },
+      {
+        "day": 84,
+        "title": "Week 12, Day 7: Multiplying Generations: Finishing the Race Well - Step 7",
+        "scriptureRef": "2 Timothy 4:1-8",
+        "scriptureText": "Scripture meditation for Week 12: I have fought the good fight, I have finished the race, I have kept the faith.",
+        "context": "Week 12 Cohort Focus: Multiplying Generations: Finishing the Race Well. Daily spiritual discipline designed for advanced discipleship depth.",
+        "reflectionPrompt": "How is the theme of Multiplying Generations: Finishing the Race Well challenging your character, habits, and community rhythms this week?",
+        "prayerPrompt": "Father, deepen the cruciform life in me. Anchor my heart in Multiplying Generations: Finishing the Race Well today.",
+        "practice": "Engage in today's Week 12 daily spiritual discipline: 10 minutes of Scripture meditation and an intentional act of Kingdom obedience."
+      }
+    ]
+  }
 ];
 
 export const HEART_MIRROR_SEED_THEMES: HeartMirrorTheme[] = [

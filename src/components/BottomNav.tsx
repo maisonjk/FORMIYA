@@ -8,12 +8,12 @@ import {
   HelpCircle,
   BookOpen,
   Baby,
-  Church,
   Flame,
   User,
   Settings,
   X,
   CreditCard,
+  BookMarked,
 } from "lucide-react";
 import { UserProfile } from "../types";
 
@@ -21,7 +21,6 @@ interface BottomNavProps {
   currentView: string;
   onNavigate: (view: string) => void;
   onOpenNextStep: () => void;
-  onOpenCompanion: () => void;
   onOpenPricing: () => void;
   onOpenSettings: () => void;
   userProfile?: UserProfile;
@@ -31,7 +30,6 @@ export const BottomNav: React.FC<BottomNavProps> = ({
   currentView,
   onNavigate,
   onOpenNextStep,
-  onOpenCompanion,
   onOpenPricing,
   onOpenSettings,
   userProfile,
@@ -84,6 +82,13 @@ export const BottomNav: React.FC<BottomNavProps> = ({
       view: "pain",
     },
     {
+      id: "journal",
+      label: "Reflection Journal",
+      desc: "Private encrypted space for prayers & reflections",
+      icon: BookMarked,
+      view: "journal",
+    },
+    {
       id: "groups",
       label: "Small Groups & Mentorship",
       desc: "Community discussions and discipleship pairings",
@@ -103,13 +108,6 @@ export const BottomNav: React.FC<BottomNavProps> = ({
       desc: "Age-tiered 5-minute discipleship moments",
       icon: Baby,
       view: "family",
-    },
-    {
-      id: "church",
-      label: "Church Leadership Portal",
-      desc: "Aggregated, anonymized spiritual health insights",
-      icon: Church,
-      view: "church",
     },
     {
       id: "profile",
@@ -187,18 +185,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({
             </div>
 
             {/* Quick Actions Row in Sheet */}
-            <div className="pt-3.5 border-t border-white/10 grid grid-cols-3 gap-2.5 text-center">
-              <button
-                onClick={() => {
-                  setIsMoreMenuOpen(false);
-                  onOpenCompanion();
-                }}
-                className="p-3 rounded-xl bg-[#181818] border border-white/10 text-white/90 hover:text-white hover:border-[#c5a368]/50 flex flex-col items-center space-y-1.5 transition-colors"
-              >
-                <Sparkles className="w-5 h-5 text-[#c5a368]" />
-                <span className="text-xs font-semibold">AI Companion</span>
-              </button>
-
+            <div className="pt-3.5 border-t border-white/10 grid grid-cols-2 gap-2.5 text-center">
               <button
                 onClick={() => {
                   setIsMoreMenuOpen(false);

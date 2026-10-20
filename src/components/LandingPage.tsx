@@ -9,7 +9,7 @@ import {
   Users,
   Compass,
   Flame,
-  Church,
+  HeartHandshake,
   Quote,
   Clock,
   Layers,
@@ -45,7 +45,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           </h1>
 
           {/* Subheadline */}
-          <p className="max-w-2xl mx-auto text-lg sm:text-xl text-white/70 leading-relaxed mb-10 font-normal">
+          <p className="max-w-2xl mx-auto text-lg sm:text-xl text-white/85 leading-relaxed mb-10 font-normal">
             Personalized Christian discipleship that helps you move from knowing Scripture to living it—one faithful, unhurried step at a time.
           </p>
 
@@ -68,7 +68,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           </div>
 
           {/* Key Trust Micro-Badges */}
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm text-white/50 font-medium">
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm text-white/75 font-medium">
             <span className="flex items-center space-x-1.5">
               <CheckCircle2 className="w-4 h-4 text-[#c5a368]" />
               <span>Scripture-Grounded First</span>
@@ -99,7 +99,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </h2>
             <p className="font-serif text-3xl sm:text-4xl font-normal text-white leading-snug">
               You know more sermons than ever. <br />
-              <span className="text-white/50 font-normal italic">
+              <span className="text-white/75 font-normal italic">
                 Are you actually becoming more like Jesus?
               </span>
             </p>
@@ -115,7 +115,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <h3 className="font-serif text-2xl font-normal text-white mb-4">
                   The Content Consumption Trap
                 </h3>
-                <ul className="space-y-3.5 text-white/70 text-sm sm:text-base">
+                <ul className="space-y-3.5 text-white/85 text-sm sm:text-base">
                   <li className="flex items-start space-x-2.5">
                     <span className="text-[#c5a368] font-bold mt-0.5">•</span>
                     <span>Reading daily devotionals without knowing what concrete action to take next.</span>
@@ -134,7 +134,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                   </li>
                 </ul>
               </div>
-              <div className="mt-8 pt-6 border-t border-white/10 text-xs text-white/40 italic">
+              <div className="mt-8 pt-6 border-t border-white/10 text-xs text-white/70 italic">
                 Result: An abundance of spiritual information, but little lasting transformation.
               </div>
             </div>
@@ -186,7 +186,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <p className="font-serif text-3xl sm:text-4xl font-normal text-white">
               How True Transformation Happens
             </p>
-            <p className="mt-3 text-base text-white/60">
+            <p className="mt-3 text-base text-white/80">
               Every pathway and daily session moves you through a repeatable, life-giving rhythm:
             </p>
           </div>
@@ -213,7 +213,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                     {item.title}
                   </h4>
                 </div>
-                <p className="text-xs text-white/50 leading-snug">
+                <p className="text-xs text-white/75 leading-snug">
                   {item.desc}
                 </p>
               </div>
@@ -244,7 +244,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <h3 className="font-serif text-xl font-medium text-white mb-3">
                   "What Should I Do Next?"
                 </h3>
-                <p className="text-sm text-white/60 leading-relaxed mb-4">
+                <p className="text-sm text-white/80 leading-relaxed mb-4">
                   Whenever you feel stuck, confused, or dry, tap one button. FORMIYA evaluates your current journey, recent reflections, and emotional state to offer ONE calm, faithful next step.
                 </p>
               </div>
@@ -266,7 +266,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <h3 className="font-serif text-xl font-medium text-white mb-3">
                   Heart Mirror Reflection
                 </h3>
-                <p className="text-sm text-white/60 leading-relaxed mb-4">
+                <p className="text-sm text-white/80 leading-relaxed mb-4">
                   With your explicit consent, FORMIYA reviews your journals over time to gently map emotional loops (e.g. Rejection → Insecurity → Withdrawal → Resentment) and suggests gospel-anchored practices.
                 </p>
               </div>
@@ -288,7 +288,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <h3 className="font-serif text-xl font-medium text-white mb-3">
                   What You're Walking Through
                 </h3>
-                <p className="text-sm text-white/60 leading-relaxed mb-4">
+                <p className="text-sm text-white/80 leading-relaxed mb-4">
                   20 curated real-life struggles—from "I feel far from God" and "I can't forgive" to "Recovering from church hurt" and "Navigating doubt"—turning pain into structured discipleship pathways.
                 </p>
               </div>
@@ -310,7 +310,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <h3 className="font-serif text-xl font-medium text-white mb-3">
                   Sermon → Discipleship
                 </h3>
-                <p className="text-sm text-white/60 leading-relaxed mb-4">
+                <p className="text-sm text-white/80 leading-relaxed mb-4">
                   Turn one Sunday sermon into a complete 5-day daily follow-up guide, small group study questions, family conversation prompts, and a weekly practice challenge.
                 </p>
               </div>
@@ -332,7 +332,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <h3 className="font-serif text-xl font-medium text-white mb-3">
                   FORMIYA Family
                 </h3>
-                <p className="text-sm text-white/60 leading-relaxed mb-4">
+                <p className="text-sm text-white/80 leading-relaxed mb-4">
                   Age-specific discipleship experiences for Ages 4–7, Ages 8–12, and Teens. Simple story hooks, hands-on family activities, and memorable bedtime prayers.
                 </p>
               </div>
@@ -345,24 +345,24 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               </button>
             </div>
 
-            {/* Feature 6: Church Portal */}
+            {/* Feature 6: Mentor ↔ Disciple Hub & Groups */}
             <div className="bg-[#111111] border border-white/10 rounded-2xl p-7 flex flex-col justify-between hover:border-[#c5a368]/40 transition-colors">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-[#181818] border border-white/10 text-[#c5a368] flex items-center justify-center mb-6">
-                  <Church className="w-6 h-6" />
+                  <HeartHandshake className="w-6 h-6" />
                 </div>
                 <h3 className="font-serif text-xl font-medium text-white mb-3">
-                  FORMIYA for Churches
+                  Mentor ↔ Disciple Hub
                 </h3>
-                <p className="text-sm text-white/60 leading-relaxed mb-4">
-                  Pastors see privacy-preserving aggregate spiritual health metrics: top growth areas, active journey engagement, and collective discipline trends without compromising member privacy.
+                <p className="text-sm text-white/80 leading-relaxed mb-4">
+                  1-on-1 spiritual pairings, weekly action items, guided check-ins, and small group leader curriculum designed for multiplication.
                 </p>
               </div>
               <button
-                onClick={() => onExploreApp("church")}
+                onClick={() => onExploreApp("groups")}
                 className="text-xs font-semibold text-[#c5a368] hover:text-[#d8b67b] flex items-center space-x-1 mt-4"
               >
-                <span>Explore Church Dashboard</span>
+                <span>Explore Groups & Mentorship</span>
                 <ArrowRight className="w-3 h-3" />
               </button>
             </div>
@@ -388,41 +388,41 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="bg-[#111111] border border-white/10 rounded-xl p-6">
               <h4 className="font-serif font-medium text-lg text-white mb-2 flex items-center space-x-2">
-                <ShieldCheck className="w-5 h-5 text-[#c5a368]" />
-                <span>Scripture Is Authoritative</span>
+                <BookOpen className="w-5 h-5 text-[#c5a368]" />
+                <span>Scripture-Grounded Orthodoxy</span>
               </h4>
-              <p className="text-sm text-white/65 leading-relaxed">
-                AI is a tool, never divine revelation. We never say "God told me" or make personal prophetic claims. Every answer is grounded in verified biblical citations.
+              <p className="text-sm sm:text-base text-white/80 leading-relaxed">
+                Rooted in historical Christian depth and biblical fidelity. Every daily practice, reflection prompt, and formation journey is anchored directly in God's Word.
               </p>
             </div>
 
             <div className="bg-[#111111] border border-white/10 rounded-xl p-6">
               <h4 className="font-serif font-medium text-lg text-white mb-2 flex items-center space-x-2">
                 <Users className="w-5 h-5 text-[#c5a368]" />
-                <span>AI Assists; Humans Disciple</span>
+                <span>Local Church Community</span>
               </h4>
-              <p className="text-sm text-white/65 leading-relaxed">
-                AI cannot replace pastors, mentors, counselors, or local church community. We build intentional on-ramps to trusted human relationships.
+              <p className="text-sm sm:text-base text-white/80 leading-relaxed">
+                Formiya champions the local congregation, connecting daily personal devotional life with small group fellowship, pastor-aligned studies, and mentor encouragement.
               </p>
             </div>
 
             <div className="bg-[#111111] border border-white/10 rounded-xl p-6">
               <h4 className="font-serif font-medium text-lg text-white mb-2 flex items-center space-x-2">
                 <Heart className="w-5 h-5 text-[#c5a368]" />
-                <span>No Shame Gamification</span>
+                <span>Grace-Oriented Rhythms</span>
               </h4>
-              <p className="text-sm text-white/65 leading-relaxed">
-                You will never see "You failed your God streak." When life happens and days are missed, we greet you with grace: "Welcome back. Let's take one faithful step today."
+              <p className="text-sm sm:text-base text-white/80 leading-relaxed">
+                No legalism or manipulative guilt. When life gets overwhelming and days are missed, we greet you with Gospel grace: "Welcome back. Take one faithful step today."
               </p>
             </div>
 
             <div className="bg-[#111111] border border-white/10 rounded-xl p-6">
               <h4 className="font-serif font-medium text-lg text-white mb-2 flex items-center space-x-2">
-                <Clock className="w-5 h-5 text-[#c5a368]" />
-                <span>Your Spiritual Life Is Private</span>
+                <Flame className="w-5 h-5 text-[#c5a368]" />
+                <span>Practical Heart Transformation</span>
               </h4>
-              <p className="text-sm text-white/65 leading-relaxed">
-                Your private journal reflections are yours. We do not sell your spiritual data, use it for advertising, or expose it to church leaders without your consent.
+              <p className="text-sm sm:text-base text-white/80 leading-relaxed">
+                Moving discipleship from passive consumption into tangible, embodied habits: prayer, reflective meditation, truth confession, and compassionate service.
               </p>
             </div>
           </div>
@@ -439,135 +439,96 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <p className="font-serif text-3xl sm:text-4xl font-normal text-white">
               Invest in What Lasts
             </p>
-            <p className="mt-3 text-base text-white/60">
-              Plans designed for individuals seeking deep spiritual formation, families walking together, and whole congregations.
+            <p className="mt-3 text-base text-white/80">
+              Plans designed for individuals seeking deep spiritual formation and families walking in rhythm together.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
             {/* Plus */}
-            <div className="bg-[#151515] border-2 border-[#c5a368] rounded-2xl p-6 flex flex-col justify-between relative shadow-xl">
+            <div className="bg-[#151515] border border-white/10 hover:border-white/20 rounded-2xl p-7 flex flex-col justify-between shadow-lg">
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-widest text-[#c5a368]">
+                  Personal Growth
+                </span>
+                <h3 className="font-serif text-2xl font-normal text-white mt-1">FORMIYA Plus</h3>
+                <div className="mt-3 mb-6">
+                  <span className="font-serif text-4xl font-medium text-white">$7.99</span>
+                  <span className="text-xs text-white/70 ml-1">/ month</span>
+                </div>
+                <ul className="space-y-3 text-xs sm:text-sm text-white/85 mb-8">
+                  <li className="flex items-center space-x-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0" />
+                    <span>5-10 min Daily Scripture, Context & Practice</span>
+                  </li>
+                  <li className="flex items-center space-x-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0" />
+                    <span>All 14 & 21-day journeys (Full Library)</span>
+                  </li>
+                  <li className="flex items-center space-x-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0" />
+                    <span><strong>Heart Mirror:</strong> Pattern Discovery</span>
+                  </li>
+                  <li className="flex items-center space-x-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0" />
+                    <span>Personalized Formation Map</span>
+                  </li>
+                  <li className="flex items-center space-x-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0" />
+                    <span>Personal Reflection Journal</span>
+                  </li>
+                </ul>
+              </div>
+              <button
+                onClick={onOpenPricing}
+                className="w-full py-3 rounded-xl bg-[#181818] hover:bg-[#222] border border-white/20 text-white font-semibold text-xs sm:text-sm transition-colors uppercase tracking-wider"
+              >
+                Select Plus
+              </button>
+            </div>
+
+            {/* Pro */}
+            <div className="bg-[#181818] border-2 border-[#c5a368] rounded-2xl p-7 flex flex-col justify-between relative shadow-xl">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#c5a368] text-black text-[10px] font-bold uppercase tracking-widest px-3 py-0.5 rounded-full">
                 Most Popular
               </div>
               <div>
                 <span className="text-xs font-semibold uppercase tracking-widest text-[#c5a368]">
-                  FORMIYA Plus
+                  Family & Community
                 </span>
-                <div className="mt-4 mb-6">
-                  <span className="font-serif text-4xl font-medium text-white">$9.99</span>
-                  <span className="text-xs text-white/40 ml-1">/ month</span>
+                <h3 className="font-serif text-2xl font-normal text-white mt-1">FORMIYA Pro</h3>
+                <div className="mt-3 mb-6">
+                  <span className="font-serif text-4xl font-medium text-white">$14.99</span>
+                  <span className="text-xs text-white/70 ml-1">/ month</span>
                 </div>
-                <ul className="space-y-2.5 text-xs text-white/75 mb-6">
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span className="text-white font-semibold">Daily Scripture, Context & Practice</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>All 14 & 21-day journeys</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span><strong>Heart Mirror</strong> Pattern Discovery</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>Personalized Formation Map</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>Unlimited AI Companion Q&A</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>Private Encrypted Reflection Journal</span>
-                  </li>
-                </ul>
-              </div>
-              <button
-                onClick={onOpenPricing}
-                className="w-full py-2.5 rounded-lg bg-[#c5a368] hover:bg-[#d8b67b] text-black font-semibold text-xs shadow-md transition-colors uppercase tracking-wider"
-              >
-                Start 14-Day Free Trial
-              </button>
-            </div>
-
-            {/* Pro */}
-            <div className="bg-[#111111] border border-white/10 rounded-2xl p-6 flex flex-col justify-between">
-              <div>
-                <span className="text-xs font-semibold uppercase tracking-widest text-[#c5a368]">
-                  FORMIYA Pro
-                </span>
-                <div className="mt-4 mb-6">
-                  <span className="font-serif text-4xl font-medium text-white">$19.99</span>
-                  <span className="text-xs text-white/40 ml-1">/ month</span>
-                </div>
-                <ul className="space-y-2.5 text-xs text-white/65 mb-6">
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
+                <ul className="space-y-3 text-xs sm:text-sm text-white/85 mb-8">
+                  <li className="flex items-center space-x-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0" />
                     <span className="text-white font-semibold">Everything in Plus</span>
                   </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>FORMIYA Family (All age tiers)</span>
+                  <li className="flex items-center space-x-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0" />
+                    <span>FORMIYA Family: All age-tiered moments</span>
                   </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>Small Group Leader Tools</span>
+                  <li className="flex items-center space-x-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0" />
+                    <span>Small Group Leader Tools & Curriculum</span>
                   </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>Mentor ↔ Disciple Hub</span>
+                  <li className="flex items-center space-x-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0" />
+                    <span><strong>Mentor ↔ Disciple Hub</strong></span>
                   </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>12-Week Advanced Journeys</span>
+                  <li className="flex items-center space-x-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-[#c5a368] shrink-0" />
+                    <span><strong>12-Week Advanced Journeys</strong></span>
                   </li>
                 </ul>
               </div>
               <button
                 onClick={onOpenPricing}
-                className="w-full py-2.5 rounded-lg bg-[#181818] hover:bg-[#222] text-white border border-white/10 font-semibold text-xs transition-colors uppercase tracking-wider"
+                className="w-full py-3 rounded-xl bg-[#c5a368] hover:bg-[#d8b67b] text-black font-semibold text-xs sm:text-sm transition-colors uppercase tracking-wider shadow-md"
               >
                 Upgrade to Pro
-              </button>
-            </div>
-
-            {/* Church */}
-            <div className="bg-[#111111] border border-white/10 rounded-2xl p-6 flex flex-col justify-between">
-              <div>
-                <span className="text-xs font-semibold uppercase tracking-widest text-[#c5a368]">
-                  For Churches
-                </span>
-                <div className="mt-4 mb-6">
-                  <span className="font-serif text-4xl font-medium text-white">$299</span>
-                  <span className="text-xs text-white/40 ml-1">/ mo starter</span>
-                </div>
-                <ul className="space-y-2.5 text-xs text-white/65 mb-6">
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>Full Congregation Access</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span><strong>Sermon → Discipleship Engine</strong></span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>Privacy-Preserving Analytics</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#c5a368]" />
-                    <span>Custom Church Curriculum</span>
-                  </li>
-                </ul>
-              </div>
-              <button
-                onClick={() => onExploreApp("church")}
-                className="w-full py-2.5 rounded-lg bg-[#181818] hover:bg-[#222] text-[#c5a368] border border-[#c5a368]/30 font-semibold text-xs transition-colors uppercase tracking-wider"
-              >
-                Schedule Church Demo
               </button>
             </div>
           </div>
@@ -580,7 +541,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           <h2 className="font-serif text-3xl sm:text-5xl font-normal text-white mb-6">
             Your next faithful step starts here.
           </h2>
-          <p className="text-base sm:text-lg text-white/60 mb-8">
+          <p className="text-base sm:text-lg text-white/85 mb-8">
             Take 3 minutes to discover where you are in your walk with Christ and receive your personalized formation map.
           </p>
           <button
@@ -596,12 +557,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       {/* Footer */}
       <footer className="bg-[#000000] text-white/50 py-12 border-t border-white/10 text-xs">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex items-center space-x-3">
-            <div className="w-7 h-7 rounded bg-[#c5a368] text-black flex items-center justify-center font-display font-bold text-sm">
-              F
-            </div>
+          <div className="flex items-center">
             <span className="font-display font-bold tracking-[0.2em] text-white uppercase text-sm">
-              FORMIYA <span className="text-[#c5a368]">.</span>
+              FORMIYA
             </span>
           </div>
           <p className="text-center sm:text-left text-white/40">
@@ -610,7 +568,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           <div className="flex space-x-6 text-white/60">
             <button onClick={() => onExploreApp("daily")} className="hover:text-[#c5a368]">Daily Practice</button>
             <button onClick={onOpenPricing} className="hover:text-[#c5a368]">Pricing</button>
-            <button onClick={() => onExploreApp("church")} className="hover:text-[#c5a368]">For Churches</button>
+            <button onClick={() => onExploreApp("groups")} className="hover:text-[#c5a368]">Groups & Mentorship</button>
           </div>
         </div>
       </footer>

@@ -13,10 +13,11 @@ import {
   RotateCcw,
   Share2,
   Type,
-  ShieldCheck,
+  BookMarked,
 } from "lucide-react";
 import confetti from "canvas-confetti";
 import { DailyFormationSession, UserProfile } from "../types";
+import { addJournalEntry } from "../lib/journalStorage";
 
 interface DailyFormationViewProps {
   session: DailyFormationSession;
@@ -56,6 +57,12 @@ export const DailyFormationView: React.FC<DailyFormationViewProps> = ({
   const handleSaveReflection = () => {
     if (!reflectionInput.trim()) return;
     onSaveReflection(session.id, reflectionInput);
+    addJournalEntry({
+      title: `Daily Formation: ${session.scripturePassage.reference}`,
+      scriptureReference: session.scripturePassage.reference,
+      category: "Reflection",
+      content: reflectionInput.trim(),
+    });
     setIsSavedReflection(true);
     setTimeout(() => setIsSavedReflection(false), 3000);
   };
@@ -70,23 +77,21 @@ export const DailyFormationView: React.FC<DailyFormationViewProps> = ({
         colors: ["#c5a368", "#d8b67b", "#ffffff"],
       });
 
-      // Synchronize formation streak to localStorage (unless incognito mode is active)
+      // Synchronize formation streak to localStorage
       try {
-        if (!userProfile.privacySettings?.incognitoMode) {
-          const todayStr = new Date().toISOString().split("T")[0];
-          const lastDate = localStorage.getItem("formed_streak_last_date");
-          if (lastDate !== todayStr) {
-            const cur = parseInt(localStorage.getItem("formed_streak_count") || String(userProfile.streakDays || 5), 10);
-            const newStreak = cur + 1;
-            localStorage.setItem("formed_streak_count", newStreak.toString());
-            localStorage.setItem("formed_streak_last_date", todayStr);
-            const savedLongest = parseInt(localStorage.getItem("formed_streak_longest") || "12", 10);
-            localStorage.setItem("formed_streak_longest", Math.max(newStreak, savedLongest).toString());
-            const hist = JSON.parse(localStorage.getItem("formed_streak_history") || "[]");
-            if (!hist.includes(todayStr)) {
-              hist.push(todayStr);
-              localStorage.setItem("formed_streak_history", JSON.stringify(hist));
-            }
+        const todayStr = new Date().toISOString().split("T")[0];
+        const lastDate = localStorage.getItem("formed_streak_last_date");
+        if (lastDate !== todayStr) {
+          const cur = parseInt(localStorage.getItem("formed_streak_count") || String(userProfile.streakDays || 5), 10);
+          const newStreak = cur + 1;
+          localStorage.setItem("formed_streak_count", newStreak.toString());
+          localStorage.setItem("formed_streak_last_date", todayStr);
+          const savedLongest = parseInt(localStorage.getItem("formed_streak_longest") || "12", 10);
+          localStorage.setItem("formed_streak_longest", Math.max(newStreak, savedLongest).toString());
+          const hist = JSON.parse(localStorage.getItem("formed_streak_history") || "[]");
+          if (!hist.includes(todayStr)) {
+            hist.push(todayStr);
+            localStorage.setItem("formed_streak_history", JSON.stringify(hist));
           }
         }
       } catch (e) {
@@ -266,19 +271,22 @@ export const DailyFormationView: React.FC<DailyFormationViewProps> = ({
           <textarea
             value={reflectionInput}
             onChange={(e) => setReflectionInput(e.target.value)}
-            placeholder="Write your honest thoughts, doubts, prayers, or quiet confessions here (saved securely and privately)..."
+            placeholder="Write your honest thoughts, doubts, prayers, or quiet confessions here..."
             rows={4}
             className="w-full p-4 sm:p-5 rounded-xl border border-white/10 bg-[#181818] text-base text-white focus:outline-none focus:ring-1 focus:ring-[#c5a368] focus:border-[#c5a368] transition-all placeholder:text-white/40 leading-relaxed"
           />
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div className="flex items-center space-x-2 text-xs sm:text-sm text-white/50">
-              <ShieldCheck className="w-4 h-4 text-[#c5a368]" />
-              <span>
-                {userProfile.privacySettings?.incognitoMode
-                  ? "Incognito Mode: Reflections will not be stored permanently"
-                  : "Protected by Pastoral Privacy Covenant • Client-side device storage only"}
-              </span>
-            </div>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+            {onNavigate ? (
+              <button
+                type="button"
+                onClick={() => onNavigate("journal")}
+                className="text-xs sm:text-sm text-[#c5a368] hover:text-[#d8b67b] flex items-center space-x-1.5 transition-colors self-start sm:self-auto"
+              >
+                <BookMarked className="w-4 h-4" />
+                <span>Open Private Encrypted Journal</span>
+              </button>
+            ) : <div />}
+
             <button
               onClick={handleSaveReflection}
               disabled={!reflectionInput.trim()}
@@ -287,7 +295,7 @@ export const DailyFormationView: React.FC<DailyFormationViewProps> = ({
               {isSavedReflection ? (
                 <>
                   <Check className="w-4 h-4" />
-                  <span>Saved Reflection</span>
+                  <span>Saved to Reflection Journal</span>
                 </>
               ) : (
                 <>

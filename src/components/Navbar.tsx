@@ -4,16 +4,14 @@ import {
   BookOpen,
   HeartHandshake,
   Users,
-  Sparkles,
   Home,
   Layers,
   Flame,
   Shield,
   CreditCard,
   Settings,
-  HelpCircle,
-  Church,
   Baby,
+  BookMarked,
 } from "lucide-react";
 import { UserProfile, SubscriptionTier } from "../types";
 
@@ -22,8 +20,7 @@ interface NavbarProps {
   onNavigate: (view: string) => void;
   userProfile?: UserProfile;
   userTier?: SubscriptionTier;
-  onOpenCompanion?: () => void;
-  onOpenNextStep: () => void;
+  onOpenNextStep?: () => void;
   onOpenPricing: () => void;
   onOpenSettings?: () => void;
 }
@@ -33,7 +30,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   onNavigate,
   userProfile,
   userTier = "plus",
-  onOpenCompanion,
   onOpenNextStep,
   onOpenPricing,
   onOpenSettings,
@@ -48,19 +44,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center space-x-6">
             <button
               onClick={() => onNavigate("landing")}
-              className="flex items-center space-x-3 text-left focus:outline-none group"
+              className="flex items-center text-left focus:outline-none group"
             >
-              <div className="w-9 h-9 rounded-lg bg-[#c5a368] text-black flex items-center justify-center font-display font-bold text-lg tracking-wider shadow-sm group-hover:bg-[#d8b67b] transition-colors">
-                F
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display font-bold text-xl tracking-[0.15em] text-white uppercase leading-tight">
-                  FORMIYA <span className="text-[#c5a368]">.</span>
-                </span>
-                <span className="text-[10px] tracking-[0.2em] text-white/40 uppercase font-semibold hidden sm:inline-block">
-                  Spiritual Formation Platform
-                </span>
-              </div>
+              <span className="font-display font-bold text-xl tracking-[0.18em] text-white uppercase leading-tight group-hover:text-[#c5a368] transition-colors">
+                FORMIYA
+              </span>
             </button>
 
             {/* Primary Desktop Nav */}
@@ -102,18 +90,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               </button>
 
               <button
-                onClick={() => (onOpenCompanion ? onOpenCompanion() : onNavigate("companion"))}
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors flex items-center space-x-1.5 ${
-                  currentView === "companion"
-                    ? "bg-[#181818] text-[#c5a368] border border-[#c5a368]/30 font-semibold"
-                    : "text-white/70 hover:text-white hover:bg-white/5"
-                }`}
-              >
-                <Sparkles className="w-4 h-4 text-[#c5a368]" />
-                <span>AI Companion</span>
-              </button>
-
-              <button
                 onClick={() => onNavigate("mirror")}
                 className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors flex items-center space-x-1.5 ${
                   currentView === "mirror"
@@ -124,23 +100,25 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <Compass className="w-4 h-4" />
                 <span>Heart Mirror</span>
               </button>
+
+              <button
+                onClick={() => onNavigate("journal")}
+                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors flex items-center space-x-1.5 ${
+                  currentView === "journal"
+                    ? "bg-[#181818] text-[#c5a368] border border-[#c5a368]/30 font-semibold"
+                    : "text-white/70 hover:text-white hover:bg-white/5"
+                }`}
+              >
+                <BookMarked className="w-4 h-4 text-[#c5a368]" />
+                <span>Journal</span>
+              </button>
             </nav>
           </div>
 
           {/* Right Action Bar */}
           <div className="flex items-center space-x-2 sm:space-x-3">
-            {/* The Central "I Don't Know What To Do Next" Button */}
-            <button
-              onClick={onOpenNextStep}
-              className="bg-[#c5a368] hover:bg-[#d8b67b] text-black px-3.5 py-1.5 rounded-md text-xs sm:text-sm font-semibold tracking-wide shadow-md transition-all flex items-center space-x-1.5"
-              title="Get a clear, unhurried, faithful next step based on your current state"
-            >
-              <HelpCircle className="w-4 h-4 text-black" />
-              <span className="font-semibold whitespace-nowrap">What Should I Do Next?</span>
-            </button>
-
             {/* Quick Hub Dropdown / Buttons for Pro & Church Tools */}
-            <div className="hidden md:flex items-center space-x-1 border-l border-white/10 pl-3">
+            <div className="hidden md:flex items-center space-x-1">
               <button
                 onClick={() => onNavigate("groups")}
                 className={`p-2 rounded-md text-white/60 hover:text-white hover:bg-white/5 transition-colors ${
@@ -170,23 +148,13 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <Baby className="w-4 h-4" />
               </button>
-
-              <button
-                onClick={() => onNavigate("church")}
-                className={`p-2 rounded-md text-white/60 hover:text-white hover:bg-white/5 transition-colors ${
-                  currentView === "church" ? "bg-[#181818] text-[#c5a368] border border-white/10" : ""
-                }`}
-                title="Church Portal & Analytics"
-              >
-                <Church className="w-4 h-4" />
-              </button>
             </div>
 
             {/* Tier / Upgrade Badge */}
             <button
               onClick={onOpenPricing}
               className={`px-2.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider transition-all flex items-center space-x-1 ${
-                tier === "pro" || tier === "church"
+                tier === "pro"
                   ? "bg-[#c5a368] text-black"
                   : "bg-[#1a1a1a] text-[#c5a368] border border-[#c5a368]/30"
               }`}
@@ -194,11 +162,11 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span>{tier.toUpperCase()}</span>
             </button>
 
-            {/* Settings & Memory */}
+            {/* Settings */}
             <button
               onClick={onOpenSettings}
               className="p-2 rounded-md text-white/60 hover:text-white hover:bg-white/5 transition-colors"
-              title="Settings, AI Memory & Privacy"
+              title="Settings"
             >
               <Settings className="w-4 h-4" />
             </button>
@@ -238,14 +206,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               {new Date().toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' })}
             </span>
           </div>
-
-          <button
-            onClick={() => (onOpenCompanion ? onOpenCompanion() : onNavigate("companion"))}
-            className="flex items-center space-x-1.5 bg-[#181818] border border-[#c5a368]/40 text-[#c5a368] px-2.5 py-1 rounded-full text-[11px] font-semibold hover:bg-white/5 transition-colors"
-          >
-            <Sparkles className="w-3 h-3" />
-            <span>AI Companion</span>
-          </button>
         </div>
       </div>
     </header>

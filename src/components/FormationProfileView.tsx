@@ -10,12 +10,7 @@ import {
   Plus,
   Check,
   Trophy,
-  ShieldCheck,
   Zap,
-  Lock,
-  EyeOff,
-  HardDrive,
-  UserCheck,
   Settings,
 } from "lucide-react";
 import confetti from "canvas-confetti";
@@ -54,7 +49,6 @@ export const FormationProfileView: React.FC<FormationProfileViewProps> = ({
   onOpenSettings,
 }) => {
   const { indicators } = userProfile;
-  const isIncognito = userProfile.privacySettings?.incognitoMode;
 
   // Local Storage Keys
   const STREAK_KEY = "formed_streak_count";
@@ -167,11 +161,9 @@ export const FormationProfileView: React.FC<FormationProfileViewProps> = ({
   };
 
   const handleResetStreak = () => {
-    if (window.confirm("Would you like to reset your active streak to 1 day? (Your longest streak will remain preserved)")) {
-      setStreakCount(1);
-      setLastLoggedDate(todayString);
-      setStreakHistory([todayString]);
-    }
+    setStreakCount(1);
+    setLastLoggedDate(todayString);
+    setStreakHistory([todayString]);
   };
 
   // Find next milestone
@@ -223,10 +215,10 @@ export const FormationProfileView: React.FC<FormationProfileViewProps> = ({
         <div>
           <div className="inline-flex items-center space-x-2 bg-[#181818] border border-[#c5a368]/30 text-[#c5a368] text-xs sm:text-sm font-semibold px-3.5 py-1.5 rounded-full mb-3">
             <Sparkles className="w-4 h-4" />
-            <span>Personalized Discipleship Map</span>
+            <span>Personalized Formation Map</span>
           </div>
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-white">
-            {userProfile.name}'s Formation Profile
+            {userProfile.name}'s Formation Map
           </h1>
           <p className="text-base sm:text-lg text-white/80 mt-2 leading-relaxed">
             Current Focus: <span className="font-semibold text-white">{userProfile.primaryGrowthArea}</span> • Stage:{" "}
@@ -455,75 +447,6 @@ export const FormationProfileView: React.FC<FormationProfileViewProps> = ({
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed italic">
             <strong className="text-[#c5a368] not-italic font-semibold">Theology of Rhythm:</strong> Discipleship is not about earning God's affection through unbroken performance; it is about cultivating daily attentiveness to His presence. <span className="text-white/90">"His mercies are new every morning."</span> (Lam. 3:22–23)
           </p>
-        </div>
-      </div>
-
-      {/* ========================================================================= */}
-      {/* PRIVACY SHIELD & DATA SOVEREIGNTY STATUS CARD */}
-      {/* ========================================================================= */}
-      <div className="bg-[#121212] border border-white/10 rounded-2xl p-6 sm:p-7 space-y-5 shadow-xs">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-4">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-xl bg-[#1a1712] border border-[#c5a368]/30 flex items-center justify-center text-[#c5a368]">
-              <ShieldCheck className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="flex items-center space-x-2">
-                <h3 className="font-serif text-xl font-normal text-white">
-                  Privacy-Safe Discipleship
-                </h3>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/40 border border-emerald-800/40 px-2 py-0.5 rounded">
-                  Active Shield
-                </span>
-              </div>
-              <p className="text-xs sm:text-sm text-white/60">
-                Zero ad tracking • End-to-end device storage • Pastoral privacy protected
-              </p>
-            </div>
-          </div>
-
-          {onOpenSettings && (
-            <button
-              onClick={onOpenSettings}
-              className="px-4 py-2.5 rounded-xl bg-[#1a1a1a] hover:bg-[#222222] border border-white/10 text-xs sm:text-sm font-semibold text-white/80 hover:text-white flex items-center space-x-2 transition-colors self-start sm:self-auto"
-            >
-              <Settings className="w-4 h-4 text-[#c5a368]" />
-              <span>Privacy & Storage Settings</span>
-            </button>
-          )}
-        </div>
-
-        {/* 3 Privacy Pillar Tags */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-          <div className="bg-[#161616] border border-white/5 rounded-xl p-3.5 space-y-1">
-            <div className="flex items-center space-x-2 text-xs font-bold text-[#c5a368]">
-              <HardDrive className="w-3.5 h-3.5" />
-              <span>Local Device Storage</span>
-            </div>
-            <p className="text-xs text-white/60 leading-relaxed">
-              Streaks and reflections are saved locally in your browser, not in a commercial cloud tracking database.
-            </p>
-          </div>
-
-          <div className="bg-[#161616] border border-white/5 rounded-xl p-3.5 space-y-1">
-            <div className="flex items-center space-x-2 text-xs font-bold text-[#c5a368]">
-              <UserCheck className="w-3.5 h-3.5" />
-              <span>Pastoral Confidentiality Wall</span>
-            </div>
-            <p className="text-xs text-white/60 leading-relaxed">
-              Pastors and small group leaders only see anonymized community health metrics. Your prayers stay private.
-            </p>
-          </div>
-
-          <div className="bg-[#161616] border border-white/5 rounded-xl p-3.5 space-y-1">
-            <div className="flex items-center space-x-2 text-xs font-bold text-[#c5a368]">
-              <Lock className="w-3.5 h-3.5" />
-              <span>No AI Model Training</span>
-            </div>
-            <p className="text-xs text-white/60 leading-relaxed">
-              Your intimate prayers and confessions are ephemeral and never used to train public language models.
-            </p>
-          </div>
         </div>
       </div>
 

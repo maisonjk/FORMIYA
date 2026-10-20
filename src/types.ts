@@ -13,7 +13,7 @@ export type DiscipleshipLevel =
 
 export type BibleTranslation = "ESV" | "NIV" | "CSB" | "NASB" | "NLT" | "KJV";
 
-export type SubscriptionTier = "plus" | "pro" | "church";
+export type SubscriptionTier = "plus" | "pro";
 export type UserTier = SubscriptionTier;
 
 export interface FormationIndicators {
@@ -50,13 +50,6 @@ export interface UserProfile {
     rememberJourney: boolean;
     rememberBibleTranslation: boolean;
     allowHeartMirror: boolean;
-  };
-  privacySettings?: {
-    localOnlyStorage: boolean;
-    incognitoMode: boolean;
-    anonymizeChurchMetrics: boolean;
-    allowHeartMirror: boolean;
-    ephemeralAiOnly: boolean;
   };
 }
 
@@ -251,12 +244,22 @@ export interface ChurchAnalytics {
   dailyPracticeCompletionRate: number;
 }
 
-export interface CompanionMessage {
+export interface JournalEntry {
   id: string;
-  role: "user" | "assistant";
+  title: string;
+  date: string;
+  scriptureReference?: string;
   content: string;
-  timestamp: string;
-  scriptureCitation?: string;
-  suggestedAction?: string;
-  isCrisis?: boolean;
+  category: "Reflection" | "Prayer" | "Confession" | "Gratitude" | "Lament";
+  encrypted?: boolean;
+}
+
+export interface FamilyMemberAccount {
+  id: string;
+  name: string;
+  relationship: string;
+  ageGroup: "kids_4_7" | "tweens_8_12" | "teens_13_18" | "adult";
+  avatar?: string;
+  streakDays: number;
+  lastActive: string;
 }
